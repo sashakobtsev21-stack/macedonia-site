@@ -1,7 +1,7 @@
 /**
- * live-data.js — клиентский слой блока «Сейчас в Грузии» (§8.4, Фаза 6).
+ * live-data.js — клиентский слой блока «Сейчас в Северной Македонии» (§8.4).
  *
- * Дотягивает свежие погоду/море/курс поверх build-time снапшота. Принципы:
+ * Дотягивает свежую погоду поверх build-time снапшота. Принципы:
  *  - один fetch на загрузку (НЕ polling, §15/правило 8 — без фоновых таймеров);
  *  - кэш в localStorage на 30 мин → повторный заход не дёргает сеть;
  *  - любой сбой источника → значение не трогаем, остаётся снапшот из HTML;
@@ -13,11 +13,10 @@
   if (!root) return;
 
   const AIR_URL =
-    'https://api.open-meteo.com/v1/forecast?latitude=41.6938,42.2679,41.6168&longitude=44.8015,42.6946,41.6367&current=temperature_2m';
+    'https://api.open-meteo.com/v1/forecast?latitude=41.9981,41.1172,41.0297&longitude=21.4254,20.8019,21.3292&current=temperature_2m';
   const SEA_URL =
-    'https://marine-api.open-meteo.com/v1/marine?latitude=41.645&longitude=41.63&current=sea_surface_temperature';
-  const FX_URL = 'https://nbg.gov.ge/gw/api/ct/monetarypolicy/currencies/en/json/';
-  const CACHE_KEY = 'gg-live-v1';
+    'https://marine-api.open-meteo.com/v1/marine?latitude=41.07&longitude=20.71&current=sea_surface_temperature';
+  const CACHE_KEY = 'nmg-live-v1';
   const TTL = 30 * 60 * 1000; // 30 минут
 
   const set = (key, val) => {
@@ -26,18 +25,13 @@
     if (el) el.textContent = val;
   };
   const fmtT = (n) => (typeof n === 'number' ? Math.round(n) + '°' : null);
-  const fmtFx = (n) => (typeof n === 'number' ? n.toFixed(2) + ' ₾' : null);
 
   function render(d) {
     if (!d) return;
-    set('air-tbilisi', fmtT(d.air && d.air.tbilisi));
-    set('air-kutaisi', fmtT(d.air && d.air.kutaisi));
-    set('air-batumi', fmtT(d.air && d.air.batumi));
-    set('sea-batumi', fmtT(d.sea));
-    set('fx-usd', fmtFx(d.fx && d.fx.usd));
-    set('fx-eur', fmtFx(d.fx && d.fx.eur));
-    set('fx-rub', fmtFx(d.fx && d.fx.rub));
-    set('fx-uah', fmtFx(d.fx && d.fx.uah));
+    set('air-skopje', fmtT(d.air && d.air.skopje));
+    set('air-ohrid', fmtT(d.air && d.air.ohrid));
+    set('air-bitola', fmtT(d.air && d.air.bitola));
+    set('sea-ohrid', fmtT(d.sea));
     const u = root.querySelector('[data-live="updated"]');
     if (u) {
       try {
@@ -79,25 +73,18 @@
   }
 
   const runFetch = async () => {
-    const [air, sea, fx] = await Promise.all([jget(AIR_URL), jget(SEA_URL), jget(FX_URL)]);
+    const [air, sea] = await Promise.all([jget(AIR_URL), jget(SEA_URL)]);
     const temp = (x) =>
       x && x.current && typeof x.current.temperature_2m === 'number'
         ? x.current.temperature_2m
         : null;
     const airArr = Array.isArray(air) ? air : [];
-    const fxArr =
-      Array.isArray(fx) && fx[0] && fx[0].currencies ? fx[0].currencies : [];
-    const per = (code) => {
-      const c = fxArr.find((x) => x.code === code);
-      return c && typeof c.rate === 'number' ? c.rate : null;
-    };
     const d = {
-      air: { tbilisi: temp(airArr[0]), kutaisi: temp(airArr[1]), batumi: temp(airArr[2]) },
+      air: { skopje: temp(airArr[0]), ohrid: temp(airArr[1]), bitola: temp(airArr[2]) },
       sea:
         sea && sea.current && typeof sea.current.sea_surface_temperature === 'number'
           ? sea.current.sea_surface_temperature
           : null,
-      fx: { usd: per('USD'), eur: per('EUR'), rub: per('RUB'), uah: per('UAH') },
     };
     render(d);
     try {
@@ -106,7 +93,7 @@
       /* квота/приватный режим — не критично */
     }
   };
-  // Сеть — вне критического пути: дёргаем 3 источника в idle, чтобы не конкурировать
+  // Сеть — вне критического пути: дёргаем источники в idle, чтобы не конкурировать
   // с отрисовкой/LCP (аудит P2-2). Снапшот из HTML виден сразу; это лишь догрузка.
   if ('requestIdleCallback' in window) requestIdleCallback(() => runFetch(), { timeout: 3000 });
   else setTimeout(runFetch, 1200);

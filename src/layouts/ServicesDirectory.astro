@@ -1,7 +1,7 @@
 ---
 /**
- * ServicesDirectory (§7, /relokatsiya/uslugi/) — директория «Услуги» для
- * живущих в Грузии (риелторы, клининг, переезд, ремонт, документы, переводчики).
+ * ServicesDirectory (§7, /relocation/uslugi/) — директория «Услуги» для
+ * живущих в Северной Македонии (риелторы, клининг, переезд, ремонт, документы, переводчики).
  * Один компонент для ru/uk (язык пропсом, текст из словарей §12). Данные —
  * коллекция `services`, нужный язык, не draft (§11). Фильтр по рубрике —
  * переиспользуем catalog-filter.js (data-catalog*, как в §8.3/§8.6), без своего
@@ -105,7 +105,7 @@ const rubricOptions = SERVICE_RUBRIC_SLUGS.filter((s) => present.has(s)).map((s)
 }));
 const hasFilter = rubricOptions.length > 1;
 
-const relHref = sectionHref(lang, 'relokatsiya');
+const relHref = sectionHref(lang, 'relocation');
 ---
 
 <BaseLayout title={pageTitle} description={description} lang={lang} noindex={!hasRealItems}>

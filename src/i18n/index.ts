@@ -55,9 +55,9 @@ export {
  * на хабе /eda/ и в getStaticPaths шаблона CityFoodPage.
  */
 export const EDA_CITY_PAGES = [
-  { key: 'tbilisi', slug: 'gde-poest-tbilisi', citySlug: 'tbilisi' },
-  { key: 'batumi', slug: 'gde-poest-batumi', citySlug: 'batumi' },
-  { key: 'kutaisi', slug: 'gde-poest-kutaisi', citySlug: 'kutaisi' },
+  { key: 'skopje', slug: 'where-to-eat-skopje', citySlug: 'skopje' },
+  { key: 'ohrid', slug: 'where-to-eat-ohrid', citySlug: 'ohrid' },
+  { key: 'bitola', slug: 'where-to-eat-bitola', citySlug: 'bitola' },
 ] as const satisfies ReadonlyArray<{ key: EdaCityKey; slug: string; citySlug: string }>;
 
 const dictionaries: Record<Lang, UIDictionary> = { ru, uk, en };
@@ -73,32 +73,32 @@ export function t(lang: Lang): UIDictionary {
  * Используется в HubPage для условного рендера AffiliateBox.
  */
 export const HUB_AFFILIATE_PARTNER: Partial<Record<HubSectionKey, string>> = {
-  'arenda-avto': 'trip-carhire',
+  'car-rental': 'trip-carhire',
   transport: 'aviasales',
-  goroda: 'trip-hotels',
-  razvlecheniya: 'trip-tours',
+  cities: 'trip-hotels',
+  entertainment: 'trip-tours',
 };
 
 /** Список разделов IA в порядке навигации (§7), кроме `home` и `o-sajte`. */
 export const SECTION_KEYS: SectionKey[] = [
-  'dostoprimechatelnosti',
-  'goroda',
-  'eda',
-  'razvlecheniya',
-  'marshruty',
-  'planirovanie',
+  'attractions',
+  'cities',
+  'food',
+  'entertainment',
+  'routes',
+  'planning',
   'transport',
-  'arenda-avto',
-  'strahovka',
-  'novosti',
-  'relokatsiya',
+  'car-rental',
+  'insurance',
+  'news',
+  'relocation',
 ];
 
 /** 5 главных плиток входа на главной (§8.4): + «Развлечения» (решение владельца 2026-06-16). */
-export const PRIMARY_TILE_KEYS = ['dostoprimechatelnosti', 'goroda', 'eda', 'razvlecheniya', 'marshruty'] as const;
+export const PRIMARY_TILE_KEYS = ['attractions', 'cities', 'food', 'entertainment', 'routes'] as const;
 
 /** Все разделы для футера и блока «Все разделы» на главной (§8.4): хабы + «О проекте» + «Обратная связь». */
-export const ALL_SECTION_KEYS: SectionKey[] = [...SECTION_KEYS, 'o-sajte', 'kontakty'];
+export const ALL_SECTION_KEYS: SectionKey[] = [...SECTION_KEYS, 'about', 'contact'];
 
 /**
  * Простая подстановка плейсхолдеров вида `{name}` в строку словаря.
@@ -167,18 +167,18 @@ export function articleHref(lang: Lang, category: string, slug: string): string 
  * по нему берётся локализованное название из словаря (`route.months`).
  */
 export const MONTH_SLUGS = [
-  'yanvar',
-  'fevral',
-  'mart',
-  'aprel',
+  'january',
+  'february',
+  'march',
+  'april',
   'may',
-  'iyun',
-  'iyul',
-  'avgust',
-  'sentyabr',
-  'oktyabr',
-  'noyabr',
-  'dekabr',
+  'june',
+  'july',
+  'august',
+  'september',
+  'october',
+  'november',
+  'december',
 ] as const;
 
 /** Локализованное название месяца по его слугу (§11 bestSeason → §12 словарь). */

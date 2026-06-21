@@ -1,12 +1,17 @@
 /**
  * English UI dictionary (SPEC §12).
  * In components, strings come only from the dictionary — hardcoding is forbidden.
+ *
+ * REMODEL NOTE (North Macedonia, bootstrap): the long prose blocks (hub intros,
+ * insurance/relocation pages, eda city pages) are NEUTRAL SCAFFOLD STUBS — honest
+ * "section is being prepared" copy, no invented YMYL facts. Detailed, fact-checked
+ * prose comes in the content phase (see docs/STRATEGY.md, docs/MACEDONIA-ANALYSIS-*).
  */
 import type { UIDictionary } from './types';
 
 export const en: UIDictionary = {
-  siteName: 'Georgia Guidebook',
-  tagline: 'Georgia travel guide: vetted places',
+  siteName: 'North Macedonia Guidebook',
+  tagline: 'North Macedonia travel guide: vetted places',
   langName: 'English',
   skipToContent: 'Skip to content',
   backToTop: 'Back to top',
@@ -16,30 +21,30 @@ export const en: UIDictionary = {
     home: 'Go to homepage',
   },
   liveData: {
-    heading: 'Right now in Georgia',
-    desc: 'Weather in the main cities and the lari exchange rate — check before you travel.',
+    heading: 'Right now in North Macedonia',
+    desc: 'Weather in the main cities and the denar exchange rate — check before you travel.',
     weather: 'Weather',
-    sea: 'Sea, Batumi',
-    fx: 'Lari rate',
-    cities: { tbilisi: 'Tbilisi', kutaisi: 'Kutaisi', batumi: 'Batumi' },
+    sea: 'Lake, Ohrid',
+    fx: 'Denar rate',
+    cities: { skopje: 'Skopje', ohrid: 'Ohrid', bitola: 'Bitola' },
     updated: 'updated',
-    source: 'weather: open-meteo · rate: National Bank of Georgia',
+    source: 'weather: open-meteo · rate: National Bank of North Macedonia',
   },
   nav: {
     home: 'Home',
-    dostoprimechatelnosti: 'What to see',
-    goroda: 'Cities',
-    eda: 'Food',
-    razvlecheniya: 'Entertainment',
-    marshruty: 'Routes',
-    planirovanie: 'Before you go',
+    attractions: 'What to see',
+    cities: 'Cities',
+    food: 'Food',
+    entertainment: 'Entertainment',
+    routes: 'Routes',
+    planning: 'Before you go',
     transport: 'Transport',
-    'arenda-avto': 'Car rental',
-    strahovka: 'Insurance',
-    novosti: 'News',
-    relokatsiya: 'Relocation',
-    'o-sajte': 'About',
-    kontakty: 'Contact',
+    'car-rental': 'Car rental',
+    insurance: 'Insurance',
+    news: 'News',
+    relocation: 'Relocation',
+    about: 'About',
+    contact: 'Contact',
   },
   header: {
     openMenu: 'Open menu',
@@ -68,29 +73,29 @@ export const en: UIDictionary = {
     samplePlaceholder: 'date verified',
   },
   home: {
-    heroTitle: 'Georgia travel guide: vetted places',
+    heroTitle: 'North Macedonia travel guide: vetted places',
     heroSubtitle:
-      'Plan your Georgia trip without the tourist traps: we pick places by rating and cross-check them with guides and locals. Updated regularly.',
-    heroCredit: 'Photo: Braveheart / Wikimedia Commons · CC BY-SA 4.0',
+      'Plan your North Macedonia trip without the tourist traps: we pick places by rating and cross-check them with guides and locals. Updated regularly.',
+    heroCredit: 'Photo: Wikimedia Commons · CC BY-SA',
     photoPrefix: 'Photo',
     search: {
       label: 'Search the site',
-      placeholder: 'Where are you headed? Kazbegi, Tbilisi, car rental…',
+      placeholder: 'Where are you headed? Ohrid, Skopje, car rental…',
       emptyNoContent: 'Nothing found yet. Try another word — search runs over the articles already published.',
       emptyNoMatch: 'Nothing found. Try a different query.',
       hint: 'Search runs over already published articles, right in your browser.',
     },
     entriesHeading: 'Where to start',
     tiles: {
-      dostoprimechatelnosti: 'Nature, churches, fortresses, waterfalls, and canyons of Georgia',
-      goroda: 'City guides: what to see, where to eat, how to get around',
-      eda: 'What to try and where to eat honestly — without tourist markups',
-      razvlecheniya: 'Where to go out: clubs and bars, quizzes, beaches, casinos, and parks',
-      marshruty: 'Ready-made road trips: a day-by-day plan, budget, and map',
+      attractions: 'Lakes, mountains, monasteries, fortresses and old towns of North Macedonia',
+      cities: 'City guides: what to see, where to eat, how to get around',
+      food: 'What to try and where to eat honestly — without tourist markups',
+      entertainment: 'Where to go out: nightlife and bars, festivals, lake beaches, and parks',
+      routes: 'Ready-made road trips: a day-by-day plan, budget, and map',
     },
     showcase: {
-      heading: 'Georgia showcase',
-      lead: 'The best places, routes and vetted venues — Georgia at a glance.',
+      heading: 'North Macedonia showcase',
+      lead: 'The best places, routes and vetted venues — North Macedonia at a glance.',
       partnerNote: 'Includes partner placements.',
       aria: 'Showcase: featured places, routes and venues',
       adKicker: 'Advertising',
@@ -122,7 +127,7 @@ export const en: UIDictionary = {
     freshEmpty: 'Nothing to show here right now — please check back soon. We keep adding vetted, up-to-date guides.',
     about: {
       heading: 'About the project',
-      text: 'Georgia Guidebook is a travel guide to Georgia: attractions, cities, food, routes, and car rental. We pick places by rating, cross-check the facts, and date-stamp every article — here’s how we work.',
+      text: 'North Macedonia Guidebook is a travel guide to North Macedonia: attractions, cities, food, routes, and car rental. We pick places by rating, cross-check the facts, and date-stamp every article — here’s how we work.',
       link: 'More about the project',
     },
   },
@@ -144,59 +149,58 @@ export const en: UIDictionary = {
     empty:
       'The first articles in this section are coming soon. We’re preparing vetted guides with up-to-date information.',
     sections: {
-      dostoprimechatelnosti: {
+      attractions: {
         intro: [
-          'What to see in Georgia — from the snowy peaks of Kazbegi and the cave towns of Vardzia and Uplistsikhe to waterfalls, canyons, and ancient churches. In this section we gather the places worth traveling for: nature, fortresses, monasteries, and viewpoints across the country — from Kakheti in the east to Svaneti in the west.',
-          'For each attraction we try to honestly answer the main questions: what exactly to see, how to get there, how much time to set aside, and when to go so you’re not disappointed. Where it makes sense, the end of the article has tips on car rental and tours, because the most convenient way to reach many places in Georgia is by car.',
+          'What to see in North Macedonia — from Lake Ohrid and its old town (a UNESCO World Heritage site) to the mountains and national parks of Mavrovo, Galičica and Pelister, ancient monasteries, fortresses and canyons. This section gathers the places worth traveling for, across the whole country.',
+          'This section is being prepared. For each attraction we’ll honestly answer the main questions: what to see, how to get there, how much time to set aside, and when to go — with the facts checked against reliable sources.',
         ],
       },
-      goroda: {
+      cities: {
         intro: [
-          'Georgia’s cities are like different countries in miniature: multilayered Tbilisi, seaside Batumi, calm Kutaisi, the resort of Borjomi, mountainous Mestia, and wine-country Sighnaghi. This section has city guides: what to see, where to eat honestly, how to get there, and where to stay.',
-          'Cities are a handy starting point for planning: routes branch out from them, attractions are nearby, and this is where you book accommodation, pick up a car, and sort out connectivity. That’s why in the city guides we link to related sections — food, routes, and rental — to put your whole trip in one place.',
+          'North Macedonia’s cities each have their own character: the capital Skopje, lakeside Ohrid, the “city of consuls” Bitola, Tetovo and Struga. This section will hold city guides: what to see, where to eat honestly, how to get there, and where to stay.',
+          'This section is being prepared. Cities are a handy starting point for planning — routes branch out from them, attractions are nearby, and this is where you book a place, pick up a car, and sort out connectivity.',
         ],
       },
-      razvlecheniya: {
+      entertainment: {
         intro: [
-          'Entertainment in Georgia — where to go for experiences beyond ancient churches and mountains: Black Sea beaches, cable cars and parks, botanical gardens, museums, and casinos. In this section we gather places to relax and have fun across the country’s cities — with a focus on what matters in practice: where it is, how much admission costs, and when it’s open.',
-          'We keep building the section out, city by city. Prices and opening hours are listed per place, so a night out or a day trip is easy to plan ahead.',
+          'Entertainment in North Macedonia — beyond monasteries and mountains: Lake Ohrid beaches, festivals, parks, museums, nightlife and casinos. This section will gather places to relax and have fun across the country’s cities, with what matters in practice: where it is, how much it costs, and when it’s open.',
+          'This section is being prepared. Prices and opening hours will be listed per place, so a night out or a day trip is easy to plan ahead.',
         ],
       },
-      marshruty: {
+      routes: {
         intro: [
-          'Ready-made road trips around Georgia: a day-by-day plan, a budget guideline, key stops, and a map. The country is compact but mountainous — a car opens up what’s hard to reach by public transport: passes, the wine villages of Kakheti, the canyons of Imereti, and the road to Svaneti.',
-          'How to choose a direction. East — wine-country Kakheti with the Alazani Valley and monasteries; north — the Georgian Military Road to Kazbegi and the Gergeti church; south — mineral-water Borjomi and the cave town of Vardzia; west — Imereti with its emerald canyons and caves; to the sea — the Tbilisi → Batumi corridor. And to see it all in one trip, there’s the “Grand Tour of Georgia,” roughly two weeks long.',
-          'Season and preparation. The best time for most routes is from late spring to autumn. In winter the mountain sections (the Georgian Military Road, the pass to Vardzia, the road to Svaneti) are harder, and passes are sometimes closed because of snow — check road conditions before setting off. For the high mountains and dirt roads, take an SUV. The mileage, days, and budget in the cards are guidelines, not exact measurements: it all depends on the number of stops, the season, and accommodation.',
+          'Ready-made road trips around North Macedonia: a day-by-day plan, a budget guideline, key stops, and a map. The country is compact — a car opens up the lakes, mountains and old towns, and North Macedonia sits at the heart of the Balkans, an easy hop to Albania, Greece, Kosovo and beyond.',
+          'This section is being prepared. The mileage, days, and budget in the cards are guidelines, not exact measurements — they depend on the number of stops, the season, and accommodation. Check road conditions before setting off.',
         ],
       },
       transport: {
         intro: [
-          'Transport in Georgia — how to get around the country: airports, trains, marshrutkas, intercity buses, and transfers. This section has practical guides: how to get from point to point, roughly how long the trip takes, and what options there are.',
-          'Here you’ll find the country’s airports (Tbilisi, Kutaisi, Batumi), city transport, and popular routes like Tbilisi → Batumi (train, bus, car) — and we keep adding directions and modes of transport. It’s handy to plan transport together with the “Car rental” and “Routes” sections.',
+          'Transport in North Macedonia — how to get around the country: airports, intercity buses, trains, and transfers. This section will hold practical guides: how to get from point to point, roughly how long it takes, and what the options are.',
+          'This section is being prepared. The country’s main gateways are Skopje (SKP) and the seasonal Ohrid (OHD) airports. It’s handy to plan transport together with the “Car rental” and “Routes” sections.',
         ],
       },
-      'arenda-avto': {
+      'car-rental': {
         intro: [
-          'Car rental in Georgia is one of the most common questions before a trip: where to get a car, how much it costs, whether you need a deposit, and what catches there are in the contracts. In this section we break down rental by city and airport and compare the options — from international aggregators to local rental companies.',
-          'We write about rental from the perspective of a traveler who has personally dealt with deposits, surcharges, and “insurance on site.” Specific prices and terms are something that goes out of date fast, so we mark the date they’re current and don’t pass off old figures as fresh.',
+          'Car rental in North Macedonia is one of the most common questions before a trip: where to get a car, how much it costs, whether you need a deposit, and what catches there are in the contracts. This section will break down rental by city and airport and compare the options.',
+          'This section is being prepared. Specific prices and terms go out of date fast, so we’ll mark the date they’re current and won’t pass off old figures as fresh.',
         ],
       },
-      strahovka: {
+      insurance: {
         intro: [
-          'Insurance for a trip to Georgia and for living in the country is a topic that’s easy to put off and that people regret at the worst possible moment. In this section we break down which insurance policies actually work for travelers and relocators, how they differ, and what to look for when choosing.',
-          'Different readers need different solutions: a tourist staying a week needs one kind of insurance, someone living in Georgia for months needs another, with regular renewal. For Ukrainian travelers we call out options that still work, such as EKTA, since some of the standard policies are off-limits to them.',
+          'Travel insurance for a trip to North Macedonia, and for living in the country, is a topic that’s easy to put off and that people regret at the worst possible moment. This section will break down which policies actually work for travelers and relocators, how they differ, and what to look for.',
+          'This section is being prepared. Entry and insurance requirements are set by the authorities and can change — we’ll mark the date and link the official source rather than passing off old facts as current.',
         ],
       },
-      planirovanie: {
+      planning: {
         intro: [
-          'Planning a trip to Georgia is what people look up before booking: do you need a visa, when to go, how much money to bring, and what about insurance and safety. This section gives short, practical answers with links to the sections that cover each topic in depth.',
-          'We keep only what actually affects your prep here: visa and entry rules, seasons and weather, money and budget, the mandatory insurance. Regulatory things (visas, insurance) change fast — we mark the date and link the official source rather than passing off old facts as current.',
+          'Planning a trip to North Macedonia is what people look up before booking: do you need a visa, when to go, how much money to bring, and what about insurance and safety. This section will give short, practical answers with links to the sections that cover each topic in depth.',
+          'This section is being prepared. Regulatory things (visas, insurance) change fast — we’ll mark the date and link the official source rather than passing off old facts as current.',
         ],
       },
-      novosti: {
+      news: {
         intro: [
-          'News and updates to the guide: new vetted places, seasonal tips, and changes worth knowing before a trip. Georgia changes — venues open and close, prices and rental terms shift, new routes appear — and this section keeps the guide up to date.',
-          'We don’t chase “hot” news for the sake of traffic. What lands here is what actually affects trip planning: what we’ve re-checked, what we’ve updated by season, and which places we’ve added after cross-checking with locals and guides. The entries show a date — so you always know how current the information is.',
+          'News and updates to the guide: new vetted places, seasonal tips, and changes worth knowing before a trip. North Macedonia changes — venues open and close, prices shift, new routes appear — and this section keeps the guide up to date.',
+          'This section is being prepared. We don’t chase “hot” news for the sake of traffic; entries show a date, so you always know how current the information is.',
         ],
       },
     },
@@ -215,9 +219,9 @@ export const en: UIDictionary = {
     heading: 'Distance',
     km: 'km',
     origins: {
-      tbilisi: 'Tbilisi',
-      kutaisi: 'Kutaisi',
-      batumi: 'Batumi',
+      skopje: 'Skopje',
+      ohrid: 'Ohrid',
+      bitola: 'Bitola',
     },
   },
   visit: {
@@ -236,7 +240,7 @@ export const en: UIDictionary = {
     heading: 'Search and book hotels',
     cta: 'Show hotel search',
     note: 'Trip.com partner widget. Loads on click. Prices and availability are on the service’s side.',
-    frameTitle: 'Hotel search in Georgia — Trip.com',
+    frameTitle: 'Hotel search in North Macedonia — Trip.com',
   },
   article: {
     tocHeading: 'Contents',
@@ -295,7 +299,7 @@ export const en: UIDictionary = {
     heading: 'About the project',
     breadcrumb: 'About',
     intro: [
-      'Georgia Guidebook is a guide to all of Georgia, available in English, Russian and Ukrainian. We bring together in one place everything you need for a trip: attractions, cities, food, ready-made routes, car rental, insurance, and news. The goal is simple — to help you plan a trip without outdated advice and tourist traps.',
+      'North Macedonia Guidebook is a guide to all of North Macedonia, available in English, Russian and Ukrainian. We bring together in one place everything you need for a trip: attractions, cities, food, ready-made routes, car rental, insurance, and news. The goal is simple — to help you plan a trip without outdated advice and tourist traps.',
       'We don’t write “from memory” and we don’t retell other people’s articles. The guide has a clear principle: how we select places, how we verify facts, and why each article shows the date it was checked. More on that below.',
     ],
     sections: [
@@ -317,7 +321,7 @@ export const en: UIDictionary = {
         heading: 'Honest about figures and prices',
         paragraphs: [
           'We don’t reprint others’ ratings and review counts verbatim — that’s platform data, and their rules forbid such copying. For us a rating is a selection criterion, not content: to see the current rating and reviews, follow the link to the source or the map.',
-          'Prices, opening hours, and terms in our articles are guidelines as of the check date, not a guarantee. Georgia changes fast, so always verify the details that matter for your trip (the rental price, the deposit, the admission cost) on the other side before you pay.',
+          'Prices, opening hours, and terms in our articles are guidelines as of the check date, not a guarantee. Always verify the details that matter for your trip (the rental price, the deposit, the admission cost) on the other side before you pay.',
         ],
       },
       {
@@ -335,81 +339,71 @@ export const en: UIDictionary = {
     },
   },
   insurance: {
-    heading: 'Insurance for a trip to Georgia: rules and where to get it',
+    heading: 'Travel insurance for North Macedonia',
     breadcrumb: 'Insurance',
     intro: [
-      'As of 2026, medical insurance has become mandatory for all foreign tourists entering Georgia. It used to be optional — now without a policy you may be refused entry at the border. Below are the current rules, the minimum requirements for a policy, and the services through which you can get one.',
-      'The topic is regulatory: the wording of the law and the border-check procedures may be refined. So we’ve gathered the key requirements into one block and advise verifying them against official sources before your trip — links to the primary sources are at the bottom of the page.',
+      'Travel insurance for a trip to North Macedonia — this section is being prepared. Below is general, non-binding guidance on what to look for in a policy. Entry and insurance requirements are set by the authorities and can change, so verify the current rules against official sources before your trip.',
+      'We don’t pass off unconfirmed figures as facts. When this section is finished, the requirements and services will be backed by primary sources, with the date they were checked.',
     ],
-    updatedIso: '2026-06-14',
+    updatedIso: '2026-06-21',
     callout: {
-      heading: 'Current rules (from January 1, 2026)',
+      heading: 'Verify entry rules before you travel',
       disclaimer:
-        'As of January 1, 2026, medical insurance is mandatory for all foreign tourists entering Georgia. This is a regulatory requirement, and the details (wording, amounts, check procedures) may change — be sure to verify they’re current before your trip.',
+        'Entry and insurance requirements for North Macedonia are set by the authorities and may change. This page is general guidance, not legal advice — verify the current rules against official sources before your trip.',
       sourceNote:
-        'The primary source is official resources: embassies, the Ministry of Foreign Affairs, and the Government of Georgia (Resolution No. 602 of 26.12.2025). Links to the sources are at the bottom of the page.',
+        'Primary sources are official resources: the Ministry of Foreign Affairs of North Macedonia and embassies. We will cite them here as the section is filled in.',
     },
     guideLink: 'In depth: how to choose and buy a policy',
     requirements: {
-      heading: 'What you need to know',
+      heading: 'What to look for in a policy (general)',
       items: [
-        'Insurance is mandatory for all foreign tourists — citizens of Russia, Ukraine, Kazakhstan, Belarus, and other countries. A policy is needed for children too.',
-        'The minimum coverage is 30,000 GEL.',
-        'The policy must cover the entire trip: from the entry date to the exit date.',
-        'The issuer can be either a Georgian or a foreign insurance company.',
-        'Coverage must include both medical expenses and accident insurance — by requirement it’s a “health and accident” policy. Medical evacuation and repatriation are additionally mentioned.',
-        'The policy language is English or Georgian. A policy only in Russian or Ukrainian without a translation may not be accepted at the border.',
-        'The policy is checked on entry: at airports — systematically, at land border crossings — selectively. Without it, entry may be refused. Airlines may check for a policy as early as check-in.',
-        'The legal basis is the Law of Georgia “On Tourism” (Art. 12) and Government of Georgia Resolution No. 602 of 26.12.2025.',
+        'Coverage of medical expenses abroad for the whole duration of your trip.',
+        'The policy should cover your entire stay: from the entry date to the exit date.',
+        'For active travel — hiking, skiing, watersports — check that the activity is covered; basic plans often exclude it as a separate option.',
+        'The policy language is best in English; keep a copy on your phone and in print.',
+        'Medical evacuation and repatriation are useful to have included.',
       ],
     },
     penalty: {
-      heading: 'Fine for not having a policy',
+      heading: 'Before you rely on “sorting it out on site”',
       paragraphs: [
-        'The base fine for not having mandatory insurance is 300 GEL. Besides the fine, entry may be refused, so it’s better to get a policy in advance rather than counting on “paying extra on site.”',
-        'For active travel — trekking, skiing, rafting, and other extreme activities — you need a separate coverage option: a basic tourist policy may not cover such cases. Verify the exact fine amounts and coverage terms for extreme activities with the insurer and in official sources before your trip.',
+        'Entry and insurance requirements are set by the authorities and can change. Arrange a policy in advance rather than counting on buying one at the border.',
+        'For active travel — trekking, skiing, rafting and other extreme activities — you may need a separate coverage option. Verify coverage terms with the insurer before your trip.',
       ],
     },
     services: {
       heading: 'Where to get a policy',
-      lead: 'Below are the services through which travelers most often get insurance for Georgia. Whichever option you choose, check that the policy meets the requirement: coverage of at least 30,000 GEL for the entire trip, the language is English or Georgian, and accident insurance is included (basic plans often don’t have it — it’s added as a separate option). Prices depend on age, duration, and the coverage set, so we give only guidelines, without exact amounts.',
+      lead: 'Below are services travelers commonly use for trip insurance. Whichever you choose, check that the policy covers medical expenses abroad for your whole trip and that the activities you plan are included. Prices depend on age, duration, and coverage, so we give only guidelines.',
       ctaPlaceholder: 'Sign up on the service’s website. Before buying, verify the current terms and rate.',
       items: [
         {
-          name: 'EKTA',
-          note: 'a working option for everyone, including citizens of Ukraine',
-          text: 'Online insurance paid by card from anywhere in the world; the policy arrives by email. Coverage is easy to adjust, and the limit can be raised to 30,000 USD — well above the 30,000 GEL requirement. The service’s legal entity is registered in an offshore jurisdiction — this doesn’t affect how the policy works, but keep it in mind.',
-        },
-        {
           name: 'SafetyWing (Nomad Insurance)',
           note: 'for digital nomads and long trips',
-          text: 'Subscription insurance billed monthly — convenient for those who live in Georgia or travel for a long time and don’t want to buy a policy for a fixed period. Suits a relocation and wintering scenario. The service has changed its terms and rates — verify the current ones before buying.',
+          text: 'Subscription insurance billed monthly — convenient for those who live abroad or travel for a long time and don’t want to buy a policy for a fixed period. Verify the current terms and coverage before buying.',
         },
         {
-          name: 'Cherehapa, Polis812',
-          note: 'aggregators for citizens of Russia',
-          text: 'Comparison services: they show offers from several insurers at once and help you pick a policy for the limit and duration you need. Handy when you want to compare terms in one place; the set of insurers and the service’s availability change over time — go by the current list on the service itself.',
+          name: 'EKTA',
+          note: 'a flexible online option',
+          text: 'Online insurance paid by card from anywhere; the policy arrives by email. Coverage is easy to adjust and the limit can be raised. Verify availability and terms for your country of residence before buying.',
         },
         {
-          name: 'TBC Insurance, Aldagi, GPI',
-          note: 'local Georgian insurers',
-          text: 'Georgian companies: the policy is issued from the start in English or Georgian and for the local 30,000 GEL limit. This is the most “risk-free” option for meeting the requirement — the policy is guaranteed to fit the local rules and the language of the check.',
+          name: 'Comparison aggregators',
+          note: 'compare several insurers at once',
+          text: 'Comparison services show offers from several insurers and help you pick a policy for the limit and duration you need. The set of insurers and availability change over time — go by the current list on the service itself.',
         },
       ],
     },
     affiliate: {
       title: 'Get SafetyWing insurance',
-      note: 'Nomad Insurance billed monthly — convenient for long trips and living in Georgia. Before buying, verify the current terms and that they meet the entry requirements.',
+      note: 'Nomad Insurance billed monthly — convenient for long trips. Before buying, verify the current terms and coverage.',
       label: 'Sign up online',
     },
     notes: {
       heading: 'What’s important to keep in mind',
       items: [
-        'Check that the policy includes accident insurance. Georgia’s requirement is a “health and accident” policy, and in basic medical plans an accident often comes as a separate option: medical coverage alone may not be enough.',
-        'Citizens of Ukraine find it more convenient to get a policy through EKTA or Ukrainian services (for example, Green Travel, Finance.ua). This is a practical recommendation based on service availability, not a ban: “Russian insurance is banned for Ukrainians” is an unconfirmed claim, and we don’t present it as a rule.',
-        'Buy the policy before entering Georgia: some services have a 5–7 day “waiting period” — the insurance doesn’t take effect immediately after payment.',
-        'Visa-free entry (for many countries — up to 1 year) does not cancel the insurance requirement: these are different things.',
-        'Car rental insurance is a separate matter. A medical policy doesn’t cover damage to the car: for the rental you need your own insurance (CDW / collision), which is arranged together with the rental.',
+        'Check that the activities you plan (hiking, skiing, watersports) are covered — basic medical plans often add them as a separate option.',
+        'Buy the policy before your trip: some services have a “waiting period” and the insurance doesn’t take effect immediately after payment.',
+        'Car rental insurance is a separate matter. A medical policy doesn’t cover damage to the car: for the rental you need your own coverage (CDW / collision), arranged together with the rental.',
       ],
       rentalLink: 'More about car rental and its insurance',
     },
@@ -417,36 +411,19 @@ export const en: UIDictionary = {
       heading: 'What to do in case of a claim',
       items: [
         'Keep your insurer’s assistance service contact (usually a 24/7 phone line or app) — it’s listed in your policy. Save it to your phone before the trip.',
-        'If you fall ill or get injured, call the assistance service first whenever possible: many policies require treatment to be pre-authorised. If you go to a clinic without it, the costs may not be reimbursed.',
+        'If you fall ill or get injured, call the assistance service first whenever possible: many policies require treatment to be pre-authorised. Without it, costs may not be reimbursed.',
         'Keep all documents: bills and payment receipts, discharge notes, diagnoses, referrals and prescriptions. Without supporting documents, reimbursement is difficult.',
         'Check how your policy works: the insurer either pays the clinic directly (direct billing) or you pay yourself and are reimbursed later against your receipts.',
         'Respect the deadline for filing a claim — it’s stated in your policy terms. Don’t delay: late claims are often rejected.',
-        'Georgia’s single emergency number is 112 (ambulance, police, rescue). In a serious situation, call for help first and sort things out with the insurer afterwards.',
+        'In North Macedonia the single emergency number is 112. In a serious situation, call for help first and sort things out with the insurer afterwards.',
       ],
     },
-    photos: [
-      {
-        src: '/images/strahovka/g1.webp',
-        alt: 'A mountain pass and green valley in the mountains of Svaneti',
-        caption:
-          'For active travel in remote mountains it’s well worth getting insurance with the right coverage: help can be a long way off here.',
-        credit: 'Photo: Andrew Dubok / Wikimedia Commons, CC BY-SA 3.0',
-      },
-      {
-        src: '/images/strahovka/g2.webp',
-        alt: 'A forest trail towards Mount Ushba in Svaneti',
-        caption:
-          'A basic policy may not cover trekking, skiing or rafting — for active travel you need a separate option.',
-        credit: 'Photo: FingerWiki / Wikimedia Commons, CC BY-SA 4.0',
-      },
-    ],
+    photos: [],
     sources: {
       heading: 'Sources',
       items: [
-        'U.S. Embassy in Georgia — the requirement for mandatory medical insurance for entry.',
-        'Government of Georgia Resolution No. 602 of 26.12.2025 and the Law “On Tourism” (Art. 12) — text at matsne.gov.ge/ka/document/view/6728816.',
-        'Ministry of Foreign Affairs of Georgia, Consular Service (entry rules) — geoconsul.gov.ge.',
-        'Georgian insurance companies (TBC Insurance, Aldagi, GPI) — coverage limit and policy language.',
+        'Ministry of Foreign Affairs of North Macedonia (entry rules) — mfa.gov.mk',
+        'Your embassy’s travel advice for North Macedonia.',
       ],
     },
   },
@@ -468,116 +445,116 @@ export const en: UIDictionary = {
     channels: {
       heading: 'How to get in touch',
       emailLabel: 'Write to us by email:',
-      email: 'info@georgiaguidebook.com',
-      emailUrl: 'mailto:info@georgiaguidebook.com',
+      email: 'info@northmacedoniaguidebook.com',
+      emailUrl: 'mailto:info@northmacedoniaguidebook.com',
     },
   },
   relocation: {
-    heading: 'Relocating to Georgia: how to settle in',
+    heading: 'Relocating to North Macedonia: how to settle in',
     breadcrumb: 'Relocation',
     uslugi: {
-      heading: 'Services for living in Georgia',
+      heading: 'Services for living in North Macedonia',
       text: 'Real estate agents, cleaning, moving, repairs, documents, translators — a directory of vetted services so you don’t have to dig through chats.',
       cta: 'Open services',
     },
     intro: [
-      'Georgia is one of the easiest destinations for a long winter stay and relocation: visa-free entry for citizens of many countries for a long period, inexpensive living, fast internet, and large Russian- and Ukrainian-speaking communities. This section is a practical guide to settling in on the ground.',
-      'We start with the non-regulatory things everyone needs: housing, connectivity, banking, transport, insurance. Documents, visas, and taxes are regulated by the state, and they change periodically — for those we give direct links to official sources and are preparing separate breakdowns.',
+      'North Macedonia is an affordable, central-Balkans base: a low cost of living, a flat 10% income tax, the euro-pegged denar, and EU-candidate status. This section is a practical guide to settling in on the ground — and it’s being prepared.',
+      'We start with the non-regulatory things everyone needs: housing, connectivity, banking, transport, insurance. Documents, residence permits, and taxes are regulated by the state and change periodically — for those we give direct links to official sources rather than passing off old facts as current.',
     ],
-    updatedIso: '2026-06-15',
+    updatedIso: '2026-06-21',
     callout: {
       heading: 'Documents and taxes change — verify with the primary source',
       disclaimer:
-        'The rules for entry, residence permits, business registration, and taxes in Georgia are revised periodically. Don’t rely on retellings in chats and outdated articles — verify the terms as of the time of your move directly with the government bodies (links below).',
+        'The rules for entry, residence permits, company registration, and taxes in North Macedonia are revised periodically. Don’t rely on retellings in chats and outdated articles — verify the terms as of the time of your move directly with the government bodies (links below).',
       sourceNote:
         'That’s why we don’t fix specific deadlines, amounts, and requirements here as unchanging, but point you to the official sites — they always have the current version.',
     },
     guides: {
       heading: 'Detailed guides',
-      lead: 'In-depth, non-regulatory how-tos for settling in — updated as things change.',
+      lead: 'In-depth, non-regulatory how-tos for settling in — coming as the section is built out.',
     },
     steps: {
       heading: 'Where to start on the ground',
       items: [
         {
           title: 'Housing for your first weeks',
-          text: 'For the first weeks it’s convenient to stay in a hotel, guesthouse, or apart-hotel, and look for a long-term rental on the ground, having seen the neighborhood in person. The largest local listing boards are myhome.ge and ss.ge; there are also many options through local chats and agencies.',
+          text: 'For the first weeks it’s convenient to stay in a hotel or apart-hotel, and look for a long-term rental on the ground, having seen the neighborhood in person. Popular local listing boards include pazar3.mk and reklama5.mk.',
         },
         {
           title: 'SIM card and internet',
-          text: 'A local SIM is sold with a passport at the airport and at operators’ offices — the main ones are Magti and Silknet. Mobile internet is fast and inexpensive, Wi-Fi is everywhere in the cities; this is one of Georgia’s strengths for remote work.',
+          text: 'A local SIM is sold with a passport at operators’ offices — the main networks are A1 and Telekom (Makedonski Telekom). Mobile internet is inexpensive and Wi-Fi is widespread in the cities.',
         },
         {
           title: 'Bank account',
-          text: 'An account and a card are opened for foreigners by the major banks — Bank of Georgia and TBC. Requirements and check times are periodically tightened, so verify the document set and terms at a branch in advance.',
+          text: 'Accounts for foreigners are opened by the major banks. Requirements and check times vary, so verify the document set and terms at a branch in advance.',
         },
         {
           title: 'Long-term rental',
-          text: 'The lease is usually for 6–12 months, with a deposit most often equal to one month. Prices depend on the city and season: in summer Batumi is more expensive, while in Tbilisi demand is steadier. Check the meters, the internet, and who pays for utilities.',
+          text: 'Leases usually run 6–12 months, with a deposit most often equal to one month. Prices depend on the city and season — Ohrid is more expensive in summer. Check the meters, the internet, and who pays for utilities.',
         },
         {
           title: 'Transport and getting around',
-          text: 'In the cities — cheap public transport (in Tbilisi, the metro and buses with a Metromoney card); between cities — trains, buses, and marshrutkas. For freedom of movement many rent a car — how that works is in our rental section.',
+          text: 'In the cities there’s cheap public transport; between cities — intercity buses. For freedom of movement many rent a car — how that works is in our rental section.',
         },
         {
           title: 'Health and insurance',
-          text: 'There are public and private clinics; the level of private medicine in the big cities is good. For the move and for trips, medical insurance with coverage abroad is convenient — options are in our insurance section.',
+          text: 'There are public and private clinics. For the move and for trips, medical insurance with coverage abroad is convenient — options are in our insurance section.',
         },
         {
-          title: 'Daily life and community',
-          text: 'Lari (₾) — cash is needed in the regions, while in the cities cards are accepted almost everywhere. Tbilisi and Batumi have large Russian- and Ukrainian-speaking communities, and cafes and services often speak English — it’s easy to adapt even without Georgian.',
+          title: 'Daily life and money',
+          text: 'The currency is the Macedonian denar (MKD), pegged to the euro (about 61.5 MKD per €1). Cards are accepted in the cities; cash is handy in smaller towns. English gets you a long way in tourist areas.',
         },
       ],
     },
     affiliate: {
       title: 'Where to stay the first weeks',
-      note: 'Hotels and apartments for your first weeks in Georgia — compare prices on Trip.com.',
+      note: 'Hotels and apartments for your first weeks in North Macedonia — compare prices on Trip.com.',
       label: 'Find a place for your first weeks',
     },
     esim: {
       title: 'eSIM with internet for your first days',
       note: 'Mobile internet from arrival, until you get a local SIM — the eSIM activates online.',
-      label: 'Buy an eSIM for Georgia',
+      label: 'Buy an eSIM for North Macedonia',
     },
     links: {
       heading: 'What’s already on the site',
       lead: 'Practical sections that come in handy when relocating:',
       items: [
-        { section: 'strahovka', text: 'medical insurance with coverage abroad' },
-        { section: 'arenda-avto', text: 'car rental: how, where, and without overpaying' },
+        { section: 'insurance', text: 'medical insurance with coverage abroad' },
+        { section: 'car-rental', text: 'car rental: how, where, and without overpaying' },
         { section: 'transport', text: 'how to get there and travel between cities' },
-        { section: 'goroda', text: 'Georgia’s cities — where to live and what’s nearby' },
-        { section: 'eda', text: 'where to eat: vetted places by city' },
+        { section: 'cities', text: 'North Macedonia’s cities — where to live and what’s nearby' },
+        { section: 'food', text: 'where to eat: vetted places by city' },
       ],
     },
     regulatory: {
       heading: 'Documents, visas, and taxes: official sources',
-      lead: 'For these topics we point you straight to government sites — they have the current rules, deadlines, and amounts. We prepare separate breakdowns relying on these same sources.',
+      lead: 'For these topics we point you straight to government sites — they have the current rules, deadlines, and amounts. We’ll prepare separate breakdowns relying on these same sources.',
       items: [
         {
           topic: 'Visa, visa-free entry, and length of stay',
-          org: 'MFA of Georgia · Consular Service',
-          url: 'https://geoconsul.gov.ge/en',
+          org: 'MFA of North Macedonia',
+          url: 'https://mfa.gov.mk/en',
         },
         {
           topic: 'Residence permit',
-          org: 'Public Service Development Agency',
-          url: 'https://sda.gov.ge/en/',
+          org: 'Ministry of the Interior',
+          url: 'https://mvr.gov.mk/',
         },
         {
-          topic: 'Sole proprietor and the “small business” tax (1%)',
-          org: 'Revenue Service of Georgia',
-          url: 'https://rs.ge/',
+          topic: 'Taxes (flat 10% income tax, VAT)',
+          org: 'Public Revenue Office (UJP)',
+          url: 'https://ujp.gov.mk/en',
         },
         {
-          topic: 'Registering a company or sole proprietorship',
-          org: 'National Agency of Public Registry',
-          url: 'https://napr.gov.ge/en',
+          topic: 'Registering a company (DOO)',
+          org: 'Central Registry of North Macedonia',
+          url: 'https://www.crm.com.mk/en',
         },
         {
-          topic: 'Driver’s license and vehicle registration',
-          org: 'Service Agency of the Ministry of Internal Affairs',
-          url: 'https://sa.gov.ge/',
+          topic: 'Invest and do business',
+          org: 'Invest North Macedonia',
+          url: 'https://investnorthmacedonia.gov.mk/',
         },
       ],
       linkLabel: 'official site',
@@ -585,25 +562,25 @@ export const en: UIDictionary = {
     notes: {
       heading: 'Nuances people ask about',
       items: [
-        'The language is Georgian, but in the cities you can easily get by with English and Russian: signs and menus are often duplicated.',
-        'The money is the lari (₾). We show the current rate against the dollar, euro, ruble, and hryvnia on the home page in the “Right now in Georgia” block.',
-        'Internet and connectivity are cheap and fast, which is why remote workers love Georgia.',
-        'Housing in Batumi gets noticeably more expensive in the summer season — worth keeping in mind for a long-term rental.',
+        'The official language is Macedonian (Albanian is also official in many areas), but in tourist areas English gets you a long way.',
+        'The money is the Macedonian denar (MKD), pegged to the euro. We show the current rate on the home page in the “Right now in North Macedonia” block.',
+        'Internet and connectivity are inexpensive and decent in the cities.',
+        'Housing in Ohrid gets noticeably more expensive in the summer season — worth keeping in mind for a long-term rental.',
       ],
     },
     sources: {
       heading: 'Official sources',
       items: [
-        'MFA of Georgia, Consular Service (visa, entry) — geoconsul.gov.ge',
-        'Public Service Development Agency (residence permit, civil registry) — sda.gov.ge',
-        'Revenue Service of Georgia (taxes, small business status) — rs.ge',
-        'National Agency of Public Registry (business registration) — napr.gov.ge',
-        'Service Agency of the Ministry of Internal Affairs of Georgia (license, vehicle registration) — sa.gov.ge',
+        'MFA of North Macedonia (visa, entry) — mfa.gov.mk',
+        'Ministry of the Interior (residence permit) — mvr.gov.mk',
+        'Public Revenue Office (taxes) — ujp.gov.mk',
+        'Central Registry (company registration) — crm.com.mk',
+        'Invest North Macedonia — investnorthmacedonia.gov.mk',
       ],
     },
   },
   eda: {
-    heading: 'Where to eat in Georgia',
+    heading: 'Where to eat in North Macedonia',
     lead: 'Restaurants, cafes, wine bars, bakeries and markets — by city. Each place has its address, hours, our honest write-up and a link to the map.',
     breadcrumbHome: 'Home',
     filtersLegend: 'Place filters',
@@ -616,24 +593,25 @@ export const en: UIDictionary = {
       reset: 'Reset filters',
     },
     cuisineKeys: {
-      georgian: 'Georgian',
-      seafood: 'Seafood',
+      macedonian: 'Macedonian',
+      balkan: 'Balkan',
+      seafood: 'Lake fish & seafood',
       wine: 'Wine bar',
       cafe: 'Café',
       bakery: 'Bakery',
       vegetarian: 'Vegetarian',
-      asian: 'Asian',
+      grill: 'Grill',
       street: 'Street food',
       bar: 'Bar',
     },
-    priceHint: 'Price level: ₾ — cheap, ₾₾ — mid-range, ₾₾₾ — above average.',
+    priceHint: 'Price level: $ — cheap, $$ — mid-range, $$$ — above average.',
     sponsoredBadge: 'Partner',
     illustrativeBadge: 'Illustration',
     dishesLabel: 'Prices for main dishes',
     dishesHint: 'a guideline, check on site',
     hoursLabel: 'Opening hours',
-    cuisineGuide: 'What to try in Georgia: a guide to the cuisine',
-    lodgingHeading: 'Where to stay in Georgia',
+    cuisineGuide: 'What to try in North Macedonia: a guide to the cuisine',
+    lodgingHeading: 'Where to stay in North Macedonia',
     lodgingInCity: 'Where to stay in {city}',
     lodgingNote: 'Hotels and apartments near the best places — compare on Trip.com.',
     onMap: 'On the map',
@@ -644,79 +622,76 @@ export const en: UIDictionary = {
     emptyNoData: 'This section is being filled in: vetted places with honest descriptions and a check date will appear here soon.',
     selectionHeading: 'How we pick these places',
     selectionNote:
-      'Places make it here on merit: we take venues with high ratings (4+★) across several sources and cross-check them with experienced travelers, guides and locals. A rating is a selection criterion, not the write-up itself — we don’t reprint other sites’ scores word for word; see the exact rating on the map. We write every description ourselves. The gold medal on a card is our seal of quality: only places we have checked in person that meet a high standard of service and food quality receive it.',
+      'Places make it here on merit: we take venues with high ratings (4+★) across several sources and cross-check them with experienced travelers, guides and locals. A rating is a selection criterion, not the write-up itself — we don’t reprint other sites’ scores word for word; see the exact rating on the map. We write every description ourselves. The gold medal on a card is our seal of quality: only places we have checked in person that meet a high standard receive it.',
     cityPages: {
       navHeading: 'Where to eat, by city',
       picksHeading: 'Our vetted places',
       backToAll: 'The whole “Where to eat” directory',
       cityGuideLink: 'City guide',
       items: {
-        tbilisi: {
-          cityName: 'Tbilisi',
-          heading: 'Tbilisi restaurants & cafes',
-          lead: 'Tbilisi is Georgia’s culinary capital: from old khinkali houses and family marani to signature restaurants and wine bars. We’ve gathered vetted places by district and occasion.',
+        skopje: {
+          cityName: 'Skopje',
+          heading: 'Skopje restaurants & cafes',
+          lead: 'Skopje is the capital and the country’s biggest food scene — from the Old Bazaar’s grills and traditional taverns to cafes and wine bars. This page is being prepared.',
           intro: [
-            'In Tbilisi people eat everywhere and in all sorts of ways. In the Old Town and Sololaki — atmospheric Georgian restaurants and wine bars; in Vera and on Rustaveli — coffee shops and breakfasts; at the Dezerter Bazaar — grocery color and street food. Prices rise toward the center and the tourist streets, and they’re noticeably cheaper in simple canteens.',
-            'Below are our vetted places: Georgian classics, signature cuisine, wine, vegan, and coffee. What exactly to order — khinkali, khachapuri, mtsvadi, qvevri wine — is in the guide to the cuisine. We verify each venue and note the check date.',
+            'This page is being prepared. We’ll gather vetted places in Skopje by district and occasion — traditional Macedonian fare, grills, wine and coffee.',
+            'Each venue will be verified, with the check date noted. What exactly to order will be in the guide to the cuisine.',
           ],
         },
-        batumi: {
-          cityName: 'Batumi',
-          heading: 'Batumi restaurants & cafes',
-          lead: 'Batumi is the sea and Adjarian cuisine: the famous boat-shaped khachapuri, fresh fish, and seaside terraces. Vetted places by the boulevard and in the old town.',
+        ohrid: {
+          cityName: 'Ohrid',
+          heading: 'Ohrid restaurants & cafes',
+          lead: 'Ohrid is the lake and its famous trout, lakeside terraces and old-town taverns. This page is being prepared.',
           intro: [
-            'In Batumi the gastronomy revolves around the sea and Adjara: fish restaurants, Adjarian khachapuri with egg and butter, seaside verandas. In the old town and by the boulevard there are more tourist spots and nightlife; a little off to the side it’s calmer and cheaper.',
-            'Below are our vetted places in Batumi. For the basic dishes of Georgian cuisine and what the region is famous for, take a look at the guide to the cuisine; each venue shows the check date.',
+            'This page is being prepared. We’ll gather vetted places in Ohrid — lakeside dining, local fish, and traditional taverns in the old town.',
+            'Each venue will be verified, with the check date noted. For the basic dishes of Macedonian cuisine, see the guide to the cuisine.',
           ],
         },
-        kutaisi: {
-          cityName: 'Kutaisi',
-          heading: 'Kutaisi restaurants & cafes',
-          lead: 'Kutaisi is the gateway to Imereti with its greenery, spices, and cheese. Simple, vivid local cuisine and vetted places not far from the center.',
+        bitola: {
+          cityName: 'Bitola',
+          heading: 'Bitola restaurants & cafes',
+          lead: 'Bitola, the “city of consuls,” is known for its café culture along Širok Sokak and its old bazaar. This page is being prepared.',
           intro: [
-            'Imeretian cuisine is one of the most expressive in Georgia: Imeretian khachapuri, pkhali, spicy sauces, and cheese. Kutaisi has many family-run places with home-style serving, and at the central market — cheese, spices, and churchkhela.',
-            'Below are our vetted places in Kutaisi. What to try first is in the guide to the cuisine; each venue lists the check date.',
+            'This page is being prepared. We’ll gather vetted places in Bitola — cafes, taverns and grills near the center.',
+            'Each venue will be verified, with the check date noted. What to try first will be in the guide to the cuisine.',
           ],
         },
       },
     },
   },
   attractionTypes: {
-    'gory-priroda': 'Mountains and nature',
-    'vodopady-kanony-ozera': 'Waterfalls, canyons, lakes',
-    peschery: 'Caves and cave towns',
-    'hramy-monastyri': 'Churches and monasteries',
-    'kreposti-zamki': 'Fortresses and castles',
-    'kurorty-termy': 'Resorts and hot springs',
-    'muzei-gorodskoe': 'Museums and city sights',
+    'mountains-nature': 'Mountains and nature',
+    'waterfalls-canyons-lakes': 'Waterfalls, canyons, lakes',
+    caves: 'Caves',
+    'churches-monasteries': 'Churches and monasteries',
+    'fortresses-castles': 'Fortresses and castles',
+    'resorts-spas': 'Resorts and hot springs',
+    'museums-urban': 'Museums and city sights',
   },
   regions: {
-    tbilisi: 'Tbilisi',
-    adjara: 'Adjara',
-    guria: 'Guria',
-    imereti: 'Imereti',
-    kakheti: 'Kakheti',
-    'kvemo-kartli': 'Kvemo Kartli',
-    'mtskheta-mtianeti': 'Mtskheta-Mtianeti',
-    'racha-lechkhumi': 'Racha-Lechkhumi',
-    'samegrelo-zemo-svaneti': 'Samegrelo — Zemo Svaneti',
-    'samtskhe-javakheti': 'Samtskhe-Javakheti',
-    'shida-kartli': 'Shida Kartli',
+    skopje: 'Skopje',
+    polog: 'Polog',
+    eastern: 'Eastern',
+    northeastern: 'Northeastern',
+    southeastern: 'Southeastern',
+    southwestern: 'Southwestern',
+    vardar: 'Vardar',
+    pelagonia: 'Pelagonia',
   },
   razvlTypes: {
-    'nochnaya-zhizn': 'Nightlife',
-    afisha: 'What’s on',
-    aktivnyy: 'Active leisure',
-    kazino: 'Casinos',
-    mesta: 'Places',
+    nightlife: 'Nightlife',
+    events: 'What’s on',
+    active: 'Active leisure',
+    casino: 'Casinos',
+    places: 'Places',
   },
   serviceRubrics: {
-    'zhilyo-rieltory': 'Housing and real estate agents',
-    klining: 'Cleaning',
-    pereezd: 'Moving and freight',
-    remont: 'Repairs and tradespeople',
-    dokumenty: 'Documents and lawyers',
-    perevodchiki: 'Translators and notary services',
+    'housing-realtors': 'Housing and real estate agents',
+    cleaning: 'Cleaning',
+    moving: 'Moving and freight',
+    repairs: 'Repairs and tradespeople',
+    documents: 'Documents and lawyers',
+    translators: 'Translators and notary services',
   },
   entertainment: {
     filtersLegend: 'Entertainment filters',
@@ -728,14 +703,14 @@ export const en: UIDictionary = {
     emptyFiltered: 'Nothing yet for the selected type. Reset the filter.',
   },
   catalog: {
-    heading: 'What to see in Georgia',
+    heading: 'What to see in North Macedonia',
     intro: [
-      'A catalog of Georgia’s attractions: nature and mountains, waterfalls and canyons, cave towns, ancient churches and monasteries, fortresses, and thermal resorts. Filter them by type and region below and open a card with the details.',
-      'Places make it into the catalog not “from an old blog from memory.” We select them by high ratings across several independent sources and check the details with experienced travelers, guides, and locals. Every article shows the date of its last check.',
+      'A catalog of North Macedonia’s attractions: lakes and mountains, waterfalls and canyons, ancient churches and monasteries, fortresses, and thermal resorts. Filter them by type and region below and open a card with the details.',
+      'This section is being prepared. Places make it into the catalog by high ratings across several independent sources, with the details checked — not “from an old blog from memory.” Every article will show the date of its last check.',
     ],
     breadcrumbHome: 'Home',
     mapHeading: 'All places on the map',
-    mapAria: 'Interactive map of Georgia’s attractions',
+    mapAria: 'Interactive map of North Macedonia’s attractions',
     mapHint: 'The map with all the markers loads on click — to keep the page lightweight.',
     filtersLegend: 'Attraction filters',
     typeLabel: 'Type',
@@ -748,10 +723,10 @@ export const en: UIDictionary = {
     emptyNoData: 'This section is being filled in: vetted places with honest descriptions and a check date will appear here soon.',
   },
   uslugi: {
-    heading: 'Services in Georgia: for living and relocating',
+    heading: 'Services in North Macedonia: for living and relocating',
     breadcrumb: 'Services',
     intro: [
-      'Services that those living in Georgia and those relocating need: real estate agents and help with housing, cleaning, freight, repairs, paperwork, translators. Conveniently gathered in one place — by category and city.',
+      'Services that those living in North Macedonia and those relocating need: real estate agents and help with housing, cleaning, freight, repairs, paperwork, translators. Conveniently gathered in one place — by category and city.',
       'We add to this section as requests come in. Paid placements are marked with a gold border; everything else we add once we’ve verified the service.',
     ],
     rubricLabel: 'Category',
@@ -764,9 +739,9 @@ export const en: UIDictionary = {
     siteLabel: 'Website',
     demoLabel: 'Sample',
     emptyFiltered: 'Nothing yet for the selected category. Reset the filter.',
-    emptyNoData: 'This section is being filled in: vetted services for living in Georgia will appear here soon.',
+    emptyNoData: 'This section is being filled in: vetted services for living in North Macedonia will appear here soon.',
     ctaHeading: 'Is your service here?',
-    ctaText: 'Real estate agents, cleaning, tradespeople, and other services for those living in Georgia — write to us and we’ll tell you about placement.',
+    ctaText: 'Real estate agents, cleaning, tradespeople, and other services for those living in North Macedonia — write to us and we’ll tell you about placement.',
     ctaLabel: 'Ask about placement',
   },
   coordCopy: {
@@ -776,21 +751,21 @@ export const en: UIDictionary = {
     copyAria: 'Copy coordinates {coords}',
   },
   hubAffiliate: {
-    'arenda-avto': {
-      title: 'Car rental in Georgia',
+    'car-rental': {
+      title: 'Car rental in North Macedonia',
       note: 'Compare rental prices on Trip.com.',
     },
     transport: {
-      title: 'Flights to Georgia',
+      title: 'Flights to North Macedonia',
       note: 'Search flights and fares on Trip.com.',
     },
-    goroda: {
+    cities: {
       title: 'Where to stay',
-      note: 'Hotels and apartments across Georgia on Trip.com.',
+      note: 'Hotels and apartments across North Macedonia on Trip.com.',
     },
-    razvlecheniya: {
+    entertainment: {
       title: 'Tours & activities',
-      note: 'Find tours and activities across Georgia on Trip.com.',
+      note: 'Find tours and activities across North Macedonia on Trip.com.',
     },
   },
 };

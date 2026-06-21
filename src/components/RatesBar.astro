@@ -9,7 +9,7 @@
  * Гибрид: значения зашиваются снапшотом на сборке (getLiveSnapshot, мемо — 1
  * запрос на билд даже при рендере на всех страницах), клиент (/js/live-data.js)
  * дотягивает свежие по тем же data-live ключам. Источник недоступен → снапшот,
- * нет и его → «—». Курс по конвенции НБ Грузии: USD/EUR за 1, RUB за 100, UAH за 10.
+ * нет и его → «—». Курс по конвенции НБ Северной Македонии: USD/EUR за 1, RUB за 100, UAH за 10.
  */
 import { t, type Lang } from '../i18n';
 import { getLiveSnapshot } from '../lib/liveSnapshot';
@@ -24,7 +24,6 @@ const ld = dict.liveData;
 const snap = await getLiveSnapshot();
 
 const fmtT = (n: number | null): string => (typeof n === 'number' ? `${Math.round(n)}°` : '—');
-const fmtFx = (n: number | null): string => (typeof n === 'number' ? `${n.toFixed(2)} ₾` : '—');
 
 const locale = lang === 'uk' ? 'uk-UA' : lang === 'en' ? 'en-US' : 'ru-RU';
 let buildTime = '';
@@ -32,7 +31,7 @@ try {
   buildTime = new Intl.DateTimeFormat(locale, {
     hour: '2-digit',
     minute: '2-digit',
-    timeZone: 'Asia/Tbilisi',
+    timeZone: 'Europe/Skopje',
   }).format(new Date());
 } catch {
   buildTime = '';
@@ -41,42 +40,23 @@ try {
 
 <div class="ratesbar" data-live>
   <div class="ratesbar__inner">
-    <ul class="rates" aria-label={ld.fx}>
-      <li class="rates__item">
-        <span class="rates__cur">1&nbsp;$</span>
-        <b data-live="fx-usd">{fmtFx(snap.fx.usd)}</b>
-      </li>
-      <li class="rates__item">
-        <span class="rates__cur">1&nbsp;€</span>
-        <b data-live="fx-eur">{fmtFx(snap.fx.eur)}</b>
-      </li>
-      <li class="rates__item">
-        <span class="rates__cur">10&nbsp;₴</span>
-        <b data-live="fx-uah">{fmtFx(snap.fx.uah)}</b>
-      </li>
-      <li class="rates__item">
-        <span class="rates__cur">100&nbsp;₽</span>
-        <b data-live="fx-rub">{fmtFx(snap.fx.rub)}</b>
-      </li>
-    </ul>
-
     <div class="wx">
       <ul class="rates rates--wx" aria-label={ld.weather}>
         <li class="rates__item">
-          <span class="rates__cur">{ld.cities.tbilisi}</span>
-          <b data-live="air-tbilisi">{fmtT(snap.air.tbilisi)}</b>
+          <span class="rates__cur">{ld.cities.skopje}</span>
+          <b data-live="air-skopje">{fmtT(snap.air.skopje)}</b>
         </li>
         <li class="rates__item">
-          <span class="rates__cur">{ld.cities.kutaisi}</span>
-          <b data-live="air-kutaisi">{fmtT(snap.air.kutaisi)}</b>
+          <span class="rates__cur">{ld.cities.ohrid}</span>
+          <b data-live="air-ohrid">{fmtT(snap.air.ohrid)}</b>
         </li>
         <li class="rates__item">
-          <span class="rates__cur">{ld.cities.batumi}</span>
-          <b data-live="air-batumi">{fmtT(snap.air.batumi)}</b>
+          <span class="rates__cur">{ld.cities.bitola}</span>
+          <b data-live="air-bitola">{fmtT(snap.air.bitola)}</b>
         </li>
         <li class="rates__item">
           <span class="rates__cur">{ld.sea}</span>
-          <b data-live="sea-batumi">{fmtT(snap.sea)}</b>
+          <b data-live="sea-ohrid">{fmtT(snap.sea)}</b>
         </li>
       </ul>
       <details class="wx__info">

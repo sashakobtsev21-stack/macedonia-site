@@ -3,7 +3,7 @@ import { z } from 'astro/zod';
 import { contentGlob } from './loaders/contentGlob';
 
 /**
- * Контент-модель Georgia Guidebook (SPEC §11, v3.1).
+ * Контент-модель North Macedonia Guidebook (SPEC §11).
  *
  * ВАЖНО: эти схемы — будущий API мобильного приложения (§23) и источник
  * автоматических schema.org. Менять только осознанно, со сверкой со SPEC §11.
@@ -17,21 +17,21 @@ import { contentGlob } from './loaders/contentGlob';
 const LANGS = ['ru', 'uk', 'en'] as const;
 
 const CATEGORIES = [
-  'dostoprimechatelnosti',
-  'goroda',
-  'eda',
-  'razvlecheniya',
-  'marshruty',
+  'attractions',
+  'cities',
+  'food',
+  'entertainment',
+  'routes',
   'transport',
-  'arenda-avto',
-  'relokatsiya',
-  'strahovka',
-  'novosti',
-  'planirovanie',
+  'car-rental',
+  'relocation',
+  'insurance',
+  'news',
+  'planning',
 ] as const;
 
-/** Уровни цен для директории «Где поесть» (§8.6, §11). */
-const PRICE_LEVELS = ['₾', '₾₾', '₾₾₾'] as const;
+/** Уровни цен для директории «Где поесть» (§8.6, §11) — универсальные тиры $/$$/$$$. */
+const PRICE_LEVELS = ['$', '$$', '$$$'] as const;
 
 /**
  * Язык-нейтральные ключи кухни для фильтра /eda/ (аудит 2026-06-20). Чип
@@ -39,13 +39,14 @@ const PRICE_LEVELS = ['₾', '₾₾', '₾₾₾'] as const;
  * карточка по-прежнему показывает полную строку `cuisine`.
  */
 const CUISINE_KEYS = [
-  'georgian',
+  'macedonian',
+  'balkan',
   'seafood',
   'wine',
   'cafe',
   'bakery',
   'vegetarian',
-  'asian',
+  'grill',
   'street',
   'bar',
 ] as const;
@@ -57,32 +58,29 @@ const CUISINE_KEYS = [
  * лейблы в i18n (`attractionTypes`); набор финализирован: 7 типов.
  */
 const ATTRACTION_TYPES = [
-  'gory-priroda', // горы / перевалы / природа
-  'vodopady-kanony-ozera', // водопады / каньоны / озёра
-  'peschery', // пещеры / пещерные города
-  'hramy-monastyri', // храмы / монастыри
-  'kreposti-zamki', // крепости / замки
-  'kurorty-termy', // курорты / термы
-  'muzei-gorodskoe', // музеи / городские объекты
+  'mountains-nature', // горы / перевалы / природа
+  'waterfalls-canyons-lakes', // водопады / каньоны / озёра (озеро Охрид)
+  'caves', // пещеры
+  'churches-monasteries', // храмы / монастыри
+  'fortresses-castles', // крепости / замки
+  'resorts-spas', // курорты / термы
+  'museums-urban', // музеи / городские объекты
 ] as const;
 
 /**
- * Регион (мхаре) Грузии (§7) — для фильтра каталога достопримечательностей.
- * Опционально (используют только достопримечательности). Слаги ↔ ru/uk лейблы
- * в i18n (`regions`). 11 мхаре + столица Тбилиси.
+ * Статистический регион Северной Македонии (§7) — для фильтра каталога.
+ * Опционально (используют только достопримечательности). Слаги ↔ лейблы
+ * в i18n (`regions`). 8 статистических регионов (NUTS-3, MK001–MK008).
  */
 const REGIONS = [
-  'tbilisi',
-  'adjara',
-  'guria',
-  'imereti',
-  'kakheti',
-  'kvemo-kartli',
-  'mtskheta-mtianeti',
-  'racha-lechkhumi',
-  'samegrelo-zemo-svaneti',
-  'samtskhe-javakheti',
-  'shida-kartli',
+  'skopje',
+  'polog',
+  'eastern',
+  'northeastern',
+  'southeastern',
+  'southwestern',
+  'vardar',
+  'pelagonia',
 ] as const;
 
 /**
@@ -91,40 +89,40 @@ const REGIONS = [
  * Опционально. Слаги ↔ ru/uk лейблы в i18n (`razvlTypes`). 5 подкатегорий.
  */
 const RAZVL_TYPES = [
-  'nochnaya-zhizn', // клубы, бары, лаунж
-  'afisha', // квизы, киновечера, концерты
-  'aktivnyy', // велопрокат, аквапарки, активный отдых
-  'kazino', // казино (игорные заведения; выделено в отдельную подкатегорию)
-  'mesta', // пляжи, парки, музеи, рынки
+  'nightlife', // клубы, бары, лаунж
+  'events', // квизы, киновечера, концерты, фестивали
+  'active', // активный отдых, прокат, аквапарки
+  'casino', // казино (игорные заведения)
+  'places', // пляжи, парки, музеи, рынки
 ] as const;
 
 /**
  * Рубрика директории «Услуги» (§7, под-раздел /relokatsiya/uslugi/) — сервисы
- * для живущих в Грузии (риелторы, клининг и т.п.). Слаги ↔ ru/uk лейблы в i18n
+ * для живущих в Северной Македонии (риелторы, клининг и т.п.). Слаги ↔ ru/uk лейблы в i18n
  * (`serviceRubrics`).
  */
 const SERVICE_RUBRICS = [
-  'zhilyo-rieltory', // жильё / риелторы
-  'klining', // клининг / уборка
-  'pereezd', // переезд / грузоперевозки
-  'remont', // ремонт / мастера
-  'dokumenty', // документы / юристы
-  'perevodchiki', // переводчики / нотариат
+  'housing-realtors', // жильё / риелторы
+  'cleaning', // клининг / уборка
+  'moving', // переезд / грузоперевозки
+  'repairs', // ремонт / мастера
+  'documents', // документы / юристы
+  'translators', // переводчики / нотариат
 ] as const;
 
 const MONTHS = [
-  'yanvar',
-  'fevral',
-  'mart',
-  'aprel',
+  'january',
+  'february',
+  'march',
+  'april',
   'may',
-  'iyun',
-  'iyul',
-  'avgust',
-  'sentyabr',
-  'oktyabr',
-  'noyabr',
-  'dekabr',
+  'june',
+  'july',
+  'august',
+  'september',
+  'october',
+  'november',
+  'december',
 ] as const;
 
 /** [lat, lng] — гео-координата (§11). */
@@ -186,7 +184,7 @@ const articleBase = z.object({
    */
   attractionType: z.enum(ATTRACTION_TYPES).optional(),
   /**
-   * Регион (мхаре) Грузии (§7) — фильтр/чип каталога достопримечательностей.
+   * Регион (мхаре) Северной Македонии (§7) — фильтр/чип каталога достопримечательностей.
    * Опционально, как и `attractionType`.
    */
   region: z.enum(REGIONS).optional(),
@@ -232,27 +230,27 @@ const articleBase = z.object({
     .optional(),
   /**
    * «Как доехать» из крупных точек въезда (§8.1). Опционально: статьи о
-   * местах получают блок AccessFrom с расстоянием/временем из Тбилиси,
-   * Кутаиси и Батуми. Все поля внутри опциональны — указываем только то,
+   * местах получают блок AccessFrom с расстоянием/временем из Скопье,
+   * Охрида и Битолы. Все поля внутри опциональны — указываем только то,
    * что известно (CLAUDE правило 4). На контракт API (§23) не влияет.
    */
   accessFrom: z
     .object({
-      tbilisi: z
+      skopje: z
         .object({
           km: z.number().optional(),
           duration: z.string().optional(),
           note: z.string().optional(),
         })
         .optional(),
-      kutaisi: z
+      ohrid: z
         .object({
           km: z.number().optional(),
           duration: z.string().optional(),
           note: z.string().optional(),
         })
         .optional(),
-      batumi: z
+      bitola: z
         .object({
           km: z.number().optional(),
           duration: z.string().optional(),
@@ -303,7 +301,7 @@ const articles = defineCollection({
 const routes = defineCollection({
   loader: contentGlob({ pattern: '**/*.{md,mdx}', base: './src/content/routes' }),
   schema: articleBase.extend({
-    category: z.literal('marshruty'),
+    category: z.literal('routes'),
     /**
      * Маршрут всегда с обложкой: переопределяем опциональный cover базы (§11) на
      * обязательный — карточка маршрута и OG-картинка без фото не имеют смысла, а
@@ -476,7 +474,7 @@ const restaurants = defineCollection({
 
 /**
  * Директория «Услуги» (§7, под-раздел /relokatsiya/uslugi/) — сервисы для
- * живущих в Грузии (риелторы, клининг, переезд и т.п.). Платное размещение —
+ * живущих в Северной Македонии (риелторы, клининг, переезд и т.п.). Платное размещение —
  * `sponsored` (золотая рамка как единственный маркёр, решение владельца
  * 2026-06-16). Контакты/цены не выдумывать (правило 4); пустая коллекция
  * строится штатно (§11).

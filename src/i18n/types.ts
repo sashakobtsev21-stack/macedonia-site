@@ -10,19 +10,19 @@ export const DEFAULT_LANG: Lang = 'en';
 /** Разделы IA (§7). `home` — это `/`, остальные совпадают с категориями коллекций. */
 export type SectionKey =
   | 'home'
-  | 'dostoprimechatelnosti'
-  | 'goroda'
-  | 'eda'
-  | 'razvlecheniya'
-  | 'marshruty'
+  | 'attractions'
+  | 'cities'
+  | 'food'
+  | 'entertainment'
+  | 'routes'
   | 'transport'
-  | 'arenda-avto'
-  | 'strahovka'
-  | 'novosti'
-  | 'relokatsiya'
-  | 'planirovanie'
-  | 'o-sajte'
-  | 'kontakty';
+  | 'car-rental'
+  | 'insurance'
+  | 'news'
+  | 'relocation'
+  | 'planning'
+  | 'about'
+  | 'contact';
 
 /**
  * Контентные разделы, которые получают шаблон Хаба (§8.3). Совпадают с
@@ -30,15 +30,15 @@ export type SectionKey =
  * шаблон-директория (§8.6, EdaDirectory).
  */
 export type HubSectionKey =
-  | 'dostoprimechatelnosti'
-  | 'goroda'
-  | 'razvlecheniya'
-  | 'marshruty'
+  | 'attractions'
+  | 'cities'
+  | 'entertainment'
+  | 'routes'
   | 'transport'
-  | 'arenda-avto'
-  | 'strahovka'
-  | 'novosti'
-  | 'planirovanie';
+  | 'car-rental'
+  | 'insurance'
+  | 'news'
+  | 'planning';
 
 /** Вводный текст конкретного хаба (§8.3). */
 export interface HubSectionContent {
@@ -52,40 +52,37 @@ export interface HubSectionContent {
  * (`attractionTypes`), порядок здесь = порядок чипов/опций фильтра каталога.
  */
 export const ATTRACTION_TYPE_SLUGS = [
-  'gory-priroda',
-  'vodopady-kanony-ozera',
-  'peschery',
-  'hramy-monastyri',
-  'kreposti-zamki',
-  'kurorty-termy',
-  'muzei-gorodskoe',
+  'mountains-nature',
+  'waterfalls-canyons-lakes',
+  'caves',
+  'churches-monasteries',
+  'fortresses-castles',
+  'resorts-spas',
+  'museums-urban',
 ] as const;
 export type AttractionTypeSlug = (typeof ATTRACTION_TYPE_SLUGS)[number];
 
 /**
  * Ключи per-city страниц «Где поесть в {городе}» (§8.6). Слаги URL и слаги
- * городов (/goroda/) задаются в EDA_CITY_PAGES (i18n/index.ts); локализованные
+ * городов (/cities/) задаются в EDA_CITY_PAGES (i18n/index.ts); локализованные
  * названия и тексты — в словарях (`eda.cityPages.items`).
  */
-export const EDA_CITY_KEYS = ['tbilisi', 'batumi', 'kutaisi'] as const;
+export const EDA_CITY_KEYS = ['skopje', 'ohrid', 'bitola'] as const;
 export type EdaCityKey = (typeof EDA_CITY_KEYS)[number];
 
 /**
- * Слаги регионов (мхаре) Грузии (§7) — совпадают с enum REGIONS в
- * content.config.ts (поле `region`). Лейблы — в словарях (`regions`).
+ * Слаги статистических регионов Северной Македонии (§7) — совпадают с enum
+ * REGIONS в content.config.ts (поле `region`). Лейблы — в словарях (`regions`).
  */
 export const REGION_SLUGS = [
-  'tbilisi',
-  'adjara',
-  'guria',
-  'imereti',
-  'kakheti',
-  'kvemo-kartli',
-  'mtskheta-mtianeti',
-  'racha-lechkhumi',
-  'samegrelo-zemo-svaneti',
-  'samtskhe-javakheti',
-  'shida-kartli',
+  'skopje',
+  'polog',
+  'eastern',
+  'northeastern',
+  'southeastern',
+  'southwestern',
+  'vardar',
+  'pelagonia',
 ] as const;
 export type RegionSlug = (typeof REGION_SLUGS)[number];
 
@@ -93,7 +90,7 @@ export type RegionSlug = (typeof REGION_SLUGS)[number];
  * Слаги подкатегорий «Развлечений» (§7) — совпадают с enum RAZVL_TYPES в
  * content.config.ts (поле `razvlType`). Лейблы — в словарях (`razvlTypes`).
  */
-export const RAZVL_TYPE_SLUGS = ['nochnaya-zhizn', 'afisha', 'aktivnyy', 'kazino', 'mesta'] as const;
+export const RAZVL_TYPE_SLUGS = ['nightlife', 'events', 'active', 'casino', 'places'] as const;
 export type RazvlTypeSlug = (typeof RAZVL_TYPE_SLUGS)[number];
 
 /**
@@ -102,24 +99,25 @@ export type RazvlTypeSlug = (typeof RAZVL_TYPE_SLUGS)[number];
  * (`serviceRubrics`).
  */
 export const SERVICE_RUBRIC_SLUGS = [
-  'zhilyo-rieltory',
-  'klining',
-  'pereezd',
-  'remont',
-  'dokumenty',
-  'perevodchiki',
+  'housing-realtors',
+  'cleaning',
+  'moving',
+  'repairs',
+  'documents',
+  'translators',
 ] as const;
 export type ServiceRubricSlug = (typeof SERVICE_RUBRIC_SLUGS)[number];
 
 /** Язык-нейтральные ключи кухни /eda/ ↔ enum CUISINE_KEYS в content.config (check-enums). */
 export const CUISINE_KEY_SLUGS = [
-  'georgian',
+  'macedonian',
+  'balkan',
   'seafood',
   'wine',
   'cafe',
   'bakery',
   'vegetarian',
-  'asian',
+  'grill',
   'street',
   'bar',
 ] as const;
@@ -134,7 +132,7 @@ export interface UIDictionary {
   backToTop: string;
   /** Страница 404 (не найдена) — единая на сайт, рендерится на языке по умолчанию. */
   notFound: { heading: string; text: string; home: string };
-  /** Блок «Сейчас в Грузии» на главной (§8.4): погода + курс лари. */
+  /** Блок «Сейчас в Северной Македонии» на главной (§8.4): погода + курс денара. */
   liveData: {
     heading: string;
     /** Короткое описание слева от панели (вёрстка «сбоку»). */
@@ -142,7 +140,7 @@ export interface UIDictionary {
     weather: string;
     sea: string;
     fx: string;
-    cities: { tbilisi: string; kutaisi: string; batumi: string };
+    cities: { skopje: string; ohrid: string; bitola: string };
     updated: string;
     source: string;
   };
@@ -208,11 +206,11 @@ export interface UIDictionary {
     /** Блок «5 главных плиток входа». */
     entriesHeading: string;
     tiles: {
-      dostoprimechatelnosti: string;
-      goroda: string;
-      eda: string;
-      razvlecheniya: string;
-      marshruty: string;
+      attractions: string;
+      cities: string;
+      food: string;
+      entertainment: string;
+      routes: string;
     };
     /** Витрина партнёров (золотая лента-карусель, §8.4/§16). */
     showcase: {
@@ -316,7 +314,7 @@ export interface UIDictionary {
   };
   /**
    * Блок «Как доехать» (AccessFrom §8.1) — расстояние/время из крупных
-   * точек въезда. Лейблы городов-истоков по слугам tbilisi/kutaisi/batumi.
+   * точек въезда. Лейблы городов-истоков по слугам skopje/ohrid/bitola.
    */
   access: {
     /** Заголовок <summary> блока. */
@@ -325,9 +323,9 @@ export interface UIDictionary {
     km: string;
     /** Локализованные названия городов-истоков. */
     origins: {
-      tbilisi: string;
-      kutaisi: string;
-      batumi: string;
+      skopje: string;
+      ohrid: string;
+      bitola: string;
     };
   };
   /** Блок «Вход и часы работы» места (VisitInfo §8.1). */
@@ -464,7 +462,7 @@ export interface UIDictionary {
   };
   /**
    * Главная страница раздела «Страховки» (§8.3 хаб с выделенным контентом,
-   * InsuranceHub). Регуляторная тема: действующие правила въезда в Грузию +
+   * InsuranceHub). Регуляторная тема: действующие правила въезда в Северную Македонию +
    * описание сервисов покупки. Бейдж «Обновлено · {date}» + оговорка про
    * актуальность. AffiliateBox нет (партнёров в partners.json нет — R4).
    * Спорные/неподтверждённые данные как факт НЕ публикуем (см. бриф п.4/п.6).
@@ -676,7 +674,7 @@ export interface UIDictionary {
    * Полная запись (Record) — расхождение слугов схемы и словаря ловит TypeScript.
    */
   attractionTypes: Record<AttractionTypeSlug, string>;
-  /** Лейблы регионов (мхаре) Грузии (§7) по слугам REGION_SLUGS. */
+  /** Лейблы регионов (мхаре) Северной Македонии (§7) по слугам REGION_SLUGS. */
   regions: Record<RegionSlug, string>;
   /** Лейблы подкатегорий «Развлечений» (§7) по слугам RAZVL_TYPE_SLUGS. */
   razvlTypes: Record<RazvlTypeSlug, string>;
@@ -734,7 +732,7 @@ export interface UIDictionary {
   };
   /**
    * Директория «Услуги» (§7, /relokatsiya/uslugi/) — сервисы для живущих в
-   * Грузии. Шаблон-директория (ServicesDirectory) с фильтром по рубрике;
+   * Северной Македонии. Шаблон-директория (ServicesDirectory) с фильтром по рубрике;
    * платное размещение — золотая рамка (решение владельца 2026-06-16).
    */
   uslugi: {

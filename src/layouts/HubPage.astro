@@ -2,7 +2,7 @@
 /**
  * HubPage (§8.3) — хаб контентного раздела.
  * Один компонент для ru и uk (язык пропсом, текст из словарей §12). Разделы:
- * dostoprimechatelnosti, goroda, marshruty, arenda-avto, strahovka, novosti.
+ * attractions, cities, routes, car-rental, insurance, news.
  * /eda/ сюда НЕ относится — у неё свой шаблон-директория (EdaDirectory, §8.6).
  *
  * Состав (§8.3): Breadcrumbs → H1 → вводный текст (i18n) → [гл. AffiliateBox
@@ -64,13 +64,13 @@ interface HubCard {
 
 /**
  * Хаб маршрутов листает коллекцию `routes`, а не `articles` (§8.2/§8.3):
- * статей категории marshruty нет, материалы маршрутов живут в `routes`.
+ * статей категории routes нет, материалы маршрутов живут в `routes`.
  * Остальные хабы — статьи своей категории. Порядок детерминированный (§21):
  * новее → старее (publishedAt desc), при равенстве — по slug.
  */
 let cards: HubCard[];
 
-if (section === 'marshruty') {
+if (section === 'routes') {
   const routes = await getCollectionSafe(
     'routes',
     (entry) => entry.data.lang === lang && entry.data.draft !== true,
@@ -81,7 +81,7 @@ if (section === 'marshruty') {
   });
   cards = routes.map((entry) => ({
     key: entry.id,
-    href: articleHref(lang, 'marshruty', entry.data.slug),
+    href: articleHref(lang, 'routes', entry.data.slug),
     title: entry.data.title,
     cardDescription: entry.data.description,
     cover: entry.data.cover,
@@ -138,7 +138,7 @@ const hasArticles = cards.length > 0;
 const ogImage = cards.find((c) => c.cover)?.cover?.src;
 
 /** ItemList (§14): список материалов раздела — rich-результаты. */
-const SITE = Astro.site ?? new URL('https://georgiaguidebook.com');
+const SITE = Astro.site ?? new URL('https://northmacedoniaguidebook.com');
 const itemListLd = hasArticles
   ? {
       '@context': 'https://schema.org',
