@@ -6,7 +6,7 @@ import type { UIDictionary } from './types';
 
 export const uk: UIDictionary = {
   siteName: 'North Macedonia Guidebook',
-  tagline: 'Довідник по Північній Македонії: перевірені місця',
+  tagline: 'перевірені місця і поради',
   langName: 'Українська',
   skipToContent: 'До змісту',
   backToTop: 'Догори',

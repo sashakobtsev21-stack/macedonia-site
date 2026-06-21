@@ -11,7 +11,7 @@ import type { UIDictionary } from './types';
 
 export const en: UIDictionary = {
   siteName: 'North Macedonia Guidebook',
-  tagline: 'North Macedonia travel guide: vetted places',
+  tagline: 'vetted places, honest tips',
   langName: 'English',
   skipToContent: 'Skip to content',
   backToTop: 'Back to top',

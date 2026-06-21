@@ -70,7 +70,7 @@
 
   /* Текст. */
   --text-body: var(--color-slate); /* body — сланец */
-  --text-heading: var(--color-wine); /* H1/H2 — вино-саперави */
+  --text-heading: var(--color-wine); /* H1/H2 — тёмный тил (озеро Охрид) */
   --text-muted: color-mix(in srgb, var(--color-slate) 70%, var(--color-stone)); /* приглушённый */
   --text-on-cta: var(--color-slate); /* текст на солнечной кнопке (контраст ≥4.5) */
   --text-on-wine: var(--color-white); /* текст на вине */

@@ -118,6 +118,7 @@ const tripLd =
   availableLangs={availableLangs}
   image={data.cover.src}
   ogType="article"
+  noindex={data.demo}
 >
   <script is:inline type="application/ld+json" set:html={JSON.stringify(articleLd)} />
   {tripLd && <script is:inline type="application/ld+json" set:html={JSON.stringify(tripLd)} />}
