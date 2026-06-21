@@ -1,9 +1,9 @@
-// Скаффолдер контента Georgia Guidebook (ROADMAP #20b).
+// Скаффолдер контента North Macedonia Guidebook.
 // Генерирует ТРИ языковые версии (ru/uk/en) скелета с корректным по
 // content.config.ts frontmatter + папку фото public/images/<slug>/ + .gitkeep.
 //
 // Использование:
-//   node scripts/new-content.mjs <type> <slug> [--title "Заголовок"] [--city Тбилиси]
+//   node scripts/new-content.mjs <type> <slug> [--title "Заголовок"] [--city Skopje]
 //   type: article | news | route | restaurant | service | city
 //
 // Что делает:
@@ -22,16 +22,17 @@ import { dirname } from 'node:path';
 const LANGS = ['ru', 'uk', 'en'];
 
 const ARTICLE_CATEGORIES = [
-  'dostoprimechatelnosti',
-  'goroda',
-  'eda',
-  'razvlecheniya',
-  'marshruty',
+  'attractions',
+  'cities',
+  'food',
+  'entertainment',
+  'routes',
   'transport',
-  'arenda-avto',
-  'relokatsiya',
-  'strahovka',
-  'novosti',
+  'car-rental',
+  'relocation',
+  'insurance',
+  'news',
+  'planning',
 ];
 
 // --- argv --------------------------------------------------------------
@@ -109,7 +110,7 @@ function articleBody(lang, category) {
       : lang === 'uk'
         ? 'TODO: вступний абзац — жваво й по суті, без вигаданих фактів.'
         : 'TODO: intro paragraph — lively and to the point, no invented facts.';
-  return `${dodComment(category === 'novosti' ? 'news' : 'route' === category ? 'route' : type)}\n\n${intro}\n`;
+  return `${dodComment(category === 'news' ? 'news' : type)}\n\n${intro}\n`;
 }
 
 function buildArticle(lang, { category }) {
@@ -137,7 +138,7 @@ title: '${title}'
 description: 'TODO: описание ≤155 символов'
 slug: '${slug}'
 lang: '${lang}'
-category: 'marshruty'
+category: 'routes'
 publishedAt: ${today}
 updatedAt: ${today}
 ${coverBlock}
@@ -145,7 +146,7 @@ days: 1
 distanceKm: 1
 budgetFrom:
   amount: 0
-  currency: 'GEL'
+  currency: 'MKD'
 stops: [] # TODO: заполнить остановки (name/km/coord), затем build-route-geometry.mjs
 bestSeason: []
 gallery: []
@@ -168,7 +169,7 @@ lang: '${lang}'
 city: '${city}'
 district: ''
 cuisine: ''
-priceLevel: '₾₾'
+priceLevel: '$$'
 geo:
   coord: [0, 0] # TODO: реальные координаты
   address: 'TODO'
@@ -190,7 +191,7 @@ function buildService(lang) {
 name: '${title}'
 slug: '${slug}'
 lang: '${lang}'
-rubric: 'zhilyo-rieltory' # TODO: zhilyo-rieltory|klining|pereezd|remont|dokumenty|perevodchiki
+rubric: 'housing-realtors' # TODO: housing-realtors|cleaning|moving|repairs|documents|translators
 city: '${city}'
 summary: 'TODO: краткое описание услуги'
 tags: []
@@ -219,8 +220,8 @@ ${dodComment('city')}
 }
 
 const PLAN = {
-  article: { coll: 'articles', build: (l) => buildArticle(l, { category: opts.category || 'dostoprimechatelnosti' }) },
-  news: { coll: 'articles', build: (l) => buildArticle(l, { category: 'novosti' }) },
+  article: { coll: 'articles', build: (l) => buildArticle(l, { category: opts.category || 'attractions' }) },
+  news: { coll: 'articles', build: (l) => buildArticle(l, { category: 'news' }) },
   route: { coll: 'routes', build: buildRoute },
   restaurant: { coll: 'restaurants', build: buildRestaurant },
   service: { coll: 'services', build: buildService },
