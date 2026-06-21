@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Georgia Guidebook — флаг Грузии">
-  <rect width="32" height="32" rx="6" fill="#ffffff"/>
-  <path d="M14 0h4v32h-4z M0 14h32v4H0z" fill="#ff0000"/>
-  <g fill="#ff0000">
-    <path d="M6 4h2v6H6z M4 6h6v2H4z"/>
-    <path d="M24 4h2v6h-2z M22 6h6v2h-6z"/>
-    <path d="M6 22h2v6H6z M4 24h6v2H4z"/>
-    <path d="M24 22h2v6h-2z M22 24h6v2h-6z"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="200 0 800 800" role="img" aria-label="North Macedonia Guidebook — flag of North Macedonia"><defs><clipPath id="r"><rect x="200" y="0" width="800" height="800" rx="150"/></clipPath></defs><g clip-path="url(#r)"><rect x="200" y="0" width="800" height="800" fill="#D20000"/><g fill="#FFE600"><polygon points="749.4,358.6 1428.7,170.2 1428.7,629.8 749.4,441.4"/><polygon points="734.9,476.3 1348.5,823.5 1023.5,1148.5 676.3,534.9"/><polygon points="641.4,549.4 829.8,1228.7 370.2,1228.7 558.6,549.4"/><polygon points="523.7,534.9 176.5,1148.5 -148.5,823.5 465.1,476.3"/><polygon points="450.6,441.4 -228.7,629.8 -228.7,170.2 450.6,358.6"/><polygon points="465.1,323.7 -148.5,-23.5 176.5,-348.5 523.7,265.1"/><polygon points="558.6,250.6 370.2,-428.7 829.8,-428.7 641.4,250.6"/><polygon points="676.3,265.1 1023.5,-348.5 1348.5,-23.5 734.9,323.7"/><circle cx="600" cy="400" r="155"/></g></g></svg>
