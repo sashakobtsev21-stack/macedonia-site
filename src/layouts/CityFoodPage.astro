@@ -44,7 +44,7 @@ const cfg = EDA_CITY_PAGES.find((p) => p.key === cityKey)!;
 const pageTitle = `${city.heading} — ${dict.siteName}`;
 const description = clampDesc(city.lead);
 
-const SITE = Astro.site ?? new URL('https://northmacedoniaguidebook.com');
+const SITE = Astro.site ?? new URL('https://macedoniaguidebook.com');
 const pageUrl = new URL(Astro.url.pathname, SITE).href;
 const homeUrl = new URL(sectionHref(lang, 'home'), SITE).href;
 const edaUrl = new URL(sectionHref(lang, 'food'), SITE).href;

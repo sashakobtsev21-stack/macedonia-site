@@ -58,11 +58,7 @@ const secondaryKeys = SECTION_KEYS.filter((key) => !primarySet.includes(key));
       </ul>
     </nav>
 
-    <div class="bar__lang">
-      <LangSwitcher lang={lang} availableLangs={availableLangs} />
-    </div>
-
-    {/* Кнопка-меню + компактный блок-выпадашка с остальными разделами. */}
+    {/* Кнопка-меню + компактный блок-выпадашка (вторичные разделы + переключатель языка). */}
     <div class="menu">
       <button
         type="button"
@@ -109,6 +105,10 @@ const secondaryKeys = SECTION_KEYS.filter((key) => !primarySet.includes(key));
             })
           }
         </ul>
+        <div class="nav__lang">
+          <span class="nav__lang-label">{dict.lang.label}</span>
+          <LangSwitcher lang={lang} availableLangs={availableLangs} />
+        </div>
       </nav>
     </div>
   </div>
@@ -218,14 +218,25 @@ const secondaryKeys = SECTION_KEYS.filter((key) => !primarySet.includes(key));
     font-weight: 600;
   }
 
-  /* Группа «язык» прижата вправо (бренд и основные разделы — слева). */
-  .bar__lang {
+  /* Кнопка-меню прижата вправо (бренд и основные разделы — слева). */
+  .menu {
+    position: relative;
     margin-left: auto;
   }
 
-  /* Кнопка-меню + выпадашка. */
-  .menu {
-    position: relative;
+  /* Переключатель языка — отдельным блоком внизу выпадашки (перенесён из строки шапки). */
+  .nav__lang {
+    margin-top: var(--space-2);
+    padding: var(--space-2) var(--space-3) 0;
+    border-top: 1px solid var(--border-hairline);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+  .nav__lang-label {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    font-weight: 600;
   }
   .menu-toggle {
     display: inline-flex;
@@ -376,7 +387,6 @@ const secondaryKeys = SECTION_KEYS.filter((key) => !primarySet.includes(key));
       width: 32px;
       height: 21px;
     }
-    .bar__lang,
     .menu {
       flex: 0 0 auto;
     }

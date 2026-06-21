@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 Disallow: /go/
 
-Sitemap: https://northmacedoniaguidebook.com/sitemap-index.xml
+Sitemap: https://macedoniaguidebook.com/sitemap-index.xml

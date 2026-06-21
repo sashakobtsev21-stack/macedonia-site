@@ -440,8 +440,8 @@ export const ru: UIDictionary = {
     channels: {
       heading: 'Как связаться',
       emailLabel: 'Пишите на почту:',
-      email: 'info@northmacedoniaguidebook.com',
-      emailUrl: 'mailto:info@northmacedoniaguidebook.com',
+      email: 'info@macedoniaguidebook.com',
+      emailUrl: 'mailto:info@macedoniaguidebook.com',
     },
   },
   relocation: {

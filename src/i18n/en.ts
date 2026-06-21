@@ -445,8 +445,8 @@ export const en: UIDictionary = {
     channels: {
       heading: 'How to get in touch',
       emailLabel: 'Write to us by email:',
-      email: 'info@northmacedoniaguidebook.com',
-      emailUrl: 'mailto:info@northmacedoniaguidebook.com',
+      email: 'info@macedoniaguidebook.com',
+      emailUrl: 'mailto:info@macedoniaguidebook.com',
     },
   },
   relocation: {

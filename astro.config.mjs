@@ -75,7 +75,7 @@ const CONTENT_DATES = collectContentDates();
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://northmacedoniaguidebook.com',
+  site: 'https://macedoniaguidebook.com',
   trailingSlash: 'always',
   output: 'static',
   build: {

@@ -21,7 +21,7 @@ Cloudflare Workers.
 > + покупка домена + замена hero-фото (сейчас плейсхолдеры с прошлого проекта).
 > Грузинские референс-документы — в `docs/_georgia-reference/`.
 
-**Домен:** `https://northmacedoniaguidebook.com` — ⚠ **плейсхолдер, домен ещё не
+**Домен:** `https://macedoniaguidebook.com` — ⚠ **плейсхолдер, домен ещё не
 куплен** (заглушка в `astro.config.mjs` и `wrangler.jsonc`).
 
 ## Стек

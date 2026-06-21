@@ -49,7 +49,7 @@ const dict = t(lang);
 const pageTitle = `${dict.eda.heading} — ${dict.siteName}`;
 const description = clampDesc(dict.eda.lead);
 
-const SITE = Astro.site ?? new URL('https://northmacedoniaguidebook.com');
+const SITE = Astro.site ?? new URL('https://macedoniaguidebook.com');
 const pageUrl = new URL(Astro.url.pathname, SITE).href;
 const homeUrl = new URL(sectionHref(lang, 'home'), SITE).href;
 
