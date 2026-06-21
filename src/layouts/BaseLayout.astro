@@ -132,10 +132,16 @@ const siteLd = {
       />
     )}
 
-    <!-- GA4 — отключено на этапе ремоделинга: у North Macedonia Guidebook пока нет
-         своего GA-ресурса. Подключить реальный GA-id (G-XXXXXXXXXX) и пересчитать
-         sha256-хеш инлайн-скрипта в public/_headers (CSP §18) при включении аналитики. -->
-    <!-- TODO(remodel): GA4 для North Macedonia (см. SETUP-GUIDE / решение владельца). -->
+    <!-- Google tag (gtag.js) — GA4. Внешний loader + инлайн-инициализация. Под строгим
+         CSP (§18, без 'unsafe-inline') инлайн-скрипт разрешён по sha256-хешу в
+         public/_headers → script-src. Меняешь содержимое инлайна/ID — пересчитай хеш. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4XYMNPQ34N"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4XYMNPQ34N');
+    </script>
 
     <!--
       Гейт движения (ui-ux-pro-max §7): СИНХРОННЫЙ внешний модуль со 'self'
