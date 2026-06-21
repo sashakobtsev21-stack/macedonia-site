@@ -1,4 +1,4 @@
-// Браузерный слой QA Georgia Guidebook (ROADMAP #21, решение владельца D8).
+// Браузерный слой QA North Macedonia Guidebook (ROADMAP #21, решение владельца D8).
 // Запуск: node scripts/qa-lighthouse.mjs   (или npm run qa:browser)
 //
 // Mobile-Lighthouse по ключевым страницам собранного сайта. Чтобы не зависеть от
@@ -23,12 +23,14 @@ import * as chromeLauncher from 'chrome-launcher';
 
 const DIST = 'dist';
 // Репрезентативный срез шаблонов (не все 294 страницы — это долго):
+// Индексируемые шаблоны (demo-статьи/маршруты под noindex — их SEO-аудит
+// штрафует за «blocked from indexing», поэтому в LH-срез берём хабы + главную).
 const PAGES = [
   ['/', 'главная (hero, витрина)'],
-  ['/goroda/tbilisi/', 'город (фото-тяжёлая статья)'],
-  ['/arenda-avto/kak-arendovat-avto/', 'статья (#16/#17, figure+карта)'],
-  ['/eda/', 'директория «Где поесть» (фильтры)'],
-  ['/marshruty/', 'хаб маршрутов'],
+  ['/planning/', 'хаб «Планирование»'],
+  ['/attractions/', 'хаб «Достопримечательности» (каталог)'],
+  ['/food/', 'директория «Где поесть» (фильтры)'],
+  ['/routes/', 'хаб маршрутов'],
 ];
 const HARD = ['accessibility', 'seo', 'best-practices'];
 const THRESHOLD = 90;

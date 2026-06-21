@@ -5,6 +5,7 @@
  */
 import { t, sectionHref, ALL_SECTION_KEYS, type Lang } from '../i18n';
 import LangSwitcher from './LangSwitcher.astro';
+import NetworkLinks from './NetworkLinks.astro';
 
 interface Props {
   lang: Lang;
@@ -39,6 +40,8 @@ const year = new Date().getFullYear();
         </ul>
       </nav>
     </div>
+
+    <NetworkLinks lang={lang} />
 
     <p class="disclaimer">{dict.footer.disclaimer}</p>
     <p class="copy">© {year} {dict.siteName}</p>

@@ -31,7 +31,8 @@ interface Props {
 
 const { lang, partner, slug, title, label, priceFrom, note } = Astro.props;
 const dict = t(lang);
-const goHref = `/go/${partner}?c=${encodeURIComponent(slug)}`;
+// &l={lang} → Worker может выбрать партнёра по языку (byLang, §16/MON-R1-3).
+const goHref = `/go/${partner}?c=${encodeURIComponent(slug)}&l=${lang}`;
 ---
 
 <aside class="affiliate" aria-labelledby={`aff-${partner}-${slug}`}>

@@ -1,0 +1,13 @@
+{
+  "$note": "Балканская кросс-сеть (DIST-R1-03): ссылки на дочерние сайты сети (Албания/Черногория/Хорватия) для кросс-линкинга и общих роуд-трип-страниц. Пока сайты-соседи не запущены — enabled:false и url пустой → блок НЕ рендерится. Появится живой сайт сети → проставить url + enabled:true, и ссылки появятся в футере на всех страницах. Взаимность ссылок (партнёр готов ставить ответную) — условие O3 в STRATEGY.",
+  "heading": {
+    "en": "Part of the Balkan guides network",
+    "ru": "Часть балканской сети путеводителей",
+    "uk": "Частина балканської мережі путівників"
+  },
+  "siblings": [
+    { "key": "albania", "label": "Albania Guidebook", "url": "", "enabled": false },
+    { "key": "montenegro", "label": "Montenegro Guidebook", "url": "", "enabled": false },
+    { "key": "croatia", "label": "Croatia Guidebook", "url": "", "enabled": false }
+  ]
+}

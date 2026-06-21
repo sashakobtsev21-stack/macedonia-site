@@ -18,7 +18,10 @@ import partnersData from '../src/data/partners.json';
 
 interface PartnersMap {
   fallback: string;
-  partners: Record<string, { urlTemplate: string; allowSubId?: boolean }>;
+  partners: Record<
+    string,
+    { urlTemplate: string; allowSubId?: boolean; byLang?: Record<string, string> }
+  >;
 }
 
 interface Env {
@@ -64,8 +67,14 @@ function handleGo(url: URL): Response {
   // SubID (slug-источник клика) подставляем только если партнёр это допускает
   // (allowSubId !== false; по умолчанию true). Аудит 2026-06-17 (P2-8): контракт
   // allowSubId объявлен в partners.json, но раньше не читался.
+  // Языковая сегментация (MON-R1-3): у партнёра может быть byLang (EN→глобальный
+  // партнёр, RU/UK→дружелюбный к СНГ). Язык приходит из ?l= (его проставляет
+  // AffiliateBox); нет byLang/совпадения → дефолтный urlTemplate. Партнёры без
+  // byLang работают как раньше (обратная совместимость).
+  const lang = url.searchParams.get('l') ?? '';
+  const template = entry.byLang?.[lang] ?? entry.urlTemplate;
   const subId = entry.allowSubId !== false ? (url.searchParams.get('c') ?? '') : '';
-  const target = buildTarget(entry.urlTemplate, subId);
+  const target = buildTarget(template, subId);
   if (!isValidTarget(target)) {
     return Response.redirect(safeFallback(url.origin), 302);
   }
