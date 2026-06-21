@@ -63,12 +63,12 @@ const places = await getCollectionSafe(
 const articlesAll = await getCollectionSafe('articles', (entry) => entry.data.draft !== true);
 const cuisineHref = articleHref(
   articlesAll.some(
-    (e) => e.data.lang === lang && e.data.category === 'food' && e.data.slug === 'chto-poprobovat',
+    (e) => e.data.lang === lang && e.data.category === 'food' && e.data.slug === 'what-to-eat-in-north-macedonia',
   )
     ? lang
     : DEFAULT_LANG,
   'food',
-  'chto-poprobovat',
+  'what-to-eat-in-north-macedonia',
 );
 
 /**
