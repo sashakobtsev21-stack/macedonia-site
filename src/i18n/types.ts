@@ -140,7 +140,7 @@ export interface UIDictionary {
     weather: string;
     sea: string;
     fx: string;
-    cities: { skopje: string; ohrid: string; bitola: string };
+    cities: { skopje: string; ohrid: string; bitola: string; mavrovo: string };
     updated: string;
     source: string;
   };

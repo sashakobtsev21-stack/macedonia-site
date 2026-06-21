@@ -1,6 +1,5 @@
 /**
- * Снапшот «живых» данных для шапки (§8.4): погода в Скопье, Охриде и Битоле +
- * температура воды Охридского озера.
+ * Снапшот «живых» данных для шапки (§8.4): погода в Скопье, Охриде, Битоле и Маврово.
  *
  * Это BUILD-TIME слой гибрида: при сборке тянем данные и зашиваем в HTML
  * (мгновенно видно, 0 CLS, работает без JS). Клиент потом обновляет свежими
@@ -8,21 +7,23 @@
  * не падает (try/catch + таймаут). Кэш на уровне модуля: один fetch на сборку,
  * даже если компонент рендерится на нескольких страницах (en/ru/uk).
  *
- * Источник: open-meteo (погода/вода, без ключей, CORS ok). Цифры не выдумываем
- * (CLAUDE правило 4): нет данных — поле пустое. Курс денара (евро-пег ~61,5/EUR)
- * — отдельная фича контент-фазы (нужен источник по MKD), здесь не показываем.
+ * Источник: open-meteo (погода, без ключей, CORS ok). Македония внутриконтинентальная
+ * (моря нет) → показываем 4 города-базы, включая горное Маврово, а НЕ температуру воды
+ * (marine-API не покрывает Охридское озеро). Курс денара (евро-пег) — фича контент-фазы.
  */
 
 export interface LiveSnapshot {
-  air: { skopje: number | null; ohrid: number | null; bitola: number | null };
-  /** Температура воды Охридского озера (если источник отдаст; иначе null). */
-  sea: number | null;
+  air: {
+    skopje: number | null;
+    ohrid: number | null;
+    bitola: number | null;
+    mavrovo: number | null;
+  };
 }
 
+// Скопье, Охрид, Битола, Маврово (4 точки в одном запросе open-meteo).
 const AIR_URL =
-  'https://api.open-meteo.com/v1/forecast?latitude=41.9981,41.1172,41.0297&longitude=21.4254,20.8019,21.3292&current=temperature_2m';
-const SEA_URL =
-  'https://marine-api.open-meteo.com/v1/marine?latitude=41.07&longitude=20.71&current=sea_surface_temperature';
+  'https://api.open-meteo.com/v1/forecast?latitude=41.9981,41.1172,41.0297,41.6692&longitude=21.4254,20.8019,21.3292,20.7497&current=temperature_2m';
 
 async function jget(url: string, ms = 6000): Promise<unknown> {
   try {
@@ -50,14 +51,14 @@ export function getLiveSnapshot(): Promise<LiveSnapshot> {
 }
 
 async function build(): Promise<LiveSnapshot> {
-  const [air, sea] = await Promise.all([jget(AIR_URL), jget(SEA_URL)]);
-
+  const air = await jget(AIR_URL);
   const airArr = Array.isArray(air) ? air : [];
-  const seaVal = (sea as { current?: { sea_surface_temperature?: unknown } } | null)?.current
-    ?.sea_surface_temperature;
-
   return {
-    air: { skopje: temp(airArr[0]), ohrid: temp(airArr[1]), bitola: temp(airArr[2]) },
-    sea: typeof seaVal === 'number' ? seaVal : null,
+    air: {
+      skopje: temp(airArr[0]),
+      ohrid: temp(airArr[1]),
+      bitola: temp(airArr[2]),
+      mavrovo: temp(airArr[3]),
+    },
   };
 }

@@ -21,7 +21,7 @@ export const ru: UIDictionary = {
     weather: 'Погода',
     sea: 'Озеро, Охрид',
     fx: 'Курс денара',
-    cities: { skopje: 'Скопье', ohrid: 'Охрид', bitola: 'Битола' },
+    cities: { skopje: 'Скопье', ohrid: 'Охрид', bitola: 'Битола', mavrovo: 'Маврово' },
     updated: 'обновлено',
     source: 'погода: open-meteo · курс: Народный банк Северной Македонии',
   },

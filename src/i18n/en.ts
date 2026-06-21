@@ -26,7 +26,7 @@ export const en: UIDictionary = {
     weather: 'Weather',
     sea: 'Lake, Ohrid',
     fx: 'Denar rate',
-    cities: { skopje: 'Skopje', ohrid: 'Ohrid', bitola: 'Bitola' },
+    cities: { skopje: 'Skopje', ohrid: 'Ohrid', bitola: 'Bitola', mavrovo: 'Mavrovo' },
     updated: 'updated',
     source: 'weather: open-meteo · rate: National Bank of North Macedonia',
   },

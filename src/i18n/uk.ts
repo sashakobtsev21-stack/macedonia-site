@@ -21,7 +21,7 @@ export const uk: UIDictionary = {
     weather: 'Погода',
     sea: 'Озеро, Охрид',
     fx: 'Курс денара',
-    cities: { skopje: 'Скоп’є', ohrid: 'Охрид', bitola: 'Бітола' },
+    cities: { skopje: 'Скоп’є', ohrid: 'Охрид', bitola: 'Бітола', mavrovo: 'Маврово' },
     updated: 'оновлено',
     source: 'погода: open-meteo · курс: Народний банк Північної Македонії',
   },
