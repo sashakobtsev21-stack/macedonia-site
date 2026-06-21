@@ -48,5 +48,8 @@ Cloudflare Workers.
 - **`CLAUDE.md`** — правила работы в репозитории.
 - **`CONTENT_GUIDE.md`** — гайд по созданию контента.
 - **`SETUP-GUIDE.md`** — подключение внешних агентов/плагинов (my_agents, ui-ux-pro-max).
+- **`docs/STRATEGY.md`** — зафиксированные стратегические решения владельца.
+- **`docs/ROADMAP.md`** — фазированный план R0–R6 (что делать дальше).
+- **`docs/MACEDONIA-ANALYSIS-2026-06-21.md`** — веб-проверенная рыночная база.
 - **`docs/memory/`** — проектная память (пока пустая).
 - **`docs/_georgia-reference/`** — архив документов Georgia Guidebook (как шаблоны).
