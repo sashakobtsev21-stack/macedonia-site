@@ -29,11 +29,11 @@ import ArticleCard from '../components/ArticleCard.astro';
 import Icon from '../components/Icon.astro';
 import EmptyHint from '../components/EmptyHint.astro';
 import { getImage } from 'astro:assets';
-import heroGergeti from '../assets/hero/gergeti-kazbek-2.jpg';
-import heroUshguli from '../assets/hero/ushguli.jpg';
-import heroMestia from '../assets/hero/mestia-ushba.jpg';
-import heroTbilisi from '../assets/hero/tbilisi-colorful.jpg';
-import heroKakheti from '../assets/hero/kakheti-vineyards.jpg';
+import heroKaneo from '../assets/hero/ohrid-kaneo.jpg';
+import heroOhridLake from '../assets/hero/ohrid-lake.jpg';
+import heroMatka from '../assets/hero/matka-canyon.jpg';
+import heroMavrovo from '../assets/hero/mavrovo.jpg';
+import heroSkopje from '../assets/hero/skopje-stone-bridge.jpg';
 
 interface Props {
   lang: Lang;
@@ -65,39 +65,39 @@ const AVIF_WIDTHS = [640, 960, 1280, 1600];
 const WEBP_WIDTHS = [640, 960, 1280];
 const heroSources = [
   {
-    img: heroGergeti,
-    q: 40,
-    credit: 'Deogyeon Hwang · Unsplash',
-    href: 'https://unsplash.com/photos/vep3LTkwuwo',
-    focus: '50% 50%',
-  },
-  {
-    img: heroUshguli,
-    q: 50,
-    credit: 'Patrick Schneider · Unsplash',
-    href: 'https://unsplash.com/photos/8bPJ0vagphw',
-    focus: '50% 55%',
-  },
-  {
-    img: heroMestia,
+    img: heroKaneo,
     q: 48,
-    credit: 'Mike Swigunski · Unsplash',
-    href: 'https://unsplash.com/photos/oqWb_tOK7ns',
+    credit: 'Tahir1434 · CC BY-SA 4.0 · Wikimedia Commons',
+    href: 'https://commons.wikimedia.org/wiki/File:St._John_Kaneo_Church_2022.jpg',
     focus: '50% 50%',
   },
   {
-    img: heroTbilisi,
+    img: heroOhridLake,
     q: 52,
-    credit: 'Inna Nasonova · Unsplash',
-    href: 'https://unsplash.com/photos/VcbjEhgdR9A',
-    focus: '50% 45%',
+    credit: 'Benoît Vicart · CC0 · Wikimedia Commons',
+    href: 'https://commons.wikimedia.org/wiki/File:Ohrid_lake_Trpeytsa.jpg',
+    focus: '50% 55%',
   },
   {
-    img: heroKakheti,
-    q: 62,
-    credit: 'Giga Goriashvili · Unsplash',
-    href: 'https://unsplash.com/photos/Lf__9L2SHVQ',
-    focus: '50% 55%',
+    img: heroMatka,
+    q: 50,
+    credit: 'Charlie Marchant · CC BY 2.0 · Wikimedia Commons',
+    href: 'https://commons.wikimedia.org/wiki/File:Matka_Canyon,_Macedonia_(43560862142).jpg',
+    focus: '50% 50%',
+  },
+  {
+    img: heroMavrovo,
+    q: 50,
+    credit: 'Делфина · CC BY-SA 3.0 · Wikimedia Commons',
+    href: 'https://commons.wikimedia.org/wiki/File:Mavrovo_National_Park_2.jpg',
+    focus: '50% 50%',
+  },
+  {
+    img: heroSkopje,
+    q: 52,
+    credit: 'Andrew Milligan sumo · CC BY 2.0 · Wikimedia Commons',
+    href: 'https://commons.wikimedia.org/wiki/File:Stone_Bridge,_Skopje,_Macedonia_(50367313171).jpg',
+    focus: '50% 45%',
   },
 ];
 const heroVariants = await Promise.all(
