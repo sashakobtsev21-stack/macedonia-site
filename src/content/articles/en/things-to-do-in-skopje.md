@@ -150,7 +150,7 @@ Most visitors stay within a 10–15 minute walk of Macedonia Square, which keeps
 
 ## Where to eat in Skopje
 
-The **Old Bazaar** is the classic place for grilled meat (ćevapi, kebab), burek and Turkish coffee at low prices. For a more local night out, head to **Debar Maalo**, lined with kafanas (traditional taverns) serving Macedonian mezze, grilled dishes and house rakija. Look for staples like **tavče gravče** (oven-baked beans), ajvar, šopska salad and the country's good, underrated wines from the Tikveš region. Prices are in Macedonian denar (**MKD**), pegged to the euro at roughly 61.5 MKD to €1, so a casual meal stays inexpensive.
+The **Old Bazaar** is the classic place for grilled meat (ćevapi, kebab), burek and Turkish coffee at low prices. For a more local night out, head to **Debar Maalo**, lined with kafanas (traditional taverns) serving Macedonian mezze, grilled dishes and house rakija. Look for staples like **tavče gravče** (oven-baked beans), ajvar, šopska salad and the country's good, underrated wines from the Tikveš region. Prices are in Macedonian denar (**MKD**), pegged to the euro at roughly 61.5 MKD to €1, so a casual meal stays inexpensive. For a few hand-picked, verified spots — from the Old Bazaar's oldest grill to a Debar Maalo kafana and a Macedonian wine bar — see our [where to eat in Skopje](/food/where-to-eat-skopje/) directory.
 
 ## Practical tips
 
