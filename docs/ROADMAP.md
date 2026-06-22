@@ -63,15 +63,15 @@ _Позже (к своим фазам): порог рейтинга директ
 | INFRA-04 | Подключить репо к Cloudflare Workers Build (автодеплой + превью на ветках) | both | M |
 | INFRA-07 | Привязать кастомный домен к Workers (+www→apex, TLS, trailing-slash) | owner | S |
 | INFRA-08 / DIST-R1-01 | **GSC** (DNS-верификация) + Bing + отправить sitemap + baseline; лёгкая аналитика (CF Web Analytics) | both | M |
-| INFRA-05 | Заменить hero-фото на македонские (Охрид/Скопье/Маврово/Битола, CC ≤200КБ, атрибуция) | both | M |
-| INFRA-06 | Подчистить остаточные грузинские следы: `kwd=Georgia` в `partners.json`, шапка `worker/index.ts` | claude | S |
-| MON-R1-1 | Перенастроить `partners.json` под MK-набор (снять Trip.com/Allianceid/kwd=Georgia; завести discovercars/localrent/booking/gyg/viator/aviasales/airalo/safetywing/wise) | both | M |
+| INFRA-05 | ✅ (готово) Заменить hero-фото на македонские (Охрид/Скопье/Маврово/Битола, CC ≤200КБ, атрибуция) | both | M |
+| INFRA-06 | ✅ (готово) Подчистить остаточные грузинские следы: `kwd=Georgia` в `partners.json`, шапка `worker/index.ts` | claude | S |
+| MON-R1-1 | ✅ (готово) Перенастроить `partners.json` под MK-набор (снять Trip.com/Allianceid/kwd=Georgia; завести discovercars/localrent/booking/gyg/viator/aviasales/airalo/safetywing/wise) | both | M |
 | MON-R1-2 | Регистрация прямых программ: DiscoverCars · Airalo · SafetyWing · Wise → рабочие трекинг-ссылки с SubID | owner | M |
 | MON-R1-3 | Расширить контракт `partners.json` + worker под языковую сегментацию `/go/` (EN→DiscoverCars, RU/UK→LocalRent) | claude | M |
 | DIST-R1-02 | Перенастроить SEO-обвязку под Македонию (Organization/WebSite schema, OG-дефолты, geo-мета — ничего грузинского) | claude | M |
 | DIST-R1-03 | Каркас балканской кросс-сети в движке (компонент сетевых ссылок из конфига) | claude | M |
 | DIST-R1-04 | RSS/Atom-фид (узел дистрибуции: Telegram/email/агрегаторы) | claude | S |
-| C-R1-01 | **Demo-тройка** (Lake Ohrid + 7-day itinerary, `demo:true`/noindex) как эталон объёма/структуры | claude | M |
+| C-R1-01 | ✅ (готово) **Demo-тройка** (Lake Ohrid + 7-day itinerary, `demo:true`/noindex) как эталон объёма/структуры | claude | M |
 
 **Gate R1:** `https://<домен>` отдаёт сайт; GSC verified, sitemap принят, hreflang без ошибок; `partners.json` — только MK-партнёры, `test:links` зелёный; demo + hero собраны; `dist/` без грузинских следов; готова публиковать индексируемый контент.
 

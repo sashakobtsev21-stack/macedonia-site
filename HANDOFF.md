@@ -8,6 +8,7 @@
 - Страниц в сборке: **61**. `npm run qa` — все 5 гейтов зелёные.
 - Контент: 2 demo-сид (`lake-ohrid`, `north-macedonia-7-day-itinerary`). 0 городов / ресторанов / услуг / новостей.
 - Домен `macedoniaguidebook.com` куплен; деплой + GSC — на владельце.
+- `src` чист от грузинских следов (слаги, лари `₾`, код `GE`); все 5 гейтов зелёные.
 
 ## Не ломать (уже работает)
 - Механика новостей: `NEWS_SECTION_WINDOW=10`, `NEWS_HOME_WINDOW=2`, `.github/workflows/daily-news-rebuild.yml`.
