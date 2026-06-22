@@ -1,4 +1,4 @@
-// Финальный QA-оркестратор Georgia Guidebook (ROADMAP #21).
+// Финальный QA-оркестратор North Macedonia Guidebook.
 // Запуск: node scripts/qa.mjs   (или npm run qa)
 //
 // Делает два прохода и печатает отчёт GO/NO-GO с разбивкой
@@ -19,7 +19,7 @@ import { readFileSync, statSync, readdirSync, existsSync, rmSync } from 'node:fs
 import { join, relative } from 'node:path';
 
 const ORIGIN = 'https://macedoniaguidebook.com';
-const TITLE_SUFFIX = ' — Georgia Guidebook';
+const TITLE_SUFFIX = ' — North Macedonia Guidebook';
 const DIST = 'dist';
 
 const findings = []; // {sev:'critical'|'medium'|'minor', area, where, msg}
