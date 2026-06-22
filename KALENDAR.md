@@ -17,7 +17,7 @@
 ## Неделя 3 (08–14.07) — Завершение стартового пакета: маршрут + аренда + сезон
 - Ср 08.07 — [Статья] North Macedonia 7-Day Itinerary · `north macedonia itinerary` · /north-macedonia-7-day-itinerary/ · категория routes · фото каждой остановки (Скопье, Матка, Охрид, Битола, Sveti Naum) · 💰 аренда, отели, туры · перелинк: → Skopje, → Ohrid, → Bitola, → Car Rental
 - Пт 10.07 — [Статья] Car Rental in North Macedonia: Full Guide · `car rental north macedonia` · /car-rental-north-macedonia/ · категория planning/transport · фото ≥5 · 💰 аренда авто (высший money-intent) · перелинк: → Driving in NM (нед.6), → Road Trip (нед.7), → 7-day itinerary
-- Вс 12.07 — [Статья] Things to Do in Bitola (+ Heraclea Lyncestis) · `things to do in bitola` · /things-to-do-in-bitola/ · категория goroda · фото ≥10 · 💰 отели, туры · перелинк: → 7-day itinerary, → Ohrid, → Lake Prespa (нед.11)
+- Вс 12.07 — [Статья] Things to Do in Bitola (+ Heraclea Lyncestis) · `things to do in bitola` · /cities/things-to-do-in-bitola/ · категория cities · фото ≥10 · 💰 отели, туры · перелинк: → 7-day itinerary, → Ohrid, → Lake Prespa (нед.11) · ✅ ОПУБЛИКОВАНО 2026-06-22 (раньше плана): 12 CC-фото (cover + 4 gallery + 7 инлайн), `draft:false`, qa=GO; структура: Широки Сокак/город консулов, Гераклея с мозаиками, Безистен/базар, Часовая башня, дейтрипы Пелистер+Крушево; перелинк 7: /cities/, Ohrid, Skopje, /transport/, /car-rental/, /planning/, 7-day itinerary; AffiliateBox /go/trip-hotels + /go/trip-tours; добавлена 3-м пиком витрины. (Lake Prespa — пока plain-text, статья нед.11 ещё не создана.)
 - Пн 13.07 — 📊 Замер GA/GSC
 
 ## Неделя 4 (15–21.07) — Охрид-кластер (пик сезона) + сезонный анонс фестиваля
