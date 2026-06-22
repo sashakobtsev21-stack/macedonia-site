@@ -12,16 +12,18 @@
  * .nav__primary и показываются только на мобайле).
  */
 import { t, sectionHref, SECTION_KEYS, PRIMARY_TILE_KEYS, type Lang } from '../i18n';
-import LangSwitcher from './LangSwitcher.astro';
 import RatesBar from './RatesBar.astro';
 import Icon from './Icon.astro';
 
 interface Props {
   lang: Lang;
-  /** Языки, доступные для текущей страницы (→ LangSwitcher, §12). По умолчанию все 3. */
+  /**
+   * Языки, доступные для страницы. Сайт одноязычный (en) — поле сохранено для
+   * совместимости сигнатуры BaseLayout; переключатель языка не рендерится.
+   */
   availableLangs?: Lang[];
 }
-const { lang, availableLangs = ['ru', 'uk', 'en'] } = Astro.props;
+const { lang } = Astro.props;
 const dict = t(lang);
 const homeHref = sectionHref(lang, 'home');
 const currentPath = Astro.url.pathname;
@@ -105,10 +107,6 @@ const secondaryKeys = SECTION_KEYS.filter((key) => !primarySet.includes(key));
             })
           }
         </ul>
-        <div class="nav__lang">
-          <span class="nav__lang-label">{dict.lang.label}</span>
-          <LangSwitcher lang={lang} availableLangs={availableLangs} />
-        </div>
       </nav>
     </div>
   </div>
@@ -224,20 +222,6 @@ const secondaryKeys = SECTION_KEYS.filter((key) => !primarySet.includes(key));
     margin-left: auto;
   }
 
-  /* Переключатель языка — отдельным блоком внизу выпадашки (перенесён из строки шапки). */
-  .nav__lang {
-    margin-top: var(--space-2);
-    padding: var(--space-2) var(--space-3) 0;
-    border-top: 1px solid var(--border-hairline);
-    display: flex;
-    align-items: center;
-    gap: var(--space-3);
-  }
-  .nav__lang-label {
-    font-size: var(--text-sm);
-    color: var(--text-muted);
-    font-weight: 600;
-  }
   .menu-toggle {
     display: inline-flex;
     align-items: center;

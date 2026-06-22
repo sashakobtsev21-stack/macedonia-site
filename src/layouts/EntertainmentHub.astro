@@ -84,10 +84,10 @@ interface HubCard {
 
 /** Город места — по суффиксу slug (-skopje/-ohrid/-bitola), иначе «другое». */
 const CITY_NAMES: Record<string, string> = {
-  skopje: lang === 'uk' ? 'Скоп’є' : lang === 'en' ? 'Skopje' : 'Скопье',
-  ohrid: lang === 'uk' ? 'Охрид' : lang === 'en' ? 'Ohrid' : 'Охрид',
-  bitola: lang === 'uk' ? 'Бітола' : lang === 'en' ? 'Bitola' : 'Битола',
-  other: lang === 'uk' ? 'Інше' : lang === 'en' ? 'Elsewhere' : 'Другое',
+  skopje: 'Skopje',
+  ohrid: 'Ohrid',
+  bitola: 'Bitola',
+  other: 'Elsewhere',
 };
 const CITY_ORDER = ['skopje', 'ohrid', 'bitola', 'other'];
 const cityKeyOf = (slug: string): string =>

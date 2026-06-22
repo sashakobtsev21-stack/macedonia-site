@@ -83,29 +83,29 @@ export default defineConfig({
     format: 'directory',
   },
   integrations: [
-    // Карта сайта всех языковых версий (§14). i18n-режим добавляет взаимные
-    // hreflang-alternates (en/ru/uk) к каждому URL, что совпадает с зеркальной
-    // структурой §7/§12 (en — корень, ru — /ru/, uk — /uk/, x-default → en).
-    // /go/ — Worker-роут поверх Static Assets (§16), в dist его нет → в карту
-    // не попадает; явный filter оставляем как защиту на случай будущих страниц.
+    // Карта сайта (§14). Сайт одноязычный — только английский (en) на корне `/`.
+    // i18n-режим оставлен с единственной локалью en → каждый URL получает self
+    // hreflang=en + x-default=en (см. serialize). /go/ — Worker-роут поверх Static
+    // Assets (§16), в dist его нет → в карту не попадает; явный filter оставляем
+    // как защиту на случай будущих страниц.
     sitemap({
       i18n: {
         defaultLocale: 'en',
-        locales: { en: 'en', ru: 'ru', uk: 'uk' },
+        locales: { en: 'en' },
       },
       // /go/ — Worker-роут (§16), в dist его нет; фильтр — защита на будущее.
       // /relocation/services/ пока пуст (коллекция services пустая) → держим вне карты
-      // и под noindex по ВСЕМ языкам. УБРАТЬ строку-regex ниже, когда появятся реальные услуги.
+      // и под noindex. УБРАТЬ строку-regex ниже, когда появятся реальные услуги.
       filter: (page) => {
         const p = new URL(page).pathname;
         if (p.startsWith('/go/')) return false;
-        if (/^\/(ru\/|uk\/)?relocation\/services\/$/.test(p)) return false;
+        if (/^\/relocation\/services\/$/.test(p)) return false;
         // demo-материалы (demo:true) — noindex, держим вне карты (аудит 2026-06-17, P0).
         const lastSeg = p.replace(/\/$/, '').split('/').pop();
         if (lastSeg && DEMO_SLUGS.has(lastSeg)) return false;
         return true;
       },
-      // x-default → en (язык по умолчанию) в alternate-ссылках карты (§14).
+      // x-default → en (единственный язык) в alternate-ссылках карты (§14).
       serialize(item) {
         if (item.links?.length) {
           const def = item.links.find((l) => l.lang === 'en');

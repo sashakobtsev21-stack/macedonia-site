@@ -247,7 +247,7 @@ for (const pick of showcasePicks) {
   if (p.place) {
     // Статья-место (Teatro): рендерим как place-карточку витрины с поповером
     // (адрес/часы/карта/сайт) и каруселью фото — как у заведений.
-    const fallbackCity = lang === 'uk' ? 'Охрид' : lang === 'en' ? 'Ohrid' : 'Охрид';
+    const fallbackCity = 'Ohrid';
     showcaseItems.push({
       href: articleHref(lang, category, entry.data.slug),
       title: p.cardTitle ?? entry.data.title,

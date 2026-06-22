@@ -1,18 +1,18 @@
 ---
 /**
- * Footer (§9, §18) — дисклеймер о партнёрских ссылках, навигация, LangSwitcher, ©.
+ * Footer (§9, §18) — дисклеймер о партнёрских ссылках, навигация, ©.
  * Направление «Полевой журнал»: камень-фон, тонкая вино-линия сверху, спокойно.
+ * Сайт одноязычный (en) — переключателя языка нет.
  */
 import { t, sectionHref, ALL_SECTION_KEYS, type Lang } from '../i18n';
-import LangSwitcher from './LangSwitcher.astro';
 import NetworkLinks from './NetworkLinks.astro';
 
 interface Props {
   lang: Lang;
-  /** Языки, доступные для текущей страницы (→ LangSwitcher, §12). По умолчанию все 3. */
+  /** Языки, доступные для страницы. Сайт одноязычный — поле сохранено для совместимости. */
   availableLangs?: Lang[];
 }
-const { lang, availableLangs = ['ru', 'uk', 'en'] } = Astro.props;
+const { lang } = Astro.props;
 const dict = t(lang);
 const year = new Date().getFullYear();
 ---
@@ -23,7 +23,6 @@ const year = new Date().getFullYear();
       <div class="brand-col">
         <p class="brand">{dict.siteName}</p>
         <p class="note">{dict.footer.note}</p>
-        <LangSwitcher lang={lang} availableLangs={availableLangs} />
       </div>
       <nav class="nav" aria-label={dict.footer.navHeading}>
         <p class="nav__heading">{dict.footer.navHeading}</p>
