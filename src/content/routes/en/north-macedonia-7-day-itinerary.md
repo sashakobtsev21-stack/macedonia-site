@@ -7,9 +7,9 @@ category: 'routes'
 publishedAt: 2026-06-21
 updatedAt: 2026-06-21
 cover:
-  src: '/images/placeholder-cover.svg'
-  alt: 'Placeholder cover — a real route photo goes here'
-coverCredit: 'Photo: placeholder (real CC/own photo added in the content phase)'
+  src: '/images/north-macedonia-7-day-itinerary/cover.webp'
+  alt: 'Matka Canyon near Skopje, North Macedonia'
+coverCredit: 'Photo: Charlie Marchant · CC BY 2.0 · Wikimedia Commons'
 days: 7
 distanceKm: 600
 budgetFrom:

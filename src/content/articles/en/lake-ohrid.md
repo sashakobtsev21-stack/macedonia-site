@@ -9,9 +9,9 @@ updatedAt: 2026-06-21
 attractionType: 'waterfalls-canyons-lakes'
 region: 'southwestern'
 cover:
-  src: '/images/placeholder-cover.svg'
-  alt: 'Placeholder cover — a real Lake Ohrid photo goes here'
-coverCredit: 'Photo: placeholder (real CC/own photo added in the content phase)'
+  src: '/images/lake-ohrid/cover.webp'
+  alt: 'Lake Ohrid and the Church of St. John at Kaneo, North Macedonia'
+coverCredit: 'Photo: Benoît Vicart · CC0 · Wikimedia Commons'
 geo:
   coord: [41.1172, 20.8019]
   address: 'Ohrid, North Macedonia'

@@ -7,9 +7,9 @@ category: 'routes'
 publishedAt: 2026-06-21
 updatedAt: 2026-06-21
 cover:
-  src: '/images/placeholder-cover.svg'
-  alt: 'Плейсхолдер обкладинки — тут буде реальне фото маршруту'
-coverCredit: 'Фото: плейсхолдер (реальне CC/власне фото — у контент-фазі)'
+  src: '/images/north-macedonia-7-day-itinerary/cover.webp'
+  alt: 'Каньйон Матка неподалік від Скопʼє, Північна Македонія'
+coverCredit: 'Фото: Charlie Marchant · CC BY 2.0 · Wikimedia Commons'
 days: 7
 distanceKm: 600
 budgetFrom:

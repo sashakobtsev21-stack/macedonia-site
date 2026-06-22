@@ -9,9 +9,9 @@ updatedAt: 2026-06-21
 attractionType: 'waterfalls-canyons-lakes'
 region: 'southwestern'
 cover:
-  src: '/images/placeholder-cover.svg'
-  alt: 'Плейсхолдер обкладинки — тут буде реальне фото озера Охрид'
-coverCredit: 'Фото: плейсхолдер (реальне CC/власне фото — у контент-фазі)'
+  src: '/images/lake-ohrid/cover.webp'
+  alt: 'Озеро Охрид і церква Святого Івана Канео, Північна Македонія'
+coverCredit: 'Фото: Benoît Vicart · CC0 · Wikimedia Commons'
 geo:
   coord: [41.1172, 20.8019]
   address: 'Охрид, Північна Македонія'
