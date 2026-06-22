@@ -83,7 +83,7 @@ You have three sensible options:
 2. **Buy standalone excess insurance** before you travel from a third-party provider — usually much cheaper, but you pay any damage up front and claim it back.
 3. **Rely on a credit-card or travel-insurance benefit** — only if you have read the policy and know it covers rentals in North Macedonia (many exclude it, or exclude the excess).
 
-Whatever you choose, **photograph the car all the way round** at pick-up and drop-off, including the roof, wheels and any existing scratches, and get every mark noted on the contract. This is the single best protection against a disputed damage charge. For longer or multi-country trips, pairing the rental with proper travel cover is worth it — see our [travel insurance for North Macedonia](/insurance/) guide.
+Whatever you choose, **photograph the car all the way round** at pick-up and drop-off, including the roof, wheels and any existing scratches, and get every mark noted on the contract. This is the single best protection against a disputed damage charge. For longer or multi-country trips, pairing the rental with proper travel cover is worth it — see our [travel insurance for North Macedonia](/insurance/north-macedonia-travel-insurance/) guide.
 
 ## What the driving is actually like
 
@@ -151,4 +151,4 @@ Watch the extras that inflate the final bill: full excess-reduction, additional 
 - Plan the trip: [North Macedonia planning hub](/planning/) and [is North Macedonia worth visiting?](/planning/is-north-macedonia-worth-visiting/)
 - Where to drive: [things to do in Ohrid](/cities/things-to-do-in-ohrid/) and [things to do in Skopje](/cities/things-to-do-in-skopje/)
 - Tie it together: the classic [7-day North Macedonia route](/routes/north-macedonia-7-day-itinerary/)
-- Cover the trip: [travel insurance for North Macedonia](/insurance/)
+- Cover the trip: [travel insurance for North Macedonia](/insurance/north-macedonia-travel-insurance/)

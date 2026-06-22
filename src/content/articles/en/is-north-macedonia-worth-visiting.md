@@ -116,7 +116,7 @@ For the classic multi-country drive, see our wider **Balkan Grand Loop** idea (N
 
 ## Is North Macedonia safe?
 
-Broadly, **yes**. North Macedonia is generally considered a safe destination for tourists, with low rates of violent crime; the usual sensible precautions against petty theft in busy spots are enough. Roads are fine on main routes but can be narrow and winding in the mountains, so drive to conditions. On entry: **US, UK, EU and Ukrainian citizens travel visa-free for 90 days within any 180**, while **Russian citizens have needed a visa since 21 March 2022**. Rules can change — always confirm with an official source before you book. A travel-insurance policy is a smart idea for the hiking and the mountain driving.
+Broadly, **yes**. North Macedonia is generally considered a safe destination for tourists, with low rates of violent crime; the usual sensible precautions against petty theft in busy spots are enough. Roads are fine on main routes but can be narrow and winding in the mountains, so drive to conditions. On entry: **US, UK, EU and Ukrainian citizens travel visa-free for 90 days within any 180**, while **Russian citizens have needed a visa since 21 March 2022**. Rules can change — always confirm with an official source before you book. A travel-insurance policy is a smart idea for the hiking and the mountain driving — see our [travel insurance for North Macedonia](/insurance/north-macedonia-travel-insurance/) guide.
 
 ## When to go
 
@@ -134,3 +134,4 @@ In short, North Macedonia is worth visiting precisely because it isn't yet on ev
 - The lakeside star: [things to do in Ohrid](/cities/things-to-do-in-ohrid/)
 - Easy southern base: [things to do in Bitola](/cities/things-to-do-in-bitola/)
 - The full route: [7-day North Macedonia itinerary](/routes/north-macedonia-7-day-itinerary/)
+- Cover the trip: [travel insurance for North Macedonia](/insurance/north-macedonia-travel-insurance/)
