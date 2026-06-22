@@ -163,6 +163,7 @@ The **Old Bazaar** is the classic place for grilled meat (ćevapi, kebab), burek
 ## Read also
 
 - Browse all [cities of North Macedonia](/cities/)
+- Still deciding? [Is North Macedonia worth visiting?](/planning/is-north-macedonia-worth-visiting/)
 - Plan the trip in our [North Macedonia planning guide](/planning/)
 - The classic [7-day North Macedonia route](/routes/north-macedonia-7-day-itinerary/) links Skopje with Ohrid and Bitola
 - Heading south? See [Lake Ohrid](/attractions/lake-ohrid/)

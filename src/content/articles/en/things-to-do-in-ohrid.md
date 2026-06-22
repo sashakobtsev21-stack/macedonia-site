@@ -187,6 +187,7 @@ The lake puts its stamp on the menu. Look for **Ohrid trout** (the protected wil
 ## Read also
 
 - Browse all [cities of North Macedonia](/cities/)
+- Still deciding? [Is North Macedonia worth visiting?](/planning/is-north-macedonia-worth-visiting/)
 - Pair it with the capital: [things to do in Skopje](/cities/things-to-do-in-skopje/)
 - The classic [7-day North Macedonia route](/routes/north-macedonia-7-day-itinerary/) links Ohrid with Skopje and Bitola
 - The lake itself: [Lake Ohrid guide](/attractions/lake-ohrid/)
