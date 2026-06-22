@@ -7,11 +7,13 @@
 ## Состояние по факту
 - **Язык:** сайт **одноязычный — только en на корне `/`**. ru/uk удалены целиком (страницы `src/pages/{ru,uk}/`, контент `**/{ru,uk}/`, словари `i18n/{ru,uk}.ts`, `LangSwitcher`). `LANGS=['en']` в `i18n/types.ts` и `content.config.ts`. hreflang = self en + x-default. `/ru/*`, `/uk/*`, `/en/*` → 301 на корень (`public/_redirects`).
 - **Контент (en-only):** 2 реальные статьи-города — **`things-to-do-in-skopje`** (столица, 16 CC-фото) и **`things-to-do-in-ohrid`** (якорь, category=cities, `draft:false`, 13 CC-фото: cover + 12) + **2 новости** (`ohrid-airport-upgrade-2026`, `d-festival-dojran-2026`, обе `draft:false`, cover + 1 инлайн-фигура) + 2 demo-сид-материала (`lake-ohrid` attractions, `north-macedonia-7-day-itinerary` route; оба `demo:true`/noindex). **2 город-статьи, 0 ресторанов, 0 услуг, 2 новости (всё en).**
-- **Сборка:** `build`/`check`/`test`/`links`/`lint` — зелёные (25 страниц). `npm run qa` = NO-GO **только** из-за известного hero главной `ohrid-kaneo` >200КБ (ROADMAP-FIX п.19, не связан со статьями/языком; собственные фото статьи Охрид все ≤200КБ). Lighthouse mobile: a11y/SEO/best-practices = 100, perf 86–92.
+- **Сборка:** `build`/`check`/`test`/`links`/`lint` — зелёные (25 страниц). `npm run qa` = **GO** (0 критических / 0 средних; известный hero `ohrid-kaneo` >200КБ закрыт точечным сжатием 2026-06-22). Lighthouse mobile: a11y/SEO/best-practices = 100, perf 86–92.
+- **Витрина главной (ShowcaseRail):** наполнена 2 опубликованными городами (`things-to-do-in-skopje`, `things-to-do-in-ohrid`, `category: 'cities'`) — золотая лента видна. **Переключателя языка в шапке/подвале нет** (удалён при переводе на en-only).
 - **Движок:** EN-only (en на корне); 8 статрегионов в enum; англ. слаги; hero / `partners.json` / иконки / `og-default` — македонские; погода Скопье/Охрид/Битола/Маврово; RSS en (`/rss.xml`); новости 10/2 дня + `daily-news-rebuild.yml`.
 - **Домен:** `macedoniaguidebook.com` — куплен, НЕ задеплоен / не в GSC.
 
 ## Сделано на Этапе 1 (2026-06-22)
+- **UI-доводка главной (2 правки).** (1) **Витрина (ShowcaseRail)**: `showcasePicks` в `src/layouts/HomePage.astro` был пустым плейсхолдером (несуществующие demo-слуги отсеивались → лента пуста) — заменён 2 опубликованными городами (`things-to-do-in-skopje`, `things-to-do-in-ohrid`, `category: 'cities'`, kicker `city`, чип Skopje/Ohrid); тип массива объявлен явным union `ShowcasePick[]` (петля-резолвер принимает будущие рестораны/маршруты/place). Золотая лента рендерится. (2) **Переключатель языка**: в Header/Footer уже отсутствовал (удалён при en-only) — подтверждено (нет `LangSwitcher`/`nav__lang`/`dict.lang.label`); поправлен стале-комментарий про `LangSwitcher`/`/ru/404` в `BaseLayout.astro`. (3) **Hero-perf**: `ohrid-kaneo` ужат точечно (avif q34, webp q50 + webp-фолбэк max 960px; AVIF до 1600px не тронут) — все варианты в `dist` ≤200КБ, `npm run qa` = **GO**. Гейты check/build/test/links/lint — зелёные.
 - **Перевод сайта на один язык (en-only).** Удалены ru/uk целиком: `src/pages/{ru,uk}/`, контент во всех коллекциях `**/{ru,uk}/`, `i18n/{ru,uk}.ts`, компонент `LangSwitcher`. `LANGS→['en']`, `DEFAULT_LANG=en` (types/content.config); `mirrorPath`/`langPrefix` упрощены; hreflang/sitemap/x-default — под один язык (self en + x-default); `check-parity` переписан под en-only (lang↔папка, title ≤60); `new-content.mjs` генерит только en; `_redirects` — `/ru/* /uk/* /en/* → /:splat 301`. Гейты check/build/test/links/lint — зелёные (25 страниц), битых ссылок на удалённые языки нет. Доки (CLAUDE/CONTENT_GUIDE/SPEC/PROGRESS/HANDOFF) синхронизированы.
 - Технический аудит → `AUDIT-2026-06-22.md`. NO-GO оказался **ложным** (грузинский `ORIGIN` в `qa.mjs`) — исправлено; битые мосты-ссылки закрыты условным рендером; реальные обложки.
 - Чистка грузинских следов в тулинге (`qa.mjs`, qa-скрипты) и хабах (insurance-слаг).
@@ -30,7 +32,7 @@
 - **Гейты:** check/build/test/links/lint — зелёные; `npm run qa` = NO-GO **только** из-за известного hero главной `ohrid-kaneo` >200КБ (к новостям не относится — все фото новостей ≤200КБ). Опубликовано при остальных зелёных по правилу скилла.
 
 ## Дальше
-- **P1:** деплой + домен + GSC (owner); оптимизация hero-perf главной (`ohrid-kaneo` >200КБ — единственный критический в qa).
+- **P1:** деплой + домен + GSC (owner). (hero-perf главной `ohrid-kaneo` ≤200КБ — **закрыто 2026-06-22**, qa = GO.)
 - **P2:** полный добор фото у сид-материалов.
 - **Контент:** Неделя 1 продолжение — `is-north-macedonia-worth-visiting` (Пт 26.06). Охрид (Вс 28.06) — опубликован раньше плана.
 Детали — `ROADMAP-FIX.md`; план — `KALENDAR.md`; стратегические фазы — `docs/ROADMAP.md`.
