@@ -56,7 +56,7 @@ The capital **Skopje** is unlike anywhere else. Its centre was rebuilt with a wa
 
 ### Matka Canyon, right next to the city
 
-Just 15 km from Skopje, **Matka Canyon** is the easiest "wow" in the country: a steep, green gorge on the Treska river with a walking path along the cliffs, kayaks and small boats for hire, a clutch of medieval churches and a cave system. It's a half-day trip that makes Skopje feel far bigger than it is.
+Just 15 km from Skopje, **[Matka Canyon](/attractions/matka-canyon/)** is the easiest "wow" in the country: a steep, green gorge on the Treska river with a walking path along the cliffs, kayaks and small boats for hire, a clutch of medieval churches and a cave system. It's a half-day trip that makes Skopje feel far bigger than it is.
 
 <figure class="figure">
 <img src="/images/is-north-macedonia-worth-visiting/matka.webp" alt="The Treska river winding between steep green cliffs in the Matka Canyon near Skopje" width="1120" height="742" loading="lazy" decoding="async" />

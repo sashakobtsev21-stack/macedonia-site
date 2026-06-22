@@ -120,7 +120,7 @@ For the big view, head up **Mount Vodno**, the green ridge that backs the city. 
 
 ### Matka Canyon (half-day trip)
 
-The most rewarding short trip from Skopje is **Matka Canyon**, about 17 km southwest of the centre. A dammed gorge of the Treska river, it offers lakeside walks, a few medieval churches, kayaking, and boat rides to the Vrelo cave. It works as a half-day on its own or as the first stop on a wider [North Macedonia route](/routes/north-macedonia-7-day-itinerary/).
+The most rewarding short trip from Skopje is **[Matka Canyon](/attractions/matka-canyon/)**, about 17 km southwest of the centre. A dammed gorge of the Treska river, it offers lakeside walks, a few medieval churches, kayaking, and boat rides to the Vrelo cave. It works as a half-day on its own or as the first stop on a wider [North Macedonia route](/routes/north-macedonia-7-day-itinerary/).
 
 <figure class="figure">
 <img src="/images/things-to-do-in-skopje/matka-canyon.webp" alt="Tour boats on the green water of Matka Canyon near Skopje" width="1280" height="853" loading="lazy" decoding="async" />
@@ -158,7 +158,7 @@ The **Old Bazaar** is the classic place for grilled meat (ćevapi, kebab), burek
 - **Getting around:** the centre is walkable end to end. City buses cover longer hops; taxis are cheap, but agree the fare or use an app.
 - **When to go:** spring and autumn are mild and pleasant; July–August are hot. The Skopje basin can be hazy in winter.
 - **Visas & entry:** US, UK, EU and Ukrainian citizens travel visa-free for 90 days within any 180; **Russian citizens need a visa** (since 21 March 2022). Rules change — always confirm with an official source before travel. More in our [North Macedonia planning hub](/planning/).
-- **Day trips:** beyond Matka, Skopje is a base for Tetovo's Painted Mosque and the Mavrovo mountains.
+- **Day trips:** beyond [Matka Canyon](/attractions/matka-canyon/), Skopje is a base for Tetovo's Painted Mosque and the Mavrovo mountains.
 
 ## Read also
 

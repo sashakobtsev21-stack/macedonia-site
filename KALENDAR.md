@@ -28,7 +28,7 @@
 
 ## Неделя 5 (22–28.07) — Money: где остановиться + Matka day-trip (сезон хайкинга)
 - Ср 22.07 — [Статья] Where to Stay in Ohrid: Best Areas & Hotels · `where to stay in ohrid` · /where-to-stay-in-ohrid/ · категория planning · фото ≥5 · 💰 отели (Booking) · перелинк: → Things to Do in Ohrid, → How Many Days in Ohrid
-- Пт 24.07 — [Статья] Matka Canyon Day Trip from Skopje · `matka canyon from skopje` · /matka-canyon-from-skopje/ · категория attractions · фото ≥5 · 💰 туры (GetYourGuide Matka l138901) · перелинк: → Things to Do in Skopje, → Best Hikes (нед.8)
+- ✅ Пт 24.07 — [Статья-достопримечательность] Matka Canyon · `matka canyon` / `matka canyon from skopje` · **/attractions/matka-canyon/** · категория attractions (первая реальная в каталоге) · фото **7** CC (cover + 6: озеро/каньон, lake-view, Врело, Св.Андрея, тропа, каяк, лодка; webp ≤200КБ) · 💰 туры (`/go/trip-tours`), трансфер (`/go/trip-transfers`) · перелинк: хаб /attractions/, → Skopje, → /planning/, → Worth Visiting, → /car-rental/, → 7-day itinerary, → Lake Ohrid + встречные из Скопье(×2)/Worth Visiting/маршрута · добавлена 6-м пиком витрины (`kicker:'sight'`) · `attractionType:waterfalls-canyons-lakes`, `region:skopje` · **ОПУБЛИКОВАНО 2026-06-22 (раньше плана, en-only, `draft:false`)** · `qa`=GO · _slug принят короткий `matka-canyon` вместо ориентира `matka-canyon-from-skopje`_
 - Вс 26.07 — [Статья] Where to Stay in Skopje: Best Areas · `where to stay in skopje` · /where-to-stay-in-skopje/ · категория planning · фото ≥5 · 💰 отели · перелинк: → Things to Do in Skopje, → Skopje Old Bazaar (нед.6)
 - Пн 27.07 — 📊 Замер GA/GSC + ревизия P1/P2 по данным месяца 1
 
