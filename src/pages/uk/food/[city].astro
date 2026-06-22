@@ -2,7 +2,7 @@
 import { EDA_CITY_PAGES } from '../../../i18n';
 import CityFoodPage from '../../../layouts/CityFoodPage.astro';
 
-/** Per-city страницы «Где поесть» (§8.6): /uk/eda/gde-poest-{город}/. */
+/** Per-city страницы «Где поесть» (§8.6): /uk/food/where-to-eat-{город}/. */
 export function getStaticPaths() {
   return EDA_CITY_PAGES.map((c) => ({
     params: { city: c.slug },

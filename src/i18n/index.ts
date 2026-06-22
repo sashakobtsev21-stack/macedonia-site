@@ -49,10 +49,10 @@ export {
 };
 
 /**
- * Per-city страницы «Где поесть» (§8.6): ключ → URL-слаг страницы (`/eda/{slug}/`)
- * + слаг города для ссылки на путеводитель `/goroda/{citySlug}/`. Локализованный
+ * Per-city страницы «Где поесть» (§8.6): ключ → URL-слаг страницы (`/food/{slug}/`)
+ * + слаг города для ссылки на путеводитель `/cities/{citySlug}/`. Локализованный
  * контент — в словарях (`eda.cityPages.items[key]`). Порядок = порядок ссылок
- * на хабе /eda/ и в getStaticPaths шаблона CityFoodPage.
+ * на хабе /food/ и в getStaticPaths шаблона CityFoodPage.
  */
 export const EDA_CITY_PAGES = [
   { key: 'skopje', slug: 'where-to-eat-skopje', citySlug: 'skopje' },
