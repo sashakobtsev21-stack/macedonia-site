@@ -3,7 +3,7 @@
 Фон ежедневно: /news (сбор → превью владельцу → «ок» → публикация во все). Замеры GA/GSC — по понедельникам (15 мин). План корректируется по GA: после недели 4 и недели 8 — ревизия очереди P1/P2 по растущим запросам. Темп: Ср / Пт / Вс. Всего 39 статей (13 недель × 3). Слаги/темы — из SEO-отчёта macedonia-seo-2026-06-22.md.
 
 ## Неделя 1 (24–30.06) — Стартовое ядро: столица + Охрид + pre-trip хаб
-- Ср 24.06 — [Статья] Things to Do in Skopje · `things to do in skopje` · /things-to-do-in-skopje/ · категория goroda (столица) · фото ≥15 · 💰 туры (GetYourGuide), отели (Booking) · перелинк: → Worth Visiting (хаб), → Skopje→Ohrid логистика (нед.2)
+- ✅ Ср 24.06 — [Статья] Things to Do in Skopje · `things to do in skopje` · /things-to-do-in-skopje/ · **категория cities** (столица; `goroda` из движка-донора не применяется — слаги английские) · фото **16** (≥15) · 💰 туры (`/go/trip-tours`), отели (`/go/trip-hotels`) · перелинк: → /cities/, → /planning/ (Worth Visiting хаб), → /transport/, → /car-rental/, → /routes/north-macedonia-7-day-itinerary/, → /attractions/lake-ohrid/ · ОПУБЛИКОВАНО 2026-06-24 (тройка en/ru/uk, `draft:false`)
 - Пт 26.06 — [Статья] Is North Macedonia Worth Visiting in 2026? · `is north macedonia worth visiting` · /is-north-macedonia-worth-visiting/ · категория planning · фото ≥5 · 💰 страховка, отели, eSIM · перелинк: → Skopje, → Ohrid, → 7-day itinerary (нед.3)
 - Вс 28.06 — [Статья] Things to Do in Ohrid (якорь) · `things to do in ohrid` · /things-to-do-in-ohrid/ · категория goroda · фото ≥15 · 💰 туры (GetYourGuide Ohrid l2416), отели, трансфер · перелинк: → Worth Visiting, → Ohrid boat trip (нед.4), → Skopje→Ohrid (нед.2)
 - Пн 29.06 — 📊 Замер GA/GSC
