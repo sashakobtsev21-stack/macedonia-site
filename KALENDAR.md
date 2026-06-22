@@ -5,7 +5,7 @@
 ## Неделя 1 (24–30.06) — Стартовое ядро: столица + Охрид + pre-trip хаб
 - ✅ Ср 24.06 — [Статья] Things to Do in Skopje · `things to do in skopje` · /things-to-do-in-skopje/ · **категория cities** (столица; `goroda` из движка-донора не применяется — слаги английские) · фото **16** (≥15) · 💰 туры (`/go/trip-tours`), отели (`/go/trip-hotels`) · перелинк: → /cities/, → /planning/ (Worth Visiting хаб), → /transport/, → /car-rental/, → /routes/north-macedonia-7-day-itinerary/, → /attractions/lake-ohrid/ · ОПУБЛИКОВАНО 2026-06-24 (тройка en/ru/uk, `draft:false`)
 - Пт 26.06 — [Статья] Is North Macedonia Worth Visiting in 2026? · `is north macedonia worth visiting` · /is-north-macedonia-worth-visiting/ · категория planning · фото ≥5 · 💰 страховка, отели, eSIM · перелинк: → Skopje, → Ohrid, → 7-day itinerary (нед.3)
-- Вс 28.06 — [Статья] Things to Do in Ohrid (якорь) · `things to do in ohrid` · /things-to-do-in-ohrid/ · категория goroda · фото ≥15 · 💰 туры (GetYourGuide Ohrid l2416), отели, трансфер · перелинк: → Worth Visiting, → Ohrid boat trip (нед.4), → Skopje→Ohrid (нед.2)
+- ✅ Вс 28.06 — [Статья] Things to Do in Ohrid (якорь) · `things to do in ohrid` · /things-to-do-in-ohrid/ · **категория cities** (`goroda` из движка-донора не применяется — слаги английские) · фото **13** (cover Канео + 12; цель ≥15 — добор в ROADMAP-FIX) · 💰 туры (`/go/trip-tours`), отели (`/go/trip-hotels`) · перелинк: → /cities/, → Skopje, → /transport/, → /planning/, → /routes/north-macedonia-7-day-itinerary/, → /attractions/lake-ohrid/ (город vs озеро разведены) · ОПУБЛИКОВАНО 2026-06-22 (тройка en/ru/uk, `draft:false`)
 - Пн 29.06 — 📊 Замер GA/GSC
 
 ## Неделя 2 (01–07.07) — Доверие (виза/безопасность) + логистика + 2-й город
