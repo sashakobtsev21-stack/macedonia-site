@@ -2,17 +2,19 @@
 
 > Снимок состояния для передачи / возобновления. **Обновляется после каждой доработки.**
 
-**Дата:** 2026-06-22 · **Этап:** контент-наполнение (Неделя 1 KALENDAR) — опубликованы статьи Скопье (столица) и Охрид (якорь).
+**Дата:** 2026-06-22 · **Этап:** контент-наполнение (Неделя 1 KALENDAR) — опубликованы статьи Скопье (столица), Охрид (якорь) и первые 2 новости.
 
 ## Кратко
-- Гейты `check/build/test/links/lint` — зелёные. `npm run qa` = NO-GO **только** из-за известного hero главной `ohrid-kaneo` >200КБ (ROADMAP-FIX п.19) — к статьям не относится (собственные фото статьи Охрид все ≤200КБ).
-- Контент: **`things-to-do-in-skopje`** (16 CC-фото) + **`things-to-do-in-ohrid`** (якорь, category=cities, тройка en/ru/uk, `draft:false`, 13 CC-фото) + 2 demo-сид (`lake-ohrid`, `north-macedonia-7-day-itinerary`). 2 город-статьи / 0 ресторанов / 0 услуг / 0 новостей.
+- Гейты `check/build/test/links/lint` — зелёные. `npm run qa` = NO-GO **только** из-за известного hero главной `ohrid-kaneo` >200КБ (ROADMAP-FIX п.19) — к статьям/новостям не относится (все собственные фото ≤200КБ; единственное >200КБ в `dist` — `ohrid-kaneo`).
+- Контент: **`things-to-do-in-skopje`** (16 CC-фото) + **`things-to-do-in-ohrid`** (якорь, category=cities, тройка en/ru/uk, `draft:false`, 13 CC-фото) + **2 новости** (`ohrid-airport-upgrade-2026`, `d-festival-dojran-2026`, обе тройки en/ru/uk, `draft:false`) + 2 demo-сид (`lake-ohrid`, `north-macedonia-7-day-itinerary`). 2 город-статьи / 0 ресторанов / 0 услуг / 2 новости.
 - Домен `macedoniaguidebook.com` куплен; деплой + GSC — на владельце.
 - `src` чист от грузинских следов (слаги, лари `₾`, код `GE`).
 
 ## Где остановились
-- Опубликована статья-якорь Охрид (Неделя 1 KALENDAR, плановый слот Вс 28.06 — сделан раньше): `things-to-do-in-ohrid`, category=cities, отдельный slug от demo `lake-ohrid` (город vs озеро разведены + взаимный перелинк). Фото — `public/images/things-to-do-in-ohrid/` (cover Канео + 12 инлайн/галерея, все ≤200КБ webp, кредиты CC в `coverCredit`/`gallery[].credit`).
-- Ранее (Ср 24.06): Скопье. Фото — `public/images/things-to-do-in-skopje/`.
+- Опубликованы 2 одобренные новости (тройки en/ru/uk, `draft:false`, category=news):
+  - `ohrid-airport-upgrade-2026` (тег авиа) — реконструкция OHD на ~65%, рейсы не прерываются. Фото `public/images/ohrid-airport-upgrade-2026/` (cover + terminal, оба терминал St. Paul the Apostle Airport, CC BY-SA 3.0 / Local hero, Commons; webp ≤200КБ). Обязательный перелинк на `/cities/things-to-do-in-ohrid/` — есть во всех 3 языках. Источник EX-YU Aviation (16.06.2026). AffiliateBox `/go/aviasales`.
+  - `d-festival-dojran-2026` (тег события) — D Festival на оз. Дойран 26–28.06.2026. Фото `public/images/d-festival-dojran-2026/` (cover оз. Дойран CC BY-SA 4.0 / Jolovema + lake CC BY-SA 3.0 / Makedonski biseri, Commons; webp ≤200КБ) — жанровая иллюстрация озера (в подписи честно). Источник Festival Abroad. AffiliateBox `/go/trip-hotels`.
+- Ранее опубликована статья-якорь Охрид `things-to-do-in-ohrid` (фото `public/images/things-to-do-in-ohrid/`) и столица Скопье `things-to-do-in-skopje` (фото `public/images/things-to-do-in-skopje/`).
 - Следующее по плану: `is-north-macedonia-worth-visiting` (Пт 26.06, planning).
 
 ## Не ломать (уже работает)
