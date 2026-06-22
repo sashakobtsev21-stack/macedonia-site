@@ -236,7 +236,13 @@ const showcasePicks: ShowcasePick[] = [
   { kind: 'article', category: 'cities', slug: 'things-to-do-in-bitola', kicker: 'city', city: 'Bitola' },
 ];
 const showcaseItems: ShowcaseItem[] = [];
+// Дедуп по slug: один материал — одна карточка в витрине (двойных пиков не
+// допускаем, чтобы крутилка не показывала одинаковые карточки рядом). Источник
+// непрерывности — клонирование уникального набора в /js/showcase-rail.js.
+const seenShowcaseSlugs = new Set<string>();
 for (const pick of showcasePicks) {
+  if (seenShowcaseSlugs.has(pick.slug)) continue;
+  seenShowcaseSlugs.add(pick.slug);
   if (pick.kind === 'restaurant') {
     const r = showcaseRestaurants.find((x) => x.data.slug === pick.slug);
     if (!r || !r.data.cover) continue;
