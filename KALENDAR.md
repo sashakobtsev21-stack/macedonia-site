@@ -9,7 +9,7 @@
 - Источник дат — только из первоисточника текущего года; раздел хранит 10 дней, блок на главной — 2 дня (механика уже в репо).
 
 ## Неделя 1 (24.06–28.06) — короткая: заполняем текущую неделю (Ср/Чт/Пт) — Доверие + логистика + Охрид-ядро
-- Ср 24.06 — [Статья] Is North Macedonia Safe for Tourists? · `is north macedonia safe` · /is-north-macedonia-safe/ · категория planning · фото ≥5 · 💰 страховка · перелинк: → Worth Visiting, → Visa Requirements · кластер planning [head]
+- Ср 24.06 — [Статья] Is North Macedonia Safe for Tourists? · `is north macedonia safe` · /planning/is-north-macedonia-safe/ · категория planning · фото ≥5 · 💰 страховка · перелинк: → Worth Visiting, → Visa Requirements · кластер planning [head] — ✅ DRAFT ГОТОВ (draft:true, 1542 сл., 6 фото CC/PD, QA GO; перелинки → Worth Visiting + /planning/ хаб + insurance + car-rental + transport; «Visa Requirements» ещё нет — заменено хабом planning; ждёт «ок» владельца на публикацию)
 - Чт 25.06 — [Статья] How to Get to Ohrid from Skopje (+ airport) · `how to get to ohrid from skopje` · /how-to-get-to-ohrid-from-skopje/ · категория routes · фото ≥5 · 💰 трансфер (Welcome Pickups), аренда · перелинк: → Things to Do in Ohrid, → Things to Do in Skopje, → Car Rental · кластер transport-routes [head]
 - Пт 26.06 — [Статья] Ohrid Boat Trip to Sveti Naum (+ Bay of Bones) · `ohrid boat trip sveti naum` · /ohrid-boat-trip-sveti-naum/ · категория attractions · фото ≥5 · 💰 туры (GetYourGuide) · перелинк: → Things to Do in Ohrid, → How Many Days in Ohrid · кластер attractions-pois [head]
 - Замер GA и новости на этой неделе НЕ ставим (до baseline; первый замер — Пн 29.06).
