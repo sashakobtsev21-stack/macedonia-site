@@ -4,6 +4,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
+import rehypeExternalLinks from 'rehype-external-links';
 
 /**
  * Слаги demo-материалов (`demo: true`) — исключаются из sitemap (аудит 2026-06-17, P0):
@@ -81,6 +82,13 @@ export default defineConfig({
   build: {
     // Files emitted as directory/index.html so URLs keep a trailing slash (§7).
     format: 'directory',
+  },
+  markdown: {
+    // Внешние http(s)-ссылки в теле статей получают rel="nofollow noopener noreferrer"
+    // (закрывает медиум-замечание аудита про bare-rel у Expedia/DiscoverCars/A1 в
+    // north-macedonia-trip-cost). target НЕ задаём (правило §2). Внутренние/относительные
+    // ссылки и Worker-роуты /go/ — не внешние → плагин их не трогает.
+    rehypePlugins: [[rehypeExternalLinks, { rel: ['nofollow', 'noopener', 'noreferrer'] }]],
   },
   integrations: [
     // Карта сайта (§14). Сайт одноязычный — только английский (en) на корне `/`.
