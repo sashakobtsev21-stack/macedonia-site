@@ -28,7 +28,7 @@ sources:
   - 'Kočani nightclub fire, 16 March 2025 (Wikipedia; Euronews reporting).'
   - 'Ministry of Foreign Affairs of the Republic of North Macedonia — visa requirements. mfa.gov.mk'
   - 'Visa policy of North Macedonia (Wikipedia) — visa-free 90/180 for US/UK/EU/Ukraine; Russian citizens require a visa since 21 March 2022.'
-draft: true
+draft: false
 ---
 
 Yes — North Macedonia is a safe country to visit, and it ranks among the calmer corners of the Balkans for travellers. Both the major advisories agree: the **US State Department places it at Level 1, "Exercise Normal Precautions"** (as of its latest review in January 2025), the lowest of its four tiers, and the **UK Foreign Office** describes attacks on foreigners as "extremely rare." Violent crime against tourists is uncommon; the realistic risks are ordinary ones — pickpocketing in crowded spots, the odd taxi overcharge, and mountain roads that demand a careful driver. This guide walks through each of those, plus emergency numbers, money, LGBT travel and what the news from 2025 does and doesn't mean for your trip.
