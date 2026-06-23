@@ -119,7 +119,7 @@ The mountain hub above Tetovo is **Popova Šapka**, a **ski resort and mountain 
 <figcaption>Popova Šapka in winter — the snowbound mountain station above Tetovo, looking down to the Polog valley. <span class="figure__credit">Photo: Darko Nikolovski · CC BY-SA 3.0 · Wikimedia Commons</span></figcaption>
 </figure>
 
-Popova Šapka and the Šar range are also part of why Tetovo works as the **gateway to the western mountains** — from here the road runs on through Gostivar toward **Mavrovo National Park**, the country's largest, about an hour southwest.
+Popova Šapka and the Šar range are also part of why Tetovo works as the **gateway to the western mountains** — from here the road runs on through Gostivar toward [Mavrovo National Park](/attractions/mavrovo-national-park/), the country's largest, about an hour southwest.
 
 ## Where to eat in Tetovo
 
@@ -156,7 +156,7 @@ Distances and times are approximate — confirm current bus schedules and mounta
 
 - **[Skopje](/cities/things-to-do-in-skopje/)** — the capital is under an hour away, easy in either direction.
 - **Popova Šapka & Šar Planina** — skiing in winter, hiking the "eyes of Šar" in summer.
-- **Mavrovo National Park** — about an hour southwest via Gostivar, for Lake Mavrovo, the Bigorski Monastery and the high peaks.
+- **[Mavrovo National Park](/attractions/mavrovo-national-park/)** — about an hour southwest via Gostivar, for Lake Mavrovo, the Bigorski Monastery and the high peaks.
 
 ## Practical tips
 
