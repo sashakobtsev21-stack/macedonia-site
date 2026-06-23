@@ -1,9 +1,9 @@
 # Контент-календарь Северная Македония — 24.06.2026 – 23.09.2026 (~3 статьи/нед)
 
-Фон ежедневно: /news (сбор → превью владельцу → «ок» → публикация во все). Замеры GA/GSC — по понедельникам (15 мин). План корректируется по GA: после недели 4 и недели 8 — ревизия очереди P1/P2 по растущим запросам. Темп: Ср / Пт / Вс. Всего 39 статей (13 недель × 3). Слаги/темы — из SEO-отчёта macedonia-seo-2026-06-22.md.
+Фон ежедневно: /news (сбор → превью владельцу → «ок» → публикация во все). Замеры GA/GSC — по понедельникам (15 мин). План корректируется по GA: после недели 4 и недели 8 — ревизия очереди P1/P2 по растущим запросам. Темп: Ср / Пт / Вс. Всего 42 статьи (13 недель × 3 + ранние доборы). Слаги/темы — из SEO-отчёта macedonia-seo-2026-06-22.md.
 
 ## News schedule (график новостей)
-- **N. Macedonia — Tue (anchor) + event-triggered.** Базовый якорь — **вторник** (один разбор/дайджест в неделю), плюс выпуски по событиям (event-triggered), когда что-то реально проходит фильтр. **Jul–Aug — пик Охрида (Ohrid Summer Festival + сезон): до 2× в неделю** (вторник-якорь + второй выпуск под событие).
+- **N. Macedonia — Tue (anchor) + event-triggered.** Базовый якорь — **вторник** (один разбор/дайджест в неделю), плюс выпуски по событиям (event-triggered), когда что-то реально проходит фильтр. **Jul–Aug — пик Охрида (Ohrid Summer Festival + сезон): до 2× в неделю** (вторник-якорь + второй выпуск **+Сб (суббота) в пик** под событие).
 - **НЕ daily.** Новостной объём страны малый — ежедневный постинг не оправдан; гонимся за релевантностью, а не за частотой.
 - **Механика:** collect → filter → **owner preview → OK → publish**. Если ничего не прошло фильтр (даты/место/год/реальность, кросс-фактчек) — **skip** (пропускаем неделю, пустышки не публикуем).
 - Источник дат — только из первоисточника текущего года; раздел хранит 10 дней, блок на главной — 2 дня (механика уже в репо).
@@ -35,7 +35,7 @@
 ## Неделя 4 (15–21.07) — Охрид-кластер (пик сезона) + сезонный анонс фестиваля
 - Ср 15.07 — [Статья] Ohrid Boat Trip to Sveti Naum (+ Bay of Bones) · `ohrid boat trip sveti naum` · /ohrid-boat-trip-sveti-naum/ · категория attractions · фото ≥5 · 💰 туры (GetYourGuide) · перелинк: → Things to Do in Ohrid, → How Many Days in Ohrid
 - Пт 17.07 — [Статья] Ohrid Summer Festival 2026 Guide (сезонный, окно сер.июля–авг) · `ohrid summer festival` · /ohrid-summer-festival/ · категория attractions/events · фото ≥5 · 💰 отели, билеты · перелинк: → Things to Do in Ohrid, → Where to Stay in Ohrid (нед.5)
-- Пт 17.07 — 📰 /news (пик Охрида: 2-й выпуск недели под событие Ohrid Summer Festival; если фильтр пуст, skip)
+- Сб 18.07 — 📰 /news (пик Охрида: 2-й выпуск недели под событие Ohrid Summer Festival; если фильтр пуст, skip)
 - Вс 19.07 — [Статья] How Many Days in Ohrid? · `how many days in ohrid` · /how-many-days-in-ohrid/ · категория planning · фото ≥5 · 💰 отели · перелинк: → Things to Do in Ohrid, → 7-day itinerary, → Boat trip
 - Вт 21.07 — 📰 /news (дайджест на согласование, НЕ daily; малый новостной объём — если фильтр пуст, skip)
 - Пн 20.07 — 📊 Замер GA/GSC
@@ -43,14 +43,14 @@
 ## Неделя 5 (22–28.07) — Money: где остановиться + Matka day-trip (сезон хайкинга)
 - Ср 22.07 — [Статья] Where to Stay in Ohrid: Best Areas & Hotels · `where to stay in ohrid` · /where-to-stay-in-ohrid/ · категория planning · фото ≥5 · 💰 отели (Booking) · перелинк: → Things to Do in Ohrid, → How Many Days in Ohrid
 - ✅ Пт 24.07 — [Статья-достопримечательность] Matka Canyon · `matka canyon` / `matka canyon from skopje` · **/attractions/matka-canyon/** · категория attractions (первая реальная в каталоге) · фото **7** CC (cover + 6: озеро/каньон, lake-view, Врело, Св.Андрея, тропа, каяк, лодка; webp ≤200КБ) · 💰 туры (`/go/trip-tours`), трансфер (`/go/trip-transfers`) · перелинк: хаб /attractions/, → Skopje, → /planning/, → Worth Visiting, → /car-rental/, → 7-day itinerary, → Lake Ohrid + встречные из Скопье(×2)/Worth Visiting/маршрута · добавлена 6-м пиком витрины (`kicker:'sight'`) · `attractionType:waterfalls-canyons-lakes`, `region:skopje` · **ОПУБЛИКОВАНО 2026-06-22 (раньше плана, en-only, `draft:false`)** · `qa`=GO · _slug принят короткий `matka-canyon` вместо ориентира `matka-canyon-from-skopje`_
-- Пт 25.07 — 📰 /news (пик Охрида: 2-й выпуск недели под событие; если фильтр пуст, skip)
+- Сб 25.07 — 📰 /news (пик Охрида: 2-й выпуск недели под событие; если фильтр пуст, skip)
 - Вс 26.07 — [Статья] Where to Stay in Skopje: Best Areas · `where to stay in skopje` · /where-to-stay-in-skopje/ · категория planning · фото ≥5 · 💰 отели · перелинк: → Things to Do in Skopje, → Skopje Old Bazaar (нед.6)
 - Вт 28.07 — 📰 /news (дайджест на согласование, НЕ daily; малый новостной объём — если фильтр пуст, skip)
 - Пн 27.07 — 📊 Замер GA/GSC + ревизия P1/P2 по данным месяца 1
 
 ## Неделя 6 (29.07–04.08) — Скопье-углубление + вождение + транспорт
 - Ср 29.07 — [Статья] Skopje Old Bazaar: Complete Guide · `skopje old bazaar` · /skopje-old-bazaar/ · категория attractions · фото ≥5 · 💰 туры, еда · перелинк: → Things to Do in Skopje, → Macedonian Food (нед.9)
-- Пт 01.08 — 📰 /news (пик Охрида: 2-й выпуск недели под событие; если фильтр пуст, skip)
+- Сб 01.08 — 📰 /news (пик Охрида: 2-й выпуск недели под событие; если фильтр пуст, skip)
 - Пт 31.07 — [Статья] Driving in North Macedonia: Rules & Tips · `driving in north macedonia` · /driving-in-north-macedonia/ · категория transport · фото ≥5 · 💰 аренда, страховка · перелинк: → Car Rental, → Road Trip (нед.7)
 - ✅ Вс 02.08 — [Статья] Getting Around North Macedonia (transport) · `getting around north macedonia` · **/transport/getting-around-north-macedonia/** · категория transport (первая в кластере `/transport/`) · фото **5** CC (cover даблдекер Скопье Avi1111 CC BY-SA 4.0 + 4 инлайн: автовокзал SAS METOKARA CC BY-SA 3.0, терминал SKP LazialeStojakovo CC BY-SA 3.0, дорога над оз.Охрид/Галичица Tomasz Lewicki CC BY-SA 2.0, гор.автобус JSP Robot8A CC BY-SA 4.0; один также в gallery; webp ≤200КБ) · 💰 трансфер (`/go/trip-transfers`), аренда (`/go/car-rental`), туры (`/go/trip-tours`) · перелинк: хаб /transport/, → renting-a-car, → Skopje/Ohrid/Bitola, → 7-day itinerary, → Worth Visiting · добавлена в `showcasePicks` (kicker `guide`) · **ОПУБЛИКОВАНО 2026-06-23 (раньше плана, en-only, `draft:false`)** · факты сверены (нет ж/д для туристов; SAS; SKP ~20–23 км; OHD сезонный ~9–10 км; JSP даблдекеры; Bolt не Uber; денар ~61,5) · все гейты зелёные
 - Вт 04.08 — 📰 /news (дайджест на согласование, НЕ daily; малый новостной объём — если фильтр пуст, skip)
@@ -59,7 +59,7 @@
 ## Неделя 7 (05–11.08) — Road trip + комбо-Балканы (кросс-сеть)
 - Ср 05.08 — [Статья] North Macedonia Road Trip Itinerary · `north macedonia road trip` · /north-macedonia-road-trip/ · категория routes · фото каждой остановки · 💰 аренда авто (money-intent) · перелинк: → Car Rental, → Driving, → 7-day itinerary _(оставлен как 2-й (из 1–2) itinerary-вариант — road-trip-углом, не дублирует 7-day по интенту)_
 - Пт 07.08 — [Статья-достопримечательность] Galičica National Park (между озёрами Охрид и Преспа) · `galicica national park` · /attractions/galicica-national-park/ · **категория attractions** (`attractionType:mountains-nature`, `region:southwestern`) · фото ≥5 (cover панорама с перевала + ≥4 инлайн: оз.Охрид с высоты/оз.Преспа/Магаро пик/эндемичная флора) · 💰 туры (`/go/trip-tours`), аренда (`/go/car-rental`) · перелинк: → Lake Ohrid, → Lake Prespa, → Things to Do in Ohrid, → Best Hikes, → 7-day itinerary · факты из первоисточника (НП с 1958; пик Магаро 2255 м; дорога Охрид↔Преспа через парк) _(СВОП: КАННИБАЛИЗАЦИЯ itinerary — «Albania & NM Itinerary» (дублировал road-trip/Balkans-комбо) убран; слот отдан отсутствующему Galičica NP (главный природный пробел между двумя озёрами))_
-- Пт 08.08 — 📰 /news (пик Охрида: 2-й выпуск недели под событие; если фильтр пуст, skip)
+- Сб 08.08 — 📰 /news (пик Охрида: 2-й выпуск недели под событие; если фильтр пуст, skip)
 - Вс 09.08 — [Статья] Cost of Living in North Macedonia (релокант-кластер, P0 топ-маржинальный приоритет сайта) · `cost of living in north macedonia` · /relocation/cost-of-living-north-macedonia/ · **категория relocation** (первая в кластере — главный пробел сайта закрывается) · фото ≥5 (cover + ≥4 инлайн: рынок/жильё Скопье+Охрид/кафе/коммуналка) · 💰 страховка (`/go/safetywing`), eSIM (`/go/airalo`), отели · перелинк: → Trip Cost, → Living as a nomad (нед.8), → Company registration (нед.9), → Residence permit (нед.12), → Worth Visiting · YMYL-аккуратность: цены — ДИАПАЗОНЫ с источником (Numbeo/Wikipedia denar-peg ~61,5) + «check current» _(СВОП: заменил слабый поздний слот «vs Albania» на собственный топ-маржинальный приоритет — релокант)_
 - Вт 11.08 — 📰 /news (дайджест на согласование, НЕ daily; малый новостной объём — если фильтр пуст, skip)
 - Пн 10.08 — 📊 Замер GA/GSC
@@ -67,7 +67,7 @@
 ## Неделя 8 (12–18.08) — Природа/хайкинг (P1, тёплый сезон)
 - Ср 12.08 — [Статья] Best Hikes in North Macedonia · `best hikes in north macedonia` · /best-hikes-in-north-macedonia/ · категория attractions/nature · фото ≥5 · 💰 туры, аренда · перелинк: → Matka Canyon, → Mavrovo NP
 - Пт 14.08 — [Статья] Mavrovo National Park Guide · `mavrovo national park` · /mavrovo-national-park/ · категория attractions/nature · фото ≥5 · 💰 отели, туры · перелинк: → Best Hikes, → Road Trip
-- Пт 15.08 — 📰 /news (пик Охрида: 2-й выпуск недели под событие; если фильтр пуст, skip)
+- Сб 15.08 — 📰 /news (пик Охрида: 2-й выпуск недели под событие; если фильтр пуст, skip)
 - Вс 16.08 — [Статья] Living in Ohrid & Skopje as a Nomad (релокант-кластер, P0) · `living in north macedonia` / `living in ohrid` / `living in skopje` · /relocation/living-in-ohrid-skopje-as-a-nomad/ · **категория relocation** · фото ≥5 (cover + ≥4 инлайн: коворкинг/набережная Охрида/центр Скопье/кафе с ноутбуком) · 💰 eSIM (`/go/airalo`), страховка (`/go/safetywing`), отели/долгая аренда · перелинк: → Cost of Living, → Company registration (нед.9), → Residence permit (нед.12), → Getting Around, → Best Time _(СВОП: КАННИБАЛИЗАЦИЯ itinerary — «3/5-day» слит в 7-day itinerary, слот отдан релокант-кластеру)_
 - Вт 18.08 — 📰 /news (дайджест на согласование, НЕ daily; малый новостной объём — если фильтр пуст, skip)
 - Пн 17.08 — 📊 Замер GA/GSC
@@ -75,7 +75,7 @@
 ## Неделя 9 (19–25.08) — Еда/вино (P1, money-ниша) + наследие
 - Ср 19.08 — [Статья] Macedonian Food: What to Eat & Where · `macedonian food` · /macedonian-food/ · категория food · фото ≥5 · 💰 туры (food tours), рестораны · перелинк: → Skopje Old Bazaar, → NM Wine
 - Пт 21.08 — [Статья] North Macedonia Wine & Tikves Wine Tours · `north macedonia wine` · /north-macedonia-wine-tikves/ · категория food/wine · фото ≥5 · 💰 дегустации/туры Tikves (недопокрытая money-ниша) · перелинк: → Macedonian Food, → Road Trip
-- Пт 22.08 — 📰 /news (пик Охрида: 2-й выпуск недели под событие; если фильтр пуст, skip)
+- Сб 22.08 — 📰 /news (пик Охрида: 2-й выпуск недели под событие; если фильтр пуст, skip)
 - Вс 23.08 — [Статья] Registering a Company in North Macedonia: DOO/DOOEL & 10% Flat Tax (релокант-кластер, P0, money-intent) · `register company north macedonia` / `north macedonia company tax` · /relocation/register-company-doo-dooel-tax/ · **категория relocation** · фото ≥5 (cover + ≥4 инлайн: центральный реестр/деловой Скопье/документы/банк) · 💰 услуги релокации (`/relocation/services/`), страховка · перелинк: → Cost of Living, → Residence permit (нед.12), → Living as a nomad, → Worth Visiting · **YMYL (правило 5): факты ТОЛЬКО из первоисточников** (ujp.gov.mk, crm.com.mk Central Register, PwC Tax Summaries): 10% flat НДФЛ, 10% CIT, 18% НДС, DOO/DOOEL = ООО (1 учредитель допускается); видимый дисклеймер «правила меняются, уточняйте» _(СВОП: убрал дубль Tetovo «Painted Mosque» — каннибализация со «Things to Do in Tetovo», деталь мечети вплетается в город-статью; слот отдан релоканту)_
 - Вт 25.08 — 📰 /news (дайджест на согласование, НЕ daily; малый новостной объём — если фильтр пуст, skip)
 - Пн 24.08 — 📊 Замер GA/GSC + ревизия P1/P2 по данным месяца 2
