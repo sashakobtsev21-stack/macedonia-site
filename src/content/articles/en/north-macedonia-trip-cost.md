@@ -116,7 +116,7 @@ The signature splurges are still cheap. At **[Matka Canyon](/attractions/matka-c
 
 ## Connectivity: eSIM and SIM
 
-Staying online is inexpensive. An **Airalo eSIM** for North Macedonia starts around **$9.50 for 3GB (30 days)**, with **5GB near $13** and **10GB near $21** — the easiest option, set up before you land ([Airalo](https://www.airalo.com/macedonia-esim)). Prefer a physical **local SIM**? An **A1 prepaid SIM** is about **299 MKD**, with tourist data bundles running roughly **249–499 MKD** ([A1](https://www.a1.mk/)). Either way, mobile data costs a few euros for a whole trip.
+Staying online is inexpensive. An **Airalo eSIM** for North Macedonia starts around **$9.50 for 3GB (30 days)**, with **5GB near $13** and **10GB near $21** — the easiest option, set up before you land. Prefer a physical **local SIM**? An **A1 prepaid SIM** is about **299 MKD**, with tourist data bundles running roughly **249–499 MKD** ([A1](https://www.a1.mk/)). Either way, mobile data costs a few euros for a whole trip.
 
 ## Three sample daily budgets
 
