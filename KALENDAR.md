@@ -159,3 +159,65 @@
 **Замеры:** Замер GA/GSC — каждый понедельник, 15 мин (отдельная строка в плане): смотрим топ-запросы в GSC, растущие/проседающие страницы, CTR/позиции. После недели 4 (первый месяц данных) и недели 8 — ревизия очереди P1/P2: темы с растущими показами получают приоритет и довод (расширение, перелинковка, обновление). Если страница из стартового пакета (Охрид/Скопье/road trip/visa) показывает рост — усиливаем кластер дополнительными статьями раньше плана; слабые темы отодвигаем. План недель 9–13 финализируется по данным GA первого месяца. Сезонные окна (см. ниже) — фиксированные, не сдвигаются по GA.
 
 **Сезонность:** В окне 24.06–23.09 (лето→ранняя осень): Ohrid Summer Festival (сер.июля–сер.августа) — анонс ставим в неделю 4 (нач.июля), до старта. Купание/пляжи Охрида (июль–сент) и boat trip Sveti Naum — недели 4–6 (пик сезона). Matka Canyon day trip и хайкинг — недели 5–8 (тёплый сезон активен). Сентябрь — оптимум по погоде (Охрид тёплый): где остаться / road trip / Преспа-Pelister-Galičica-Kruševo усиливаем в неделях 11–13. **Релокант/номад-кластер (нед.7–13) — несезонный** (рекуррентные партнёрки, Tier-1): ставится сквозь второе полугодие окна независимо от погоды, по приоритету маржинальности. ЗА окно (отметить на будущее): Mavrovo горнолыжка — готовить к ноябрю (зимний сезон дек–март); вождение зимой/зимняя резина — ноябрь; обновление вечнозелёных (visa/safe/worth-it/best-time) — пик планирования январь–март, плановое обновление в январе 2027; sezon/itinerary/хайкинг для следующего тёплого сезона — освежить к марту–апрелю 2027. Tikves wine — поставлено в неделю 9 (виноград/урожай сентябрь — релевантно), дегустации актуальны осенью.
+
+
+---
+## Расширение плана — long-tail backlog (Этап 2, под трафик/рекламную модель)
+
+**Итог:** 36 новых слотов (все EN, Tier-1 Запад — приоритет EN-first по гео-правилу 1). Все отдедуплены против опубликованного (`src/content`, 20 страниц) и против 13-недельного день-в-день плана — пересечений НЕТ, сателлиты не потребовались. По кластерам: **Cities-towns 5** (Struga, Prilep, Strumica, Kratovo, Demir Kapija) · **Attractions/POIs 10** (Kaneo, Samuel's Fortress, Vodno, Bay of Bones, Kokino, Stobi, Kuklica, Smolare/Kolesino, Vevcani, Bigorski) · **Best-time/weather 2** (Weather by month, Mavrovo Ski — категория attractions, кластер best-time) · **Budget/cost 1** (Is expensive) · **Transport-routes 5** (Skopje airport, Tirana→Ohrid/Skopje, getting to NM, Skopje→Bitola, Ohrid→Bitola) · **Where-to-stay 2** (Lake Ohrid beaches, Bitola) · **Food/drink 3** (Wine guide, Dishes to try, Where to eat Skopje) · **Day-trips 2** (from Skopje, from Ohrid) · **Comparisons 3** (NM vs Albania, Ohrid vs Bitola, Is Skopje worth it) · **Itineraries 3** (How many days in Skopje, 3-day, 10-day). **Practical** — свёрнут в Transport/Budget (тонкие лендинги, см. дедуп основного плана). Приоритет очереди: head → mid → long-tail внутри каждого кластера; первыми берём head-слоты (Kaneo, Vodno, Lake Ohrid beaches, NM vs Albania, Skopje airport, Day trips from Skopje). Несезонные (транспорт/сравнения/еда) ставятся по марже; сезонные (пляжи Охрида, Mavrovo ski) — по окну.
+
+### Cities (cities-towns)
+- [Статья] Things to Do in Struga: Lake Ohrid's Quieter Twin · key `things to do in struga` · /things-to-do-in-struga/ · категория cities · фото≥5 (город≥10) · 💰отели, туры · кластер cities-towns [mid]
+- [Статья] Things to Do in Prilep: Marko's Towers, Tobacco & Treskavec · key `things to do in prilep` · /things-to-do-in-prilep/ · категория cities · фото≥5 (город≥10) · 💰отели, туры · кластер cities-towns [mid]
+- [Статья] Things to Do in Strumica: Carnival, Waterfalls & Hot Springs · key `things to do in strumica` · /things-to-do-in-strumica/ · категория cities · фото≥5 (город≥10) · 💰отели, туры · кластер cities-towns [mid]
+- [Статья] Things to Do in Kratovo: Crater Town, Bridges & Kuklica · key `things to do in kratovo` · /things-to-do-in-kratovo/ · категория cities · фото≥5 (город≥10) · 💰отели, туры · кластер cities-towns [long-tail]
+- [Статья] Demir Kapija & the Tikves Wine Road: Gorge, Wineries & Stobi · key `demir kapija north macedonia` · /demir-kapija-tikves-wine-road/ · категория cities · фото≥5 (город≥10) · 💰отели, туры · кластер cities-towns [long-tail]
+
+### Attractions (attractions-pois)
+- [Статья] Sveti Jovan Kaneo: North Macedonia's Most Famous Church · key `church of st john kaneo ohrid` · /sveti-jovan-kaneo-church-ohrid/ · категория attractions · фото≥5 · 💰туры, отели · кластер attractions-pois [head]
+- [Статья] Mount Vodno & the Millennium Cross: Hike, Cable Car & Views · key `millennium cross skopje vodno` · /vodno-millennium-cross-skopje/ · категория attractions · фото≥5 · 💰туры, отели · кластер attractions-pois [head]
+- [Статья] Samuel's Fortress, Ohrid: History, Tickets & Views · key `samuels fortress ohrid` · /samuels-fortress-ohrid/ · категория attractions · фото≥5 · 💰туры, отели · кластер attractions-pois [mid]
+- [Статья] Bay of the Bones: Ohrid's Prehistoric Stilt Village Museum · key `bay of the bones ohrid` · /bay-of-bones-ohrid/ · категория attractions · фото≥5 · 💰туры, отели · кластер attractions-pois [mid]
+- [Статья] Kokino Observatory: Europe's Ancient Megalithic Sky-Watcher · key `kokino observatory` · /kokino-megalithic-observatory/ · категория attractions · фото≥5 · 💰туры, отели · кластер attractions-pois [mid]
+- [Статья] Stobi: North Macedonia's Greatest Roman Ruins · key `stobi north macedonia` · /stobi-archaeological-site/ · категория attractions · фото≥5 · 💰туры, отели · кластер attractions-pois [mid]
+- [Статья] Kuklica Stone Town: North Macedonia's 'Petrified Wedding' · key `kuklica stone town` · /kuklica-stone-town/ · категория attractions · фото≥5 · 💰туры, отели · кластер attractions-pois [long-tail]
+- [Статья] Smolare & Kolesino Waterfalls: North Macedonia's Tallest Falls · key `smolare waterfall north macedonia` · /smolare-kolesino-waterfalls/ · категория attractions · фото≥5 · 💰туры, отели · кластер attractions-pois [long-tail]
+- [Статья] Vevcani Springs: A Storybook Village Above Lake Ohrid · key `vevcani springs` · /vevcani-springs-village/ · категория attractions · фото≥5 · 💰туры, отели · кластер attractions-pois [long-tail]
+- [Статья] Bigorski Monastery: The Carved Wonder of Western Macedonia · key `bigorski monastery` · /bigorski-monastery/ · категория attractions · фото≥5 · 💰туры, отели · кластер attractions-pois [long-tail]
+
+### Best time / weather (best-time-weather)
+- [Статья] North Macedonia Weather by Month: When to Go for What · key `north macedonia weather by month` · /north-macedonia-weather-by-month/ · категория planning · фото≥5 · 💰отели, eSIM · кластер best-time-weather [mid]
+- [Статья] Mavrovo Ski Resort: Skiing & Winter in North Macedonia · key `mavrovo ski resort` · /mavrovo-ski-resort/ · категория attractions · фото≥5 · 💰отели, ски-пассы · кластер best-time-weather [mid] · сезон: публиковать/обновлять в ноябре
+
+### Budget / cost (budget-cost)
+- [Статья] Is North Macedonia Expensive? A Real Cost Breakdown for 2026 · key `is north macedonia expensive` · /is-north-macedonia-expensive/ · категория planning · фото≥5 · 💰отели, eSIM · кластер budget-cost [mid] · YMYL: диапазоны цен + источники
+
+### Transport (transport-routes)
+- [Статья] How to Get from Skopje Airport to the City Center · key `skopje airport to city center` · /skopje-airport-to-city-center/ · категория transport · фото≥5 · 💰трансферы · кластер transport-routes [head]
+- [Статья] Getting from Tirana to Ohrid & Skopje (Albania to North Macedonia) · key `tirana to ohrid` · /tirana-to-ohrid-skopje/ · категория transport · фото≥5 · 💰трансферы, аренда авто · кластер transport-routes [mid]
+- [Статья] Getting to North Macedonia from Sofia, Thessaloniki & Pristina · key `how to get to north macedonia` · /getting-to-north-macedonia/ · категория transport · фото≥5 · 💰трансферы, аренда авто · кластер transport-routes [mid]
+- [Статья] Skopje to Bitola: Bus, Car & How to Get There · key `skopje to bitola bus` · /skopje-to-bitola/ · категория transport · фото≥5 · 💰аренда авто, трансферы · кластер transport-routes [mid]
+- [Статья] Ohrid to Bitola: How to Travel Between the Two Cities · key `ohrid to bitola` · /ohrid-to-bitola/ · категория transport · фото≥5 · 💰аренда авто · кластер transport-routes [long-tail]
+
+### Where to stay (where-to-stay)
+- [Статья] Best Beaches on Lake Ohrid: Where to Swim (Gradiste, Trpejca & More) · key `lake ohrid beaches` · /lake-ohrid-beaches-swimming/ · категория planning · фото≥5 · 💰отели · кластер where-to-stay [head] · сезон: лето
+- [Статья] Where to Stay in Bitola: Best Areas & Hotels · key `where to stay in bitola` · /where-to-stay-in-bitola/ · категория planning · фото≥5 · 💰отели · кластер where-to-stay [long-tail]
+
+### Food (food-drink)
+- [Статья] Macedonian Wine Guide: Grapes, Regions & How to Taste · key `macedonian wine` · /macedonian-wine-guide/ · категория food · фото≥5 · 💰дегустации, туры · кластер food-drink [mid]
+- [Статья] Ajvar, Tavce Gravce & 12 Macedonian Dishes You Must Try · key `macedonian food dishes to try` · /macedonian-dishes-to-try/ · категория food · фото≥5 · 💰фуд-туры · кластер food-drink [mid]
+- [Статья] Where to Eat in Skopje: Best Restaurants & Kafanas · key `best restaurants in skopje` · /where-to-eat-in-skopje/ · категория food · фото≥5 · 💰фуд-туры · кластер food-drink [mid]
+
+### Day trips (day-trips)
+- [Статья] Best Day Trips from Skopje: 10 Easy Escapes · key `day trips from skopje` · /best-day-trips-from-skopje/ · категория planning · фото≥5 · 💰туры, аренда авто · кластер day-trips [head]
+- [Статья] Day Trips from Ohrid: Sveti Naum, Galicica, Struga & Beyond · key `day trips from ohrid` · /day-trips-from-ohrid/ · категория planning · фото≥5 · 💰туры, аренда авто · кластер day-trips [mid]
+
+### Comparisons (comparisons)
+- [Статья] North Macedonia vs Albania: Which Should You Visit? · key `north macedonia vs albania` · /north-macedonia-vs-albania/ · категория planning · фото≥5 · 💰отели, страховка · кластер comparisons [head]
+- [Статья] Ohrid vs Bitola: Which North Macedonia City Is Right for You? · key `ohrid or bitola` · /ohrid-vs-bitola/ · категория planning · фото≥5 · 💰отели · кластер comparisons [mid]
+- [Статья] Is Skopje Worth Visiting? An Honest Guide to the Capital · key `is skopje worth visiting` · /is-skopje-worth-visiting/ · категория planning · фото≥5 · 💰отели, туры · кластер comparisons [mid]
+
+### Itineraries (itineraries)
+- [Статья] How Many Days in Skopje? The Perfect Length of Stay · key `how many days in skopje` · /how-many-days-in-skopje/ · категория planning · фото≥5 · 💰отели · кластер itineraries [mid]
+- [Маршрут] North Macedonia in 3 Days: A Short-Break Itinerary · key `north macedonia 3 day itinerary` · /north-macedonia-3-day-itinerary/ · категория routes · фото каждой остановки (≥5) · 💰отели, аренда авто · кластер itineraries [mid] · scoped, чтобы не каннибализировать 7-day
+- [Маршрут] North Macedonia in 10 Days: The In-Depth Grand Tour · key `north macedonia 10 day itinerary` · /north-macedonia-10-day-itinerary/ · категория routes · фото каждой остановки (≥5) · 💰отели, аренда авто · кластер itineraries [long-tail] · только если 7-day силён в GSC (избегать overlap)
