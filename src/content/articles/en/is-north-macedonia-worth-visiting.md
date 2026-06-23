@@ -99,7 +99,7 @@ For a first visit, **5 to 7 days** hits the sweet spot:
 |---|---|
 | **2–3 days** | Skopje + Matka Canyon, or Ohrid on its own |
 | **5 days** | Skopje, Matka, then Ohrid with a St. Naum boat trip |
-| **7 days** | Add Bitola, the Pelistar/Mavrovo mountains or a Tikveš wine stop |
+| **7 days** | Add Bitola, the Pelister/Mavrovo mountains or a Tikveš wine stop |
 | **10+ days** | A relaxed loop plus a hop into Albania or Greece |
 
 A week lets you pair the two anchors — Skopje and Ohrid — with one mountain or wine detour without rushing. Our [7-day North Macedonia itinerary](/routes/north-macedonia-7-day-itinerary/) maps exactly that route.
