@@ -9,7 +9,7 @@ updatedAt: 2026-06-22
 cover:
   src: '/images/ohrid-airport-upgrade-2026/cover.webp'
   alt: 'The arched terminal of St. Paul the Apostle Airport in Ohrid against a clear blue sky'
-coverCredit: 'Photo: Local hero · CC BY-SA 3.0 · Wikimedia Commons'
+coverCredit: 'Photo: Local hero · CC BY-SA 3.0 · Wikimedia Commons (commons.wikimedia.org/wiki/File:StPaultheApostleAirport.jpg)'
 gallery: []
 affiliate:
   - partner: 'aviasales'
@@ -41,5 +41,5 @@ Book as normal. The overhaul is visible but non-disruptive, the departures hall 
 
 <figure class="figure">
 <img src="/images/ohrid-airport-upgrade-2026/terminal.webp" alt="Side view of the Ohrid airport terminal building and its curved roof" width="1280" height="960" loading="lazy" decoding="async" />
-<figcaption>The St. Paul the Apostle Airport terminal at Ohrid, currently being modernised. <span class="figure__credit">Photo: Local hero · CC BY-SA 3.0 · Wikimedia Commons</span></figcaption>
+<figcaption>The St. Paul the Apostle Airport terminal at Ohrid, currently being modernised. <span class="figure__credit">Photo: Local hero · CC BY-SA 3.0 · Wikimedia Commons (commons.wikimedia.org/wiki/File:StPaultheApostleAirport-2.jpg)</span></figcaption>
 </figure>

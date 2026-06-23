@@ -25,7 +25,7 @@ accessFrom:
 cover:
   src: '/images/matka-canyon/cover.webp'
   alt: 'The cliffs and green water of Matka Canyon and its reservoir near Skopje'
-coverCredit: 'Photo: Chris H Munro · CC BY-SA 4.0 · Wikimedia Commons'
+coverCredit: 'Photo: Chris H Munro · CC BY-SA 4.0 · Wikimedia Commons (commons.wikimedia.org/wiki/File:Matka_Lake_-_Macedonia.jpg)'
 visit:
   price: 'Canyon free to enter; boat trips and kayak hire paid (pay on site, cash in denar)'
   hours: 'Outdoor area daytime year-round; boats run mainly in daylight, busiest in summer'
@@ -73,7 +73,7 @@ The signature experience is the **boat ride up the canyon to the Vrelo cave**. S
 
 <figure class="figure">
 <img src="/images/matka-canyon/vrelo-cave.webp" alt="Lit interior of the Vrelo cave at Matka with walkways and stalactites" width="1280" height="853" loading="lazy" decoding="async" />
-<figcaption>Inside Vrelo cave — the lit visitor section; the underwater part runs far deeper. <span class="figure__credit">Photo: kallerna · CC BY-SA 4.0 · Wikimedia Commons</span></figcaption>
+<figcaption>Inside Vrelo cave — the lit visitor section; the underwater part runs far deeper. <span class="figure__credit">Photo: kallerna · CC BY-SA 4.0 · Wikimedia Commons (commons.wikimedia.org/wiki/File:Matka_Canyon_Vrelo_Cave_3.jpg)</span></figcaption>
 </figure>
 
 Boats leave when they have enough passengers rather than on a fixed timetable, and they run mainly in daylight, most often in the warmer months. Buy your ticket at the jetty; in peak summer there can be a wait, so go early.
@@ -95,7 +95,7 @@ Matka is a fine spot for **walking and hiking**. The easiest route is the lakesi
 
 <figure class="figure">
 <img src="/images/matka-canyon/canyon-trail.webp" alt="A riverside path and fence with the wooded canyon walls of Matka rising behind" width="1280" height="851" loading="lazy" decoding="async" />
-<figcaption>Trails follow the Treska through the canyon — from an easy lakeside stroll to steeper climbs into the cliffs. <span class="figure__credit">Photo: Jovanovdalibor · CC BY-SA 3.0 · Wikimedia Commons</span></figcaption>
+<figcaption>Trails follow the Treska through the canyon — from an easy lakeside stroll to steeper climbs into the cliffs. <span class="figure__credit">Photo: Jovanovdalibor · CC BY-SA 3.0 · Wikimedia Commons (commons.wikimedia.org/wiki/File:Matka%27s_Beauty.JPG)</span></figcaption>
 </figure>
 
 ### Kayaking and canoeing
