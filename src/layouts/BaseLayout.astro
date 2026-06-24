@@ -8,6 +8,7 @@ import '../styles/global.css';
 import { t, mirrorPath, langPrefix, DEFAULT_LANG, type Lang } from '../i18n';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import CookieConsent from '../components/CookieConsent.astro';
 
 interface Props {
   /** <title>; ≤ 60 символов (CLAUDE правило 7). */
@@ -123,16 +124,11 @@ const siteLd = {
       crossorigin
     />
 
-    <!-- Google tag (gtag.js) — GA4. Внешний loader + инлайн-инициализация. Под строгим
-         CSP (§18, без 'unsafe-inline') инлайн-скрипт разрешён по sha256-хешу в
-         public/_headers → script-src. Меняешь содержимое инлайна/ID — пересчитай хеш. -->
+    <!-- Google Analytics 4 (G-4XYMNPQ34N, §17). Consent Mode v2: default denied
+         задаётся во внешнем /js/ga-init.js (script-src 'self', §18), баннер
+         поднимает analytics_storage до granted только после согласия. -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4XYMNPQ34N"></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-4XYMNPQ34N');
-    </script>
+    <script is:inline src="/js/ga-init.js"></script>
 
     <!--
       Гейт движения (ui-ux-pro-max §7): СИНХРОННЫЙ внешний модуль со 'self'
@@ -249,6 +245,9 @@ const siteLd = {
         <path d="M12 19V5M5 12l7-7 7 7" />
       </svg>
     </button>
+
+    {/* Баннер согласия на cookies под GA4 (Consent Mode v2, §17/§18). */}
+    <CookieConsent lang={lang} />
 
     <!--
       Reveal при скролле + stagger hero — внешний vanilla-модуль со 'self'
