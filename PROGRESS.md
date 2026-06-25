@@ -61,3 +61,8 @@
 - **P2:** полный добор фото у сид-материалов.
 - **Контент:** Неделя 1 продолжение — `is-north-macedonia-worth-visiting` (Пт 26.06). Охрид (Вс 28.06) и Битола (Неделя 2/3) — опубликованы раньше плана.
 Детали — `ROADMAP-FIX.md`; план — `KALENDAR.md`; стратегические фазы — `docs/ROADMAP.md`.
+
+## 2026-06-25 — Hero/OG/HTTPS
+- Главная: удалён чёрно-белый hero `skopje-stone-bridge.jpg`, вместо него используется цветной `skopje-panorama.webp`; мрачные Matka/Mavrovo убраны из hero-ротации, оставлены яркие Kaneo/Ohrid/Skopje. Кадры пересобираются в более высоком качестве (до 1920px AVIF / 1600px WebP).
+- Ротация теперь меняет фото в открытой вкладке по таймеру, а не только при новой загрузке страницы. Также обновлены брендированный `og-default.jpg`, `og:image:secure_url` и HTTP→HTTPS 301 в Worker.
+- Проверки: `npm run check`, `npm run build`, `npm test`, `npm run lint` — зелёные.

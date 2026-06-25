@@ -31,9 +31,7 @@ import EmptyHint from '../components/EmptyHint.astro';
 import { getImage } from 'astro:assets';
 import heroKaneo from '../assets/hero/ohrid-kaneo.jpg';
 import heroOhridLake from '../assets/hero/ohrid-lake.jpg';
-import heroMatka from '../assets/hero/matka-canyon.jpg';
-import heroMavrovo from '../assets/hero/mavrovo.jpg';
-import heroSkopje from '../assets/hero/skopje-stone-bridge.jpg';
+import heroSkopje from '../assets/hero/skopje-panorama.webp';
 
 interface Props {
   lang: Lang;
@@ -53,77 +51,38 @@ const description = dict.home.heroSubtitle;
  * сразу за ним ставит srcset выбранного кадра (без двойной загрузки),
  * fetchpriority=high; <noscript> — дефолтный кадр для отключённого JS.
  */
-// Hero — full-bleed фон со СКРИМОМ. Раньше упирался в 1280px webp: на широком
-// десктопе кадр апскейлился до ~1920 и мылил. Чинится разрешением (битрейт под
-// тёмным скримом вторичен), но жёсткий бюджет §15 (каждая картинка ≤200КБ, гейт qa)
-// не даёт детальным кадрам влезть в 1600+ на webp. Поэтому AVIF (сжимает заметно
-// плотнее) до 1600px + webp-фолбэк до 1280px для ~5% браузеров без AVIF (<picture>).
-// `sizes="100vw"`: мобайл (70%+ трафика, §15) и Lighthouse-mobile берут 640/960/1280;
-// 1600 уезжает только на десктоп. quality AVIF — per-image (q): детальный снежный
-// Гергети жмём сильнее, мягкий градиент Кахетии — мягче; так каждый вариант ≤~175КБ.
-const AVIF_WIDTHS = [640, 960, 1280, 1600];
-const WEBP_WIDTHS = [640, 960, 1280];
+// Hero — full-bleed фон со скримом. Десктопу отдаём до 1920px AVIF / 1600px WebP,
+// чтобы широкий экран не апскейлил 1280px-кадры и не выглядел мыльно.
+const AVIF_WIDTHS = [640, 960, 1280, 1600, 1920];
+const WEBP_WIDTHS = [640, 960, 1280, 1600];
 const heroSources = [
   {
     img: heroKaneo,
-    // Детальный кадр (церковь на скале + рябь озера) плохо жмётся: на дефолтных
-    // q его 1280px webp/avif вылезали за бюджет §15 (≤200КБ) и давали qa NO-GO.
-    // Снижаем quality точечно ТОЛЬКО для этого кадра (под скримом hero потеря
-    // незаметна) — оба варианта ≤200КБ, остальные 4 героя не трогаем.
-    q: 34,
-    wq: 50,
-    // 1280px webp этого детального кадра не влезает в §15 (≤200КБ) даже на низком
-    // quality без видимого бандинга. webp — лишь фолбэк для ~5% браузеров без AVIF
-    // (им под тёмным скримом 960px достаточно); AVIF до 1600px не трогаем.
-    webpWidths: [640, 960],
-    webpWidth: 960,
+    q: 58,
     credit: 'Tahir1434 · CC BY-SA 4.0 · Wikimedia Commons',
     href: 'https://commons.wikimedia.org/wiki/File:St._John_Kaneo_Church_2022.jpg',
     focus: '50% 50%',
   },
   {
     img: heroOhridLake,
-    q: 52,
+    q: 62,
     credit: 'Benoît Vicart · CC0 · Wikimedia Commons',
     href: 'https://commons.wikimedia.org/wiki/File:Ohrid_lake_Trpeytsa.jpg',
     focus: '50% 55%',
   },
   {
-    img: heroMatka,
-    q: 50,
-    credit: 'Charlie Marchant · CC BY 2.0 · Wikimedia Commons',
-    href: 'https://commons.wikimedia.org/wiki/File:Matka_Canyon,_Macedonia_(43560862142).jpg',
-    focus: '50% 50%',
-  },
-  {
-    img: heroMavrovo,
-    q: 50,
-    credit: 'Делфина · CC BY-SA 3.0 · Wikimedia Commons',
-    href: 'https://commons.wikimedia.org/wiki/File:Mavrovo_National_Park_2.jpg',
-    focus: '50% 50%',
-  },
-  {
     img: heroSkopje,
-    q: 52,
-    credit: 'Andrew Milligan sumo · CC BY 2.0 · Wikimedia Commons',
-    href: 'https://commons.wikimedia.org/wiki/File:Stone_Bridge,_Skopje,_Macedonia_(50367313171).jpg',
-    focus: '50% 45%',
+    q: 62,
+    credit: 'kallerna · CC BY-SA 4.0 · Wikimedia Commons',
+    href: 'https://commons.wikimedia.org/wiki/File:Skopje,_view_from_Mount_Vodno.jpg',
+    focus: '50% 50%',
   },
 ];
 const heroVariants = await Promise.all(
   heroSources.map(async (s) => {
     const [avif, webp] = await Promise.all([
-      getImage({ src: s.img, width: 1600, widths: AVIF_WIDTHS, format: 'avif', quality: s.q }),
-      // webp-фолбэк — держит каждый вариант ≤200КБ (§15) для браузеров без AVIF.
-      // Качество и максимальная ширина webp — per-image (s.wq/s.webpWidth(s)),
-      // дефолт 64 / ≤1280px; детальный Kaneo жмём плотнее и режем до 960px.
-      getImage({
-        src: s.img,
-        width: s.webpWidth ?? 1280,
-        widths: s.webpWidths ?? WEBP_WIDTHS,
-        format: 'webp',
-        quality: s.wq ?? 64,
-      }),
+      getImage({ src: s.img, width: 1920, widths: AVIF_WIDTHS, format: 'avif', quality: s.q }),
+      getImage({ src: s.img, width: 1600, widths: WEBP_WIDTHS, format: 'webp', quality: 76 }),
     ]);
     return {
       avifSrcset: avif.srcSet.attribute,
