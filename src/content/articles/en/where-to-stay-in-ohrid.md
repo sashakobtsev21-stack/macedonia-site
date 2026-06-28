@@ -4,8 +4,8 @@ description: 'Where to stay in Ohrid: the Old Town, lakefront boardwalk, budget 
 slug: 'where-to-stay-in-ohrid'
 lang: 'en'
 category: 'planning'
-publishedAt: 2026-06-29
-updatedAt: 2026-06-29
+publishedAt: 2026-06-28
+updatedAt: 2026-06-28
 featuredOrder: 5
 cover:
   src: '/images/where-to-stay-in-ohrid/cover.webp'
