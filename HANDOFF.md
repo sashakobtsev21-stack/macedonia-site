@@ -1,15 +1,15 @@
 # HANDOFF — North Macedonia Guidebook
 > Снимок для возобновления (обновляется после каждой доработки). Подробная история — `PROGRESS.md`; план — `ROADMAP.md`/`KALENDAR.md`; аудит — `AUDIT.md`.
 
-**Дата:** 2026-06-29 · **Фаза:** R4 наполнение · **Статей:** ~24 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `publish(macedonia): transport A->B cluster -- airport->centre, Tirana->Ohrid/Skopje, Skopje->Bitola (3 articles)`
+**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `publish(macedonia): Driving in North Macedonia -- Rules & Tips (en)`
 
 ## Где остановились
-- Контент: последние опубликованные — **транспортный кластер «A→B» (3 статьи, 29.06):** `skopje-airport-to-city-center`, `tirana-to-ohrid-skopje` (YMYL-визы, кросс-граница AL→MK), `skopje-to-bitola` — все `/transport/…/`, `draft:false`, qa=GO, test:links=GO. Слот KALENDAR Пн 29.06 закрыт. Перед ними — `where-to-stay-in-ohrid` и `cost-of-living-north-macedonia` (28.06). Полный лог — `PROGRESS.md`.
+- Контент: последние опубликованные — **транспортный кластер «routes» (3 статьи, 30.06):** `ohrid-to-bitola`, `getting-to-north-macedonia` (Sofia/Thessaloniki/Pristina→Skopje), `driving-in-north-macedonia` (rules & tips) — все `/transport/…/`, `draft:false`, qa=GO, test:links=GO, по 5 уник. CC-фото, бэклинки добавлены. Слот KALENDAR Вт 30.06 закрыт. Перед ними — кластер «A→B» (29.06: `skopje-airport-to-city-center`, `tirana-to-ohrid-skopje`, `skopje-to-bitola`). Полный лог — `PROGRESS.md`.
 - Календарь вычищен: будущие даты = только `○` к написанию (выполненного на будущих датах нет); план до 26.07; темп 3/будний день; маршруты по Вс.
 - Сеть: доки выровнены (ядро 12/12, добавлены ROADMAP.md+AUDIT.md); дашборд `grafana/dashboard.html` актуален; `/work` публикует автономно при полной уверенности.
 
 ## Что дальше
-- Следующий слот — **Вт 30.06** (3 transport-связки: Ohrid↔Bitola, getting-to-NM из Sofia/Thessaloniki/Pristina, Driving in NM). Далее по `KALENDAR.md` (where-to-stay, сравнения, релокация P0). SEO-актуализация по GSC ~06.07.
+- Следующий слот — **Ср 01.07** по `KALENDAR.md` (далее темы where-to-stay/сравнения/релокация P0). Воскресные маршруты: ближайший — Вс 05.07. SEO-актуализация по GSC ~06.07.
 
 ## Блокеры владельца
 - GSC: Request Indexing + sitemap. Партнёрки (Travelpayouts: DiscoverCars/GetYourGuide/Booking + EKTA). Моат-решение (владелец не в стране). Дисплей-реклама (рек.: старт без).
