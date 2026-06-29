@@ -124,6 +124,7 @@ Put together, getting around North Macedonia is simpler than the lack of trains 
 ## Read also
 
 - The section hub: [transport in North Macedonia](/transport/)
+- Arriving overland: [getting to North Macedonia from Sofia, Thessaloniki & Pristina](/transport/getting-to-north-macedonia/)
 - Rent for the parks and lakes: [renting a car in North Macedonia](/car-rental/renting-a-car-in-north-macedonia/)
 - Where you're heading: [things to do in Skopje](/cities/things-to-do-in-skopje/), [things to do in Ohrid](/cities/things-to-do-in-ohrid/) and [things to do in Bitola](/cities/things-to-do-in-bitola/)
 - Tie it together: the [7-day North Macedonia itinerary](/routes/north-macedonia-7-day-itinerary/)
