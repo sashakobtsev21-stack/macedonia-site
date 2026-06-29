@@ -2,6 +2,22 @@
 
 > Статус и роадмап. **Обновляется после КАЖДОЙ доработки** (правило дисциплины — `CLAUDE.md`).
 
+## 2026-06-30 — a11y-серия портирована с движка Грузии (gruzia 284cb30), 11 фиксов
+- **Портирована вся a11y-серия с эталонного движка Грузии** (коммит `284cb30`, движок общий) — применены EN-эквиваленты с бренд-токенами Македонии (wine = Ohrid teal), без грузинских строк/токенов. 11 пунктов:
+  1. **Header** — два `<nav>` с одним именем разведены: дропдаун получил новый `header.menuNav` («All sections»), `.nav-inline` оставил `primaryNav`. Добавлен ключ `menuNav` в `en.ts` + `types.ts`.
+  2. **Уникальные id** `<base>-${Math.random().toString(36).slice(2,8)}` в PhotoGallery / VisitInfo / RelatedPosts / TOC (`aria-labelledby` не ломается при двух блоках на странице).
+  3. **ShowcaseRail `.scard__nav`** — WCAG 1.4.11: фон slate 42%→60% + белая обводка 40%, hover 66%→78%.
+  4. **Имя лайтбокса** — WCAG 4.1.2: новый i18n `gallery.dialogName` («Photo viewer») → `data-dialog-name` → `aria-label` оверлея вместо «Close». Затронуты `lightbox.js`, PhotoGallery, RestaurantCard, ShowcaseRail.
+  5. **Esc-закрытие поповера** витрины + возврат фокуса — `showcase-rail.js`.
+  6. **`aria-label` на `.gallery__item`** (новый ключ `gallery.open` = «Open photo») — PhotoGallery.
+  7. **Фокус-кольцо-пилюля** `.cmap__btn:focus-visible` (CatalogMap) и `.hero__credit:focus-visible` (HomePage).
+  8. **Skip-link** — видимая пилюля при фокусе (`position:fixed` + фон `--color-wine` + `--text-on-wine` + тень/паддинг) в `global.css`; бренд-токены Македонии, не грузинские.
+  9. **Тач-таргеты ≥44px** — чипы директории еды `/food/` (`EdaDirectory.astro`, `min-height:44px` @media ≤600px). **Под-пункт «переключатель языка» ПРОПУЩЕН:** сайт EN-only, `LangSwitcher.astro` отсутствует.
+  10. **noindex синхронизирован** — `noindex, follow` (раньше `nofollow`; код приведён к JSDoc) в `BaseLayout.astro`.
+  11. **Резерв витрины** — `padding-bottom` `198px`→`188px` в ShowcaseRail (как в эталоне).
+- **Гейты:** `npm run qa` = **GO** (критических 0 / средних 0; миноры — довоенные alt/CLS на index/404). `npm run test:links` = **GO** (2804 ссылки, 0 битых).
+- **Доки:** `ROADMAP-FIX.md` (новая секция «a11y-серия портирована»), `PROGRESS.md`, `HANDOFF.md` обновлены.
+
 ## 2026-06-30 — ROADMAP-FIX P2: добор фото — закрыт (lake-ohrid и маршрут уже в норме, якорь Охрид усилен до 15)
 - **Закрыт блок P2 «полный добор фото до нормы» в `ROADMAP-FIX.md`.** Перед работой проверено реальное число фото у каждой статьи (правило «не трогать, если в норме»):
   - **`lake-ohrid`** — уже в норме: cover + **5 инлайн-figure** (kaneo/sunset/sveti-naum/springs/boat) + 2 gallery. Текст давно наполнен; добор не требовался — **не трогал**.

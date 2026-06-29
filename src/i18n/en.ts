@@ -51,6 +51,7 @@ export const en: UIDictionary = {
     closeMenu: 'Close menu',
     menuShort: 'Menu',
     primaryNav: 'Primary navigation',
+    menuNav: 'All sections',
   },
   lang: {
     label: 'Language',
@@ -233,6 +234,8 @@ export const en: UIDictionary = {
   },
   gallery: {
     heading: 'Photos',
+    dialogName: 'Photo viewer',
+    open: 'Open photo',
     close: 'Close',
     prev: 'Previous',
     next: 'Next',

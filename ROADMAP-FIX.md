@@ -11,6 +11,22 @@
 - [x] `/news` скилл локализован под Македонию; `full-audit`/`add-content` descriptions переименованы.
 - [x] Доки приведены к реальному состоянию; PROGRESS/HANDOFF/MEMORY созданы/наполнены; стандарты + правило дисциплины в CLAUDE/CONTENT_GUIDE.
 
+## ✅ Закрыто 2026-06-30 — a11y-серия портирована (gruzia 284cb30)
+A11y-серия портирована с эталонного движка Грузии (коммит `284cb30`); движок общий, применены EN-эквиваленты с бренд-токенами Македонии (wine = Ohrid teal):
+- [x] Два `<nav>` с одним именем → дропдаун получил `header.menuNav` («All sections»), `.nav-inline` оставил `primaryNav` (Header).
+- [x] Латентные коллизии static `id` → уникальный `<base>-${random36}` в PhotoGallery/VisitInfo/RelatedPosts/TOC.
+- [x] WCAG 1.4.11: контраст стрелок витрины `.scard__nav` (slate 42%→60% + белая обводка 40%, hover 66%→78%) — ShowcaseRail.
+- [x] WCAG 4.1.2: имя диалога-лайтбокса = «Photo viewer» (`data-dialog-name`), не «Close» — lightbox.js + PhotoGallery/RestaurantCard/ShowcaseRail.
+- [x] Esc закрывает поповер витрины + возврат фокуса — showcase-rail.js.
+- [x] `aria-label` на `.gallery__item` (ключ `gallery.open`) — PhotoGallery.
+- [x] Фокус-кольцо-пилюля `.cmap__btn`/`.hero__credit` (CatalogMap/HomePage).
+- [x] Skip-link = видимая пилюля при фокусе (бренд-токены `--color-wine`/`--text-on-wine`) — global.css.
+- [x] Тач-таргеты ≥44px: чипы директории еды `/food/` (`min-height:44px` @≤600px) — EdaDirectory. _(Переключатель языка пропущен: сайт EN-only, LangSwitcher отсутствует.)_
+- [x] noindex синхронизирован: `noindex, follow` (код к JSDoc) — BaseLayout.
+- [x] Резерв витрины 198px→188px — ShowcaseRail.
+
+qa=GO + test:links=GO. Токены из tokens.css, без React, перф цел.
+
 ## ✅ Закрыто после запуска (по факту — сайт live)
 - [x] **Деплой + домен live:** сайт развёрнут на Cloudflare Workers Build, привязан домен `macedoniaguidebook.com` (www→apex, TLS). Подтверждено: сайт live, фаза R4 (см. `ROADMAP.md` / `HANDOFF.md`).
 

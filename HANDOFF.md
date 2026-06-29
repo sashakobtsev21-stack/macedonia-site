@@ -1,7 +1,12 @@
 # HANDOFF — North Macedonia Guidebook
 > Снимок для возобновления (обновляется после каждой доработки). Подробная история — `PROGRESS.md`; план — `ROADMAP.md`/`KALENDAR.md`; аудит — `AUDIT.md`.
 
-**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `content(macedonia): photo top-up — lake-ohrid, 7-day itinerary stops, things-to-do-in-ohrid`
+**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `fix(macedonia): a11y series ported from engine (nav labels, unique ids, carousel/lightbox/skip-link/touch-targets/focus-ring/noindex)`
+
+## A11y-серия портирована с движка (gruzia 284cb30) (2026-06-30)
+- **11 a11y-фиксов портированы с эталонного движка Грузии** (коммит `284cb30`), EN-эквиваленты с бренд-токенами Македонии: разные `aria-label` у двух `<nav>` (новый `header.menuNav`); уникальные per-instance `id` (PhotoGallery/VisitInfo/RelatedPosts/TOC); контраст стрелок витрины `.scard__nav` (WCAG 1.4.11); имя лайтбокса = «Photo viewer» (`gallery.dialogName`, WCAG 4.1.2); Esc+возврат фокуса в `showcase-rail.js`; `aria-label` `.gallery__item` (`gallery.open`); фокус-кольцо-пилюля `.cmap__btn`/`.hero__credit`; skip-link = видимая пилюля (`--color-wine`/`--text-on-wine`); тач-чипы `/food/` ≥44px; `noindex, follow`; резерв витрины 188px.
+- **Пропущено:** под-пункт «переключатель языка ≥44px» — сайт EN-only, `LangSwitcher` отсутствует.
+- **Гейты:** qa=GO (крит. 0 / сред. 0), test:links=GO (2804 ссылки, 0 битых).
 
 ## Добор фото P2 (2026-06-30)
 - **`ROADMAP-FIX.md` P2 закрыт.** Проверено реальное число фото: `lake-ohrid` (cover + 5 инлайн) и `north-macedonia-7-day-itinerary` (cover + фото каждой из 6 остановок) **уже были в норме — не трогались**. _(Маршрут не содержит остановки Маврово — в ROADMAP-FIX опечатка.)_
