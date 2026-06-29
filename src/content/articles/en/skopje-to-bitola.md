@@ -110,6 +110,7 @@ However you travel it, Skopje to Bitola is one of the easiest intercity hops in 
 ## Read also
 
 - [Things to do in Bitola](/cities/things-to-do-in-bitola/) — Širok Sokak, Heraclea and the city of consuls
+- [Ohrid to Bitola](/transport/ohrid-to-bitola/) — the short hop from the lake, by bus or over the Galičica pass
 - [Things to do in Skopje](/cities/things-to-do-in-skopje/) — if you're starting in the capital
 - [Getting around North Macedonia](/transport/getting-around-north-macedonia/) — the wider bus, taxi and car picture
 - [Renting a car in North Macedonia](/car-rental/renting-a-car-in-north-macedonia/) — deposits, insurance and driving rules
