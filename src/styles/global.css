@@ -158,6 +158,16 @@ img {
   background: color-mix(in srgb, var(--color-wine) 85%, black);
 }
 
+/* Контентные таблицы: горизонтальный скролл на узких экранах (анти-overflow на
+   мобайле). Таблица в .prose становится блоком со своим горизонтальным скроллом,
+   чтобы широкая таблица не давала горизонтальное переполнение всей страницы. */
+.prose table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 /*
  * --- Слой движения (ui-ux-pro-max §7) ---
  * Reveal при скролле и stagger-вход hero.

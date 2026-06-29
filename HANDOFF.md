@@ -1,7 +1,11 @@
 # HANDOFF — North Macedonia Guidebook
 > Снимок для возобновления (обновляется после каждой доработки). Подробная история — `PROGRESS.md`; план — `ROADMAP.md`/`KALENDAR.md`; аудит — `AUDIT.md`.
 
-**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `fix(macedonia): a11y series ported from engine (nav labels, unique ids, carousel/lightbox/skip-link/touch-targets/focus-ring/noindex)`
+**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `fix(macedonia): responsive content tables (overflow-x scroll on .prose table)`
+
+## B1: адаптивные контентные таблицы (2026-06-30)
+- **Анти-overflow контентных таблиц на мобайле** (движок общий с Грузией): правило `.prose table { display:block; max-width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch }` в `src/styles/global.css`. Покрывает все три рендера контента в `<div class="prose">` (ArticlePage / RoutePage / InsuranceHub). Широкая таблица скроллится внутри своего блока, не растягивая страницу.
+- **Гейты:** `qa:responsive`=**GO** (0 переполнений, 10 шаблонов × 5 ширин), `qa`=**GO** (ВЕРДИКТ, крит. 0 / сред. 0), `test:links`=**GO** (2804 ссылки, 0 битых).
 
 ## A11y-серия портирована с движка (gruzia 284cb30) (2026-06-30)
 - **11 a11y-фиксов портированы с эталонного движка Грузии** (коммит `284cb30`), EN-эквиваленты с бренд-токенами Македонии: разные `aria-label` у двух `<nav>` (новый `header.menuNav`); уникальные per-instance `id` (PhotoGallery/VisitInfo/RelatedPosts/TOC); контраст стрелок витрины `.scard__nav` (WCAG 1.4.11); имя лайтбокса = «Photo viewer» (`gallery.dialogName`, WCAG 4.1.2); Esc+возврат фокуса в `showcase-rail.js`; `aria-label` `.gallery__item` (`gallery.open`); фокус-кольцо-пилюля `.cmap__btn`/`.hero__credit`; skip-link = видимая пилюля (`--color-wine`/`--text-on-wine`); тач-чипы `/food/` ≥44px; `noindex, follow`; резерв витрины 188px.

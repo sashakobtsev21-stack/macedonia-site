@@ -27,6 +27,11 @@ A11y-серия портирована с эталонного движка Гр
 
 qa=GO + test:links=GO. Токены из tokens.css, без React, перф цел.
 
+## ✅ Закрыто 2026-06-30 — B1: адаптивные контентные таблицы (движок общий с Грузией)
+- [x] **[responsive]** Контентные таблицы в `<div class="prose">` (ArticlePage/RoutePage/InsuranceHub) получают горизонтальный скролл на узких экранах — анти-overflow на мобайле. Правило `.prose table { display:block; max-width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch }` в `src/styles/global.css`. Широкая таблица теперь скроллится внутри своего блока, не давая горизонтального переполнения страницы.
+
+qa:responsive=GO (0 переполнений, 10 шаблонов × 5 ширин) · qa=GO · test:links=GO.
+
 ## ✅ Закрыто после запуска (по факту — сайт live)
 - [x] **Деплой + домен live:** сайт развёрнут на Cloudflare Workers Build, привязан домен `macedoniaguidebook.com` (www→apex, TLS). Подтверждено: сайт live, фаза R4 (см. `ROADMAP.md` / `HANDOFF.md`).
 
