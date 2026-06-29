@@ -2,6 +2,16 @@
 
 > Статус и роадмап. **Обновляется после КАЖДОЙ доработки** (правило дисциплины — `CLAUDE.md`).
 
+## 2026-06-30 — Де-сиротинг вечнозелёных статей (входящие ред. ссылки в 4 орфана)
+- **Закрыто «сиротство» (0 входящих внутренних ред. ссылок) у 4 вечнозелёных статей** — вплетены контекстные входящие из родственных по теме статей (новости `d-festival-dojran-2026`/`ohrid-airport-upgrade-2026` не трогались). Перед работой реальные входящие перепроверены `grep` — у всех 4 было ровно 0 (матчился только сам файл).
+  - **`cost-of-living-north-macedonia`** (`/relocation/`, head релокации) ← 2 родителя: `north-macedonia-trip-cost` (`/planning/`, контекст «дни vs месяцы» в «bottom line» + Read also) и `is-north-macedonia-worth-visiting` (`/planning/`, инлайн на фразе про long-stay nomads / low cost of living).
+  - **`skopje-airport-to-city-center`** (`/transport/`) ← 2 родителя: `things-to-do-in-skopje` (`/cities/`, раздел «How to get to Skopje» — про шаттл/такси) и `how-to-get-to-ohrid-from-skopje` (`/transport/`, пункт про шаттл 199 MKD).
+  - **`tirana-to-ohrid-skopje`** (`/transport/`) ← 2 родителя: `getting-to-north-macedonia` и `how-to-get-to-ohrid-from-skopje` (оба `/transport/`, Read also — «прибытие со стороны Албании»). Исходящий кросс-линк на Албанию у неё уже был; добавлены недостающие **входящие**.
+  - **`skopje-nightlife`** (`/entertainment/`) ← 1 родитель: `things-to-do-in-skopje` (`/cities/`, инлайн на Debar Maalo — bar-hopping). **Второй естественный родитель отсутствует** (нет отдельного гайда Скопье/where-to-stay-in-skopje), форсить искусственный не стал — честно отмечено; 1 контекстная входящая укладывается в правило 1–2.
+- Анкоры осмысленные, не дублируются; ссылки относительные `/{категория}/{slug}/` со слешем. Кросс-сайт документация Македонии уже в CLAUDE.md — не дублировалась.
+- **Гейты:** `npm run qa` = **GO** (ВЕРДИКТ; критических 0 / средних 0; 64 минора — все довоенные alt/CLS на index/404). `npm run test:links` = **GO** (2804 ссылки, 0 битых, 48 страниц).
+- **Доки:** `PROGRESS.md`, `HANDOFF.md` обновлены.
+
 ## 2026-06-30 — B2: перенос длинных URL в фото-кредитах (анти-overflow на мобайле, порт из albania 9f0d46f)
 - **Длинные неразрывные URL источников в фото-кредитах больше не растягивают страницу за вьюпорт.** В `src/styles/global.css` добавлено правило `.prose figcaption, .prose .figure__credit, .cover__credit { overflow-wrap:anywhere; word-break:break-word }`. Кредиты содержат `sourceUrl` Wikimedia (`commons.wikimedia.org/wiki/File:…`) — одно длинное «слово» давало горизонтальный перелив на узких экранах (особенно `/attractions/matka-canyon/`, где такие URL и в `coverCredit`, и в трёх `figure__credit`). Покрыты оба места рендера кредита: figcaption/`figure__credit` внутри `<div class="prose">` (тело статьи) и `cover__credit` обложки (вне `.prose`, ArticlePage).
 - **Проверка реально прогоняет кредит:** в `scripts/qa-responsive.mjs` в PAGES добавлена `/attractions/matka-canyon/` — статья с длинными URL-кредитами (раньше в PAGES не было ни одной такой).

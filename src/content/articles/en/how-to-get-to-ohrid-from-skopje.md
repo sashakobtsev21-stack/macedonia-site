@@ -104,7 +104,7 @@ Before booking, read the details in our [car rental in North Macedonia](/car-ren
 
 This is the part travellers often misread. **Skopje International Airport (SKP) is not on the Ohrid bus route**, and there is no direct public bus from SKP to Ohrid. Your realistic choices are:
 
-1. **Airport shuttle to Skopje + bus to Ohrid.** The official airport guide lists a shuttle to Skopje city / Central Bus Station, with the ticket shown as **199 MKD** when checked on 2026-06-25. The timetable is tied to flight arrivals and departures, so check current times. From the bus station, take an Ohrid coach.
+1. **Airport shuttle to Skopje + bus to Ohrid.** The official airport guide lists a shuttle to Skopje city / Central Bus Station, with the ticket shown as **199 MKD** when checked on 2026-06-25. The timetable is tied to flight arrivals and departures, so check current times — our [Skopje Airport to the city center](/transport/skopje-airport-to-city-center/) guide covers the shuttle and taxi fares in detail. From the bus station, take an Ohrid coach.
 2. **Private transfer from SKP to Ohrid.** This is the simplest door-to-door route and the best late-arrival choice. Get a live quote before travel.
 3. **Rental car at SKP.** Good if you are building a lake-and-mountains trip and want the car anyway.
 4. **Airport taxi to Skopje + onward bus.** Works if the shuttle timing is poor, but it still leaves you changing at the bus station.
@@ -145,4 +145,5 @@ Once you arrive, keep the plan simple: base near the lake, walk the old town, an
 - [Things to do in Skopje](/cities/things-to-do-in-skopje/) — useful if you break the journey in the capital
 - [Renting a car in North Macedonia](/car-rental/renting-a-car-in-north-macedonia/) — deposits, insurance and driving rules
 - [Getting around North Macedonia](/transport/) — the wider bus, taxi and car picture
+- [Tirana to Ohrid & Skopje](/transport/tirana-to-ohrid-skopje/) — arriving at the lake from Albania instead
 - [North Macedonia 7-day itinerary](/routes/north-macedonia-7-day-itinerary/) — how Skopje, Ohrid and Bitola fit together

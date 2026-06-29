@@ -108,6 +108,7 @@ Once you're in Skopje, the whole country is within a few hours — see [getting 
 
 - [Things to do in Skopje](/cities/things-to-do-in-skopje/) — what to do once you arrive in the capital
 - [Getting around North Macedonia](/transport/getting-around-north-macedonia/) — onward buses, taxis and car travel
+- [Tirana to Ohrid & Skopje](/transport/tirana-to-ohrid-skopje/) — coming in from Albania instead
 - [Skopje to Bitola](/transport/skopje-to-bitola/) — heading south from the capital
 - [Renting a car in North Macedonia](/car-rental/renting-a-car-in-north-macedonia/) — if you're driving the Balkans
 - [North Macedonia 7-day itinerary](/routes/north-macedonia-7-day-itinerary/) — how the country fits together once you're in

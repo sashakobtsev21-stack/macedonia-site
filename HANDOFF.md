@@ -1,7 +1,15 @@
 # HANDOFF — North Macedonia Guidebook
 > Снимок для возобновления (обновляется после каждой доработки). Подробная история — `PROGRESS.md`; план — `ROADMAP.md`/`KALENDAR.md`; аудит — `AUDIT.md`.
 
-**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `fix(macedonia): wrap long photo-credit URLs (anti mobile-overflow), ported from albania 9f0d46f`
+**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `content(macedonia): de-orphan evergreen articles (inbound editorial links)`
+
+## Де-сиротинг вечнозелёных статей (2026-06-30)
+- **4 орфана (0 входящих ред. ссылок) получили контекстные входящие из родственных** (новости-2026 не трогались):
+  - `cost-of-living-north-macedonia` ← `north-macedonia-trip-cost` (body «bottom line» + Read also) + `is-north-macedonia-worth-visiting` (инлайн на long-stay nomads).
+  - `skopje-airport-to-city-center` ← `things-to-do-in-skopje` (раздел «How to get to Skopje») + `how-to-get-to-ohrid-from-skopje` (шаттл 199 MKD).
+  - `tirana-to-ohrid-skopje` ← `getting-to-north-macedonia` + `how-to-get-to-ohrid-from-skopje` (Read also). Исходящая на Албанию уже была — добавлены входящие.
+  - `skopje-nightlife` ← `things-to-do-in-skopje` (Debar Maalo, инлайн). **2-го естественного родителя нет** (нет гайда Скопье/where-to-stay-in-skopje) — оставлена 1 контекстная (правило 1–2), отмечено честно.
+- Ссылки `/{категория}/{slug}/` со слешем, осмысленные анкоры, без дублей. **Гейты:** `qa`=**GO** (крит. 0 / сред. 0), `test:links`=**GO** (2804 ссылки, 0 битых).
 
 ## B2: перенос длинных URL в фото-кредитах (2026-06-30, порт из albania 9f0d46f)
 - **Анти-overflow от длинных URL источников в фото-кредитах** (`sourceUrl` Wikimedia `commons.wikimedia.org/wiki/File:…` в `coverCredit`/`figure__credit`, напр. `/attractions/matka-canyon/`): правило `.prose figcaption, .prose .figure__credit, .cover__credit { overflow-wrap:anywhere; word-break:break-word }` в `src/styles/global.css`. Покрыты тело статьи (figcaption/`figure__credit` в `.prose`) и обложка (`cover__credit` в ArticlePage, вне `.prose`). В `scripts/qa-responsive.mjs` PAGES добавлена `/attractions/matka-canyon/`, чтобы проверка прогоняла кредит.

@@ -159,7 +159,7 @@ The simplest way to cut the bill is to enjoy Ohrid in the **shoulder season** an
 
 ## The bottom line
 
-North Macedonia delivers a lot for very little. Realistically, budget **€30–50 a day** as a backpacker, **€65–110** for a comfortable mid-range trip, and **€150+** to travel in real comfort — with Ohrid in high summer the one line item that can push you up. The stable euro peg makes planning easy, the food and buses are cheap everywhere, and the headline sights cost next to nothing. Sort out your dates with the [best time to visit](/planning/best-time-to-visit-north-macedonia/) guide, work out how you'll move with the [getting around](/transport/getting-around-north-macedonia/) guide, and see why it's all worth it in [is North Macedonia worth visiting?](/planning/is-north-macedonia-worth-visiting/)
+North Macedonia delivers a lot for very little. Realistically, budget **€30–50 a day** as a backpacker, **€65–110** for a comfortable mid-range trip, and **€150+** to travel in real comfort — with Ohrid in high summer the one line item that can push you up. The stable euro peg makes planning easy, the food and buses are cheap everywhere, and the headline sights cost next to nothing. If you're thinking of staying for months rather than days, switch over to our [cost of living in North Macedonia](/relocation/cost-of-living-north-macedonia/) guide, which works in monthly rent and bills instead of daily travel budgets. Sort out your dates with the [best time to visit](/planning/best-time-to-visit-north-macedonia/) guide, work out how you'll move with the [getting around](/transport/getting-around-north-macedonia/) guide, and see why it's all worth it in [is North Macedonia worth visiting?](/planning/is-north-macedonia-worth-visiting/)
 
 ## Read also
 
@@ -168,4 +168,5 @@ North Macedonia delivers a lot for very little. Realistically, budget **€30–
 - Self-drive the lakes and mountains: [renting a car in North Macedonia](/car-rental/renting-a-car-in-north-macedonia/)
 - Build the trip: [7-day North Macedonia itinerary](/routes/north-macedonia-7-day-itinerary/)
 - Still deciding? [Is North Macedonia worth visiting?](/planning/is-north-macedonia-worth-visiting/)
+- Staying longer? [Cost of living in North Macedonia](/relocation/cost-of-living-north-macedonia/) — monthly budgets for nomads and couples
 - More in the [North Macedonia planning hub](/planning/)

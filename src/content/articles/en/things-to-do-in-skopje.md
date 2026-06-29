@@ -142,7 +142,7 @@ Most visitors stay within a 10–15 minute walk of Macedonia Square, which keeps
 
 ## How to get to Skopje
 
-**By air.** Skopje International Airport (**SKP**) is about 20–25 km east of the city. The simplest options into the centre are the airport shuttle bus, a pre-booked transfer, or a taxi; agree the fare or use an official/metered taxi. Allow roughly 30–40 minutes by road (verify current schedules and prices on the day, as they change).
+**By air.** Skopje International Airport (**SKP**) is about 20–25 km east of the city. The simplest options into the centre are the airport shuttle bus, a pre-booked transfer, or a taxi; agree the fare or use an official/metered taxi. Allow roughly 30–40 minutes by road (verify current schedules and prices on the day, as they change). For the fares and the shuttle timetable, see our guide to [getting from Skopje Airport to the city center](/transport/skopje-airport-to-city-center/).
 
 **Onward to Ohrid.** There is **no direct public bus from the airport to Ohrid** — you travel via Skopje. From Skopje's main bus station, buses run to **Ohrid** (around 170 km, roughly 3 hours). If you are short on time, a private transfer or a rental car is faster and opens up Mavrovo and the lakes; see our guide to [getting around North Macedonia](/transport/) and [car rental](/car-rental/).
 
@@ -150,7 +150,7 @@ Most visitors stay within a 10–15 minute walk of Macedonia Square, which keeps
 
 ## Where to eat in Skopje
 
-The **Old Bazaar** is the classic place for grilled meat (ćevapi, kebab), burek and Turkish coffee at low prices. For a more local night out, head to **Debar Maalo**, lined with kafanas (traditional taverns) serving Macedonian mezze, grilled dishes and house rakija. Look for staples like **tavče gravče** (oven-baked beans), ajvar, šopska salad and the country's good, underrated wines from the Tikveš region. Prices are in Macedonian denar (**MKD**), pegged to the euro at roughly 61.5 MKD to €1, so a casual meal stays inexpensive. For a few hand-picked, verified spots — from the Old Bazaar's oldest grill to a Debar Maalo kafana and a Macedonian wine bar — see our [where to eat in Skopje](/food/where-to-eat-skopje/) directory.
+The **Old Bazaar** is the classic place for grilled meat (ćevapi, kebab), burek and Turkish coffee at low prices. For a more local night out, head to **Debar Maalo**, lined with kafanas (traditional taverns) serving Macedonian mezze, grilled dishes and house rakija — and, once the plates are cleared, the city's best bar-hopping (see [Skopje nightlife](/entertainment/skopje-nightlife/)). Look for staples like **tavče gravče** (oven-baked beans), ajvar, šopska salad and the country's good, underrated wines from the Tikveš region. Prices are in Macedonian denar (**MKD**), pegged to the euro at roughly 61.5 MKD to €1, so a casual meal stays inexpensive. For a few hand-picked, verified spots — from the Old Bazaar's oldest grill to a Debar Maalo kafana and a Macedonian wine bar — see our [where to eat in Skopje](/food/where-to-eat-skopje/) directory.
 
 ## Practical tips
 

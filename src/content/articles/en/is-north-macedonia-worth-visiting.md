@@ -87,7 +87,7 @@ This is the clincher for most people. North Macedonia uses the **denar (MKD)**, 
 
 ## Who it's for — and who might skip it
 
-**It's a great fit if you** like lakes, mountains, history and food over beaches and nightlife; want Balkan character without crowds or high prices; enjoy slow towns, hiking and the odd quirky city; or are a remote worker or budget traveller looking for value. The low cost of living also draws long-stay nomads and would-be expats — though note there is **no digital-nomad visa** here; longer stays go through work or business residence.
+**It's a great fit if you** like lakes, mountains, history and food over beaches and nightlife; want Balkan character without crowds or high prices; enjoy slow towns, hiking and the odd quirky city; or are a remote worker or budget traveller looking for value. The low [cost of living](/relocation/cost-of-living-north-macedonia/) also draws long-stay nomads and would-be expats — though note there is **no digital-nomad visa** here; longer stays go through work or business residence.
 
 **You might be underwhelmed if** you're chasing a classic beach holiday (this is a landlocked country — the "beaches" are on lakes), a buzzing club scene, or a deep menu of big-ticket international sights. North Macedonia rewards curiosity and a slower pace more than a tick-list. It's also a small market, so a few places feel low-key rather than polished — which many travellers count as a plus.
 
