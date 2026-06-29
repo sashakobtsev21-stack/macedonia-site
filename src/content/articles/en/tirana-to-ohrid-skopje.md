@@ -39,7 +39,7 @@ draft: false
 
 The easiest way from **Tirana to Ohrid** is the direct bus or shared minibus (a *furgon*): there are roughly **5–7 a day**, the trip takes about **3 to 3.5 hours** including the border, and a ticket runs about **€15–20**. They leave mostly from the **South/Regional terminal** in southeast Tirana, cross into North Macedonia at the **Kjafasan–Qafë Thanë** pass near Struga, and drop you at **Ohrid bus station**. To carry on to **Skopje**, change at Ohrid and take an onward coach — another **170 km and about 3–3.5 hours**. If you'd rather not change buses or watch a timetable, a rental car or a private transfer does Tirana to Ohrid door to door in around **2.5–3 hours**.
 
-This is one of the Balkans' great short hops — two countries, one lake — and it's genuinely simple. Below is the practical breakdown: which terminal in Tirana, how the border actually works, the onward leg to Skopje, what it costs, and the **visa rules for 2026** so nobody gets a nasty surprise at the barrier.
+This is one of the Balkans' great short hops — two countries, one lake — and it's genuinely simple. Below is the practical breakdown: which terminal in Tirana, how the border actually works, the onward leg to Skopje, what it costs, and the **visa rules for 2026** so nobody gets a nasty surprise at the barrier. If you're spending time in the Albanian capital before you set off, our [things to do in Tirana](https://albaniaguidebook.com/cities/things-to-do-in-tirana/) guide covers the city.
 
 ## Quick answer: bus, furgon, transfer or car?
 
