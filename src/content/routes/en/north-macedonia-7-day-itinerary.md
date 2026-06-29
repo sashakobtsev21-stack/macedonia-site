@@ -180,4 +180,5 @@ From Bitola it is roughly **170 km and 2.5–3 hours** back to Skopje (or its ai
 - [Things to do in Bitola](/cities/things-to-do-in-bitola/) — Heraclea and the city of consuls
 - [How to get to Ohrid from Skopje](/transport/) — every transfer option
 - [Car rental in North Macedonia](/car-rental/) — the easiest way to drive this route
+- [Driving in North Macedonia: rules & tips](/transport/driving-in-north-macedonia/) — limits, tolls, documents and winter rules
 - More routes and road trips: [North Macedonia routes](/routes/)

@@ -147,6 +147,7 @@ Watch the extras that inflate the final bill: full excess-reduction, additional 
 ## Read also
 
 - The section hub: [car rental in North Macedonia](/car-rental/)
+- Before you set off: [driving in North Macedonia — rules & tips](/transport/driving-in-north-macedonia/)
 - Getting around without a car: [transport in North Macedonia](/transport/)
 - Plan the trip: [North Macedonia planning hub](/planning/) and [is North Macedonia worth visiting?](/planning/is-north-macedonia-worth-visiting/)
 - Where to drive: [things to do in Ohrid](/cities/things-to-do-in-ohrid/) and [things to do in Skopje](/cities/things-to-do-in-skopje/)
