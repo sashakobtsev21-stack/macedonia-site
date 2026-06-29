@@ -11,11 +11,13 @@
 - [x] `/news` скилл локализован под Македонию; `full-audit`/`add-content` descriptions переименованы.
 - [x] Доки приведены к реальному состоянию; PROGRESS/HANDOFF/MEMORY созданы/наполнены; стандарты + правило дисциплины в CLAUDE/CONTENT_GUIDE.
 
+## ✅ Закрыто после запуска (по факту — сайт live)
+- [x] **Деплой + домен live:** сайт развёрнут на Cloudflare Workers Build, привязан домен `macedoniaguidebook.com` (www→apex, TLS). Подтверждено: сайт live, фаза R4 (см. `ROADMAP.md` / `HANDOFF.md`).
+
 ## Открыто
 
 ### P1 — перед/для запуска
-- [ ] **owner action:** деплой на Cloudflare Workers Build + привязать домен `macedoniaguidebook.com` (www→apex, TLS).
-- [ ] **owner action:** после деплоя — отправить `sitemap-index.xml` в Google Search Console + переиндексация главной (тогда же Google подхватит новый фавикон).
+- [ ] **owner action:** GSC — отправить `sitemap-index.xml` в Google Search Console + Request Indexing главной (тогда же Google подхватит новый фавикон). _(Сайт уже live; остаётся submission в GSC — числится блокером владельца в HANDOFF.)_
 - [ ] **[perf]** оптимизировать hero `ohrid-kaneo` (LCP главной) до ≤200КБ webp — снизить качество/ширину в `astro:assets` (сейчас >200КБ, ловит `qa.mjs`).
 
 ### P2 — полный добор фото до нормы (отложено с Этапа 1; НЕ контент-генерация)
@@ -30,7 +32,7 @@
 
 ### Owner actions (сводно)
 - [x] Домен `macedoniaguidebook.com` — куплен.
-- [ ] Cloudflare Workers Build + bind домена + TLS.
-- [ ] GSC: sitemap + переиндексация (после деплоя).
+- [x] Cloudflare Workers Build + bind домена + TLS — **сайт live**.
+- [ ] GSC: sitemap + переиндексация.
 - [ ] Партнёрские аккаунты под сегментацию (DiscoverCars для EN-аренды; SafetyWing/Airalo/Wise; проверить вывод средств Travelpayouts).
-- [ ] Решения O2 / O4 / O5 (порядок входа контента, обязательная языковая пара, дисплей-реклама) — см. `docs/STRATEGY.md`.
+- [ ] Решения O2 / O5 (порядок входа контента, дисплей-реклама) — см. `docs/STRATEGY.md`. _(O4 закрыт: сайт EN-only, 2026-06-22.)_

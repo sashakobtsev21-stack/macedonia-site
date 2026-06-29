@@ -1,7 +1,13 @@
 # HANDOFF — North Macedonia Guidebook
 > Снимок для возобновления (обновляется после каждой доработки). Подробная история — `PROGRESS.md`; план — `ROADMAP.md`/`KALENDAR.md`; аудит — `AUDIT.md`.
 
-**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `publish(macedonia): Driving in North Macedonia -- Rules & Tips (en)`
+**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `chore(macedonia): remove stale duplicate docs/ROADMAP, trim superseded CONTENT_PLAN/done FIX items`
+
+## Чистка доков (2026-06-30)
+- **Удалён дубль `docs/ROADMAP.md`** (застрял на 22.06); уникальные ID-таблицы R0–R6, owner-развилки и сквозные YMYL-правила перенесены в корневой `ROADMAP.md` (сворачиваемая секция «Архив деталей»). Источник фазового плана — теперь только корневой `ROADMAP.md`.
+- `ROADMAP-FIX.md`: деплой+домен live отмечены `[x]`; открыты — GSC sitemap, perf hero, добор фото сидов.
+- `docs/CONTENT_PLAN.md`: усилен статус «СПРАВОЧНИК, не активный план»; убраны устаревшие маркеры/«ожидает O2/O4» (O4 закрыт), §5-очередь помечена исторической; кластерная/интерлинк/денежная справка сохранена.
+- Ссылки на удалённый файл починены в `README.md` и `PROGRESS.md`.
 
 ## Где остановились
 - Контент: последние опубликованные — **транспортный кластер «routes» (3 статьи, 30.06):** `ohrid-to-bitola`, `getting-to-north-macedonia` (Sofia/Thessaloniki/Pristina→Skopje), `driving-in-north-macedonia` (rules & tips) — все `/transport/…/`, `draft:false`, qa=GO, test:links=GO, по 5 уник. CC-фото, бэклинки добавлены. Слот KALENDAR Вт 30.06 закрыт. Перед ними — кластер «A→B» (29.06: `skopje-airport-to-city-center`, `tirana-to-ohrid-skopje`, `skopje-to-bitola`). Полный лог — `PROGRESS.md`.

@@ -49,8 +49,8 @@ Cloudflare Workers.
 - **`CONTENT_GUIDE.md`** — гайд по созданию контента.
 - **`SETUP-GUIDE.md`** — подключение внешних агентов/плагинов (my_agents, ui-ux-pro-max).
 - **`docs/STRATEGY.md`** — зафиксированные стратегические решения владельца.
-- **`docs/ROADMAP.md`** — фазированный план R0–R6 (что делать дальше).
-- **`docs/CONTENT_PLAN.md`** — pillar+spoke по кластерам + очередь первых ~30 страниц.
+- **`ROADMAP.md`** (корневой) — фазированный план R0–R6 + архив деталей (ID-таблицы/развилки). _(Дубль `docs/ROADMAP.md` удалён 2026-06-30.)_
+- **`docs/CONTENT_PLAN.md`** — справочник: pillar+spoke по кластерам + интерлинк-карта (СУПЕРСЕДЕД `KALENDAR.md`).
 - **`docs/MACEDONIA-ANALYSIS-2026-06-21.md`** — веб-проверенная рыночная база.
 - **`docs/memory/`** — проектная память (пока пустая).
 - **`docs/_georgia-reference/`** — архив документов Georgia Guidebook (как шаблоны).
