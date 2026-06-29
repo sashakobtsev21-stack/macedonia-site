@@ -1,7 +1,11 @@
 # HANDOFF — North Macedonia Guidebook
 > Снимок для возобновления (обновляется после каждой доработки). Подробная история — `PROGRESS.md`; план — `ROADMAP.md`/`KALENDAR.md`; аудит — `AUDIT.md`.
 
-**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `fix(macedonia): responsive content tables (overflow-x scroll on .prose table)`
+**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `fix(macedonia): wrap long photo-credit URLs (anti mobile-overflow), ported from albania 9f0d46f`
+
+## B2: перенос длинных URL в фото-кредитах (2026-06-30, порт из albania 9f0d46f)
+- **Анти-overflow от длинных URL источников в фото-кредитах** (`sourceUrl` Wikimedia `commons.wikimedia.org/wiki/File:…` в `coverCredit`/`figure__credit`, напр. `/attractions/matka-canyon/`): правило `.prose figcaption, .prose .figure__credit, .cover__credit { overflow-wrap:anywhere; word-break:break-word }` в `src/styles/global.css`. Покрыты тело статьи (figcaption/`figure__credit` в `.prose`) и обложка (`cover__credit` в ArticlePage, вне `.prose`). В `scripts/qa-responsive.mjs` PAGES добавлена `/attractions/matka-canyon/`, чтобы проверка прогоняла кредит.
+- **Гейты:** `qa:responsive` ДО=**NO-GO** (+147/+107/+53px @320/360/414 на matka-canyon) → ПОСЛЕ=**GO** (0 переполнений, 11 шаблонов × 5 ширин); `qa`=**GO** (крит. 0 / сред. 0); `test:links`=**GO** (2804 ссылки, 0 битых).
 
 ## B1: адаптивные контентные таблицы (2026-06-30)
 - **Анти-overflow контентных таблиц на мобайле** (движок общий с Грузией): правило `.prose table { display:block; max-width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch }` в `src/styles/global.css`. Покрывает все три рендера контента в `<div class="prose">` (ArticlePage / RoutePage / InsuranceHub). Широкая таблица скроллится внутри своего блока, не растягивая страницу.

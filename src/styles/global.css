@@ -250,3 +250,14 @@ img {
     animation: none !important;
   }
 }
+
+/* Кредиты/подписи к фото содержат длинные неразрывные URL источников
+   (sourceUrl Wikimedia: commons.wikimedia.org/wiki/File:…) — принудительный
+   перенос, иначе одно слово даёт горизонтальный перелив на узких экранах (~320px).
+   Портировано из albania-site (9f0d46f). */
+.prose figcaption,
+.prose .figure__credit,
+.cover__credit {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}

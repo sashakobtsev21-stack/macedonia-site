@@ -32,6 +32,11 @@ qa=GO + test:links=GO. Токены из tokens.css, без React, перф це
 
 qa:responsive=GO (0 переполнений, 10 шаблонов × 5 ширин) · qa=GO · test:links=GO.
 
+## ✅ Закрыто 2026-06-30 — B2: перенос длинных URL в фото-кредитах (порт из albania 9f0d46f)
+- [x] **[responsive]** Длинные неразрывные URL источников (`coverCredit`/`figure__credit` с `commons.wikimedia.org/wiki/File:…`, напр. на `/attractions/matka-canyon/`) тянули страницу за вьюпорт на мобайле. Правило `.prose figcaption, .prose .figure__credit, .cover__credit { overflow-wrap:anywhere; word-break:break-word }` в `src/styles/global.css`. В `scripts/qa-responsive.mjs` в PAGES добавлена `/attractions/matka-canyon/` (статья с длинным URL-кредитом), чтобы проверка реально прогоняла кредиты.
+
+qa:responsive до фикса: NO-GO — перелив на `/attractions/matka-canyon/` @320/360/414 (+147/+107/+53px). После: GO — **0 переполнений** (11 шаблонов × 5 ширин). qa=GO · test:links=GO.
+
 ## ✅ Закрыто после запуска (по факту — сайт live)
 - [x] **Деплой + домен live:** сайт развёрнут на Cloudflare Workers Build, привязан домен `macedoniaguidebook.com` (www→apex, TLS). Подтверждено: сайт live, фаза R4 (см. `ROADMAP.md` / `HANDOFF.md`).
 

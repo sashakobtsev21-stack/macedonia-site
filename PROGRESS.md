@@ -2,6 +2,12 @@
 
 > Статус и роадмап. **Обновляется после КАЖДОЙ доработки** (правило дисциплины — `CLAUDE.md`).
 
+## 2026-06-30 — B2: перенос длинных URL в фото-кредитах (анти-overflow на мобайле, порт из albania 9f0d46f)
+- **Длинные неразрывные URL источников в фото-кредитах больше не растягивают страницу за вьюпорт.** В `src/styles/global.css` добавлено правило `.prose figcaption, .prose .figure__credit, .cover__credit { overflow-wrap:anywhere; word-break:break-word }`. Кредиты содержат `sourceUrl` Wikimedia (`commons.wikimedia.org/wiki/File:…`) — одно длинное «слово» давало горизонтальный перелив на узких экранах (особенно `/attractions/matka-canyon/`, где такие URL и в `coverCredit`, и в трёх `figure__credit`). Покрыты оба места рендера кредита: figcaption/`figure__credit` внутри `<div class="prose">` (тело статьи) и `cover__credit` обложки (вне `.prose`, ArticlePage).
+- **Проверка реально прогоняет кредит:** в `scripts/qa-responsive.mjs` в PAGES добавлена `/attractions/matka-canyon/` — статья с длинными URL-кредитами (раньше в PAGES не было ни одной такой).
+- **Гейты (до/после):** `npm run qa:responsive` ДО фикса = **NO-GO** (перелив на `/attractions/matka-canyon/` @320/360/414 = +147/+107/+53px), ПОСЛЕ = **GO** (0 переполнений, 11 шаблонов × 5 ширин). `npm run qa` = **GO** (ВЕРДИКТ; критических 0 / средних 0). `npm run test:links` = **GO** (2804 ссылки, 0 битых).
+- **Доки:** `ROADMAP-FIX.md` (новая секция B2), `PROGRESS.md`, `HANDOFF.md` обновлены.
+
 ## 2026-06-30 — B1: адаптивные контентные таблицы (анти-overflow на мобайле, движок общий с Грузией)
 - **Контентные таблицы теперь скроллятся горизонтально на узких экранах.** В `src/styles/global.css` добавлено правило `.prose table { display:block; max-width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch }`. Контент рендерится в `<div class="prose">` (ArticlePage / RoutePage / InsuranceHub — все три покрыты глобальным правилом). Широкая таблица больше не даёт горизонтального переполнения всей страницы — она прокручивается внутри своего блока.
 - **Гейты:** `npm run qa:responsive` = **GO** (0 горизонтальных переполнений, 10 шаблонов × 5 ширин 320/360/414/768/1280; НЕ-табличных переполнений не осталось). `npm run qa` = **GO** (ВЕРДИКТ; критических 0 / средних 0; миноры — довоенные alt/CLS на index/404). `npm run test:links` = **GO** (2804 ссылки, 0 битых).

@@ -15,7 +15,7 @@ import { join, extname } from 'node:path';
 import { chromium } from 'playwright-core';
 
 const DIST = 'dist';
-const PAGES = ['/', '/attractions/', '/attractions/lake-ohrid/', '/food/', '/entertainment/', '/insurance/', '/routes/', '/routes/north-macedonia-7-day-itinerary/', '/cities/', '/news/'];
+const PAGES = ['/', '/attractions/', '/attractions/lake-ohrid/', '/attractions/matka-canyon/', '/food/', '/entertainment/', '/insurance/', '/routes/', '/routes/north-macedonia-7-day-itinerary/', '/cities/', '/news/'];
 const WIDTHS = [320, 360, 414, 768, 1280];
 const TOLERANCE = 1; // субпиксели/округления
 const MIME = {
