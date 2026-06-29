@@ -2,6 +2,17 @@
 
 > Статус и роадмап. **Обновляется после КАЖДОЙ доработки** (правило дисциплины — `CLAUDE.md`).
 
+## 2026-06-30 — KALENDAR v5: горизонт продлён до 31.07, добор до 3/будний день (планирование, контент не писался)
+- **Только планирование (статьи НЕ писались).** План Македонии заканчивался ~23.07; дни 24, 27, 28, 29, 30, 31 июля были пусты + 23.07 неполный (2). Доведён до **ровно 3 статьи на каждый будний день** на горизонте **01.07–31.07.2026** (23 будня).
+- **Добавлено 19 новых коммерческих decision-stage тем** (новые слаги, сверены на дубли по всему KALENDAR + `src/content/articles/en/` + `src/content/routes/`):
+  - **Транспорт A→B (7):** Skopje→Ohrid (`/transport/skopje-to-ohrid/`, 23.07), Skopje→Thessaloniki SKG (`skopje-to-thessaloniki-airport`, 24.07), Ohrid Airport OHD→город (`ohrid-airport-to-town`, 27.07), Ohrid→Sveti Naum/граница (`ohrid-to-sveti-naum-border`, 27.07), Bitola→Prilep (`bitola-to-prilep`, 30.07), Skopje→Tirana (`skopje-to-tirana`, 31.07, YMYL-визы), Skopje→Pristina (`skopje-to-pristina-kosovo`, 31.07).
+  - **Money аренда/eSIM (3):** Car Rental Skopje Airport (`/car-rental/car-rental-skopje-airport/`, 24.07), Best eSIM (`best-esim-for-north-macedonia`, 24.07), Car Rental Ohrid (`/car-rental/car-rental-ohrid/`, 27.07).
+  - **Where to stay (3):** Struga (28.07), Mavrovo (28.07), Bitola-vs-Ohrid (`where-to-stay-bitola-vs-ohrid`, 31.07).
+  - **Сравнения (4):** Skopje vs Ohrid (28.07), Lake Ohrid vs Lake Prespa (29.07), NM vs Bulgaria (29.07), Ohrid vs Struga (29.07).
+  - **Day trips (2):** Day Trips from Bitola (30.07), Matka Canyon Day Trip from Skopje (30.07).
+- **Структура:** 24.07 добавлен в Неделю 4; заведена **Неделя 5 (27.07–31.07)**; Сб 01.08 — /news. Категории — только из `content.config.ts` (transport / car-rental / planning).
+- **Сверка скриптом:** все 23 будня 01–31.07 = **ровно 3** (0 ошибок). Темы взяты из бэклога `docs/CONTENT_PLAN.md` (§2.2 transport/money, §2.8) + реальные A→B-связки; не выдуманы. Обновлены KALENDAR (метаданные v5), ROADMAP («до 31.07»), HANDOFF.
+
 ## 2026-06-30 — транспортный кластер «routes» — 3 статьи опубликованы (слот Вт 30.06)
 - **Опубликованы 3 transport-статьи (все `draft:false`, qa=GO, test:links=GO), слот KALENDAR Вт 30.06 закрыт.** EN-only, банк по одной (commit+push после каждой). Конвейер: факты (WebSearch/WebFetch) → текст → фото → гейты.
   1. **`ohrid-to-bitola`** → **/transport/ohrid-to-bitola/** (~1457 слов). Лид: ≈68–70 км; bus ~1.5–2 ч ~€19/≈1150 MKD, до 17 рейсов/день 06:00–20:30; drive ~1–1.5 ч via Resen ИЛИ сезонный перевал Galičica (закрыт 21.11.2025–31.03.2026). H2: quick-answer, bus, driving (две дороги), Resen/Lake Prespa, «What's waiting in Bitola», tips. Факты: Balkanviator/Rome2Rio/Makedonijapat. AffiliateBox: `/go/car-rental`. Перелинк 6+хаб. Бэклинк из `skopje-to-bitola`.
