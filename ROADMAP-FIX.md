@@ -20,10 +20,10 @@
 - [ ] **owner action:** GSC — отправить `sitemap-index.xml` в Google Search Console + Request Indexing главной (тогда же Google подхватит новый фавикон). _(Сайт уже live; остаётся submission в GSC — числится блокером владельца в HANDOFF.)_
 - [ ] **[perf]** оптимизировать hero `ohrid-kaneo` (LCP главной) до ≤200КБ webp — снизить качество/ширину в `astro:assets` (сейчас >200КБ, ловит `qa.mjs`).
 
-### P2 — полный добор фото до нормы (отложено с Этапа 1; НЕ контент-генерация)
-- [ ] `lake-ohrid`: cover + ≥4 инлайн-figure (норма статьи ≥5 фото). Сейчас только cover.
-- [ ] `north-macedonia-7-day-itinerary`: cover + фото **каждой остановки** (Скопье / Маврово / Охрид / Битола). Сейчас только cover.
-- [ ] `things-to-do-in-ohrid` (якорь): добор фото с 13 до целевых ~15–20 для якорной статьи (норма ≥10 уже выполнена; cover Канео + 12 CC ≤200КБ). Кандидаты: интерьеры/фрески Св. Софии, виды с лодки, пляжи Лагадин/Градиште, нацпарк Галичица.
+### P2 — полный добор фото до нормы (закрыто 2026-06-30; НЕ контент-генерация)
+- [x] `lake-ohrid`: **уже в норме** (cover + 5 инлайн-figure: kaneo/sunset/sveti-naum/springs/boat + 2 gallery) — проверено по факту; текст наполнен с момента сид-обложки, добор не требовался.
+- [x] `north-macedonia-7-day-itinerary`: **уже в норме** (cover + фото **каждой остановки**: Skopje/Matka/Ohrid/Sveti Naum/Bitola/Pelister + 2 gallery) — проверено по факту. _(Маршрут не включает Маврово как остановку; остановки — Скопье/Матка/Охрид/Наум/Битола/Пелистер, у каждой своё фото.)_
+- [x] `things-to-do-in-ohrid` (якорь): добор с 12 до **15 уникальных** фото (cover + 13 инлайн-figure + panorama в gallery). Добавлены 3 CC/PD ≤200КБ по темам статьи: пляж/купание (`beach.webp`, Ivka20 · CC0), Bay of Bones (`bay-of-bones.webp`, BrankaVV · CC BY-SA 4.0), нацпарк Галичица (`galicica.webp`, Taskosmileski · CC BY-SA 3.0). qa=GO, test:links=GO.
 
 ### P3 — наполнение (поздние этапы, НЕ сейчас)
 - [ ] Pillar «What to eat in North Macedonia» (`/food/`) — мост уже готов, появится автоматически.

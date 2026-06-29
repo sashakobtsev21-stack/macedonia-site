@@ -1,7 +1,11 @@
 # HANDOFF — North Macedonia Guidebook
 > Снимок для возобновления (обновляется после каждой доработки). Подробная история — `PROGRESS.md`; план — `ROADMAP.md`/`KALENDAR.md`; аудит — `AUDIT.md`.
 
-**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `chore(macedonia): remove stale duplicate docs/ROADMAP, trim superseded CONTENT_PLAN/done FIX items`
+**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `content(macedonia): photo top-up — lake-ohrid, 7-day itinerary stops, things-to-do-in-ohrid`
+
+## Добор фото P2 (2026-06-30)
+- **`ROADMAP-FIX.md` P2 закрыт.** Проверено реальное число фото: `lake-ohrid` (cover + 5 инлайн) и `north-macedonia-7-day-itinerary` (cover + фото каждой из 6 остановок) **уже были в норме — не трогались**. _(Маршрут не содержит остановки Маврово — в ROADMAP-FIX опечатка.)_
+- **`things-to-do-in-ohrid`** усилен с 12 до **15 уникальных** фото: +beach (Ivka20 · CC0), +bay-of-bones (BrankaVV · CC BY-SA 4.0, +абзац), +galicica (Taskosmileski · CC BY-SA 3.0, +абзац). qa=GO, test:links=GO.
 
 ## Чистка доков (2026-06-30)
 - **Удалён дубль `docs/ROADMAP.md`** (застрял на 22.06); уникальные ID-таблицы R0–R6, owner-развилки и сквозные YMYL-правила перенесены в корневой `ROADMAP.md` (сворачиваемая секция «Архив деталей»). Источник фазового плана — теперь только корневой `ROADMAP.md`.

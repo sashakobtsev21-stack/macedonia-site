@@ -2,6 +2,14 @@
 
 > Статус и роадмап. **Обновляется после КАЖДОЙ доработки** (правило дисциплины — `CLAUDE.md`).
 
+## 2026-06-30 — ROADMAP-FIX P2: добор фото — закрыт (lake-ohrid и маршрут уже в норме, якорь Охрид усилен до 15)
+- **Закрыт блок P2 «полный добор фото до нормы» в `ROADMAP-FIX.md`.** Перед работой проверено реальное число фото у каждой статьи (правило «не трогать, если в норме»):
+  - **`lake-ohrid`** — уже в норме: cover + **5 инлайн-figure** (kaneo/sunset/sveti-naum/springs/boat) + 2 gallery. Текст давно наполнен; добор не требовался — **не трогал**.
+  - **`north-macedonia-7-day-itinerary`** — уже в норме: cover + фото **каждой остановки** (Skopje/Matka/Ohrid/Sveti Naum/Bitola/Pelister) + 2 gallery. Маршрут **не включает Маврово** как остановку (в ROADMAP-FIX опечатка) — у всех реальных 6 остановок фото есть — **не трогал**.
+  - **`things-to-do-in-ohrid`** (якорь) — усилен с **12 до 15 уникальных** фото (cover + 13 инлайн-figure + panorama в gallery). Добавлены 3 CC/PD ≤200КБ по уже описанным в статье темам: **пляж/купание** (`beach.webp`, Ivka20 · CC0, в раздел «Boat trips and beaches»), **Bay of Bones** (`bay-of-bones.webp`, BrankaVV · CC BY-SA 4.0, + короткий абзац про музей-наколную-населбу) и **нацпарк Галичица** (`galicica.webp`, Taskosmileski · CC BY-SA 3.0, + абзац в раздел про озеро). Кадры — реальные Commons (через `commons-candidates.mjs` + `build-gallery.mjs`), уникальные, атрибуция автор+лицензия в подписи.
+- **Гейты:** `npm run qa` = **GO** (критических 0 / средних 0; 64 минора — все довоенные: flag/hero на index/404). `npm run test:links` = **GO** (2804 ссылки, 0 битых). Сборка 48 страниц.
+- **Доки:** `ROADMAP-FIX.md` P2 → все 3 пункта `[x]` с пометкой что/откуда; `PROGRESS.md` + `HANDOFF.md` обновлены.
+
 ## 2026-06-30 — Чистка доков: удалён дубль docs/ROADMAP.md, урезаны ROADMAP-FIX/CONTENT_PLAN (контент не трогался)
 - **Удалён устаревший дубль `docs/ROADMAP.md`** (застрял на предзапусковом 22.06). Живой план — корневой `ROADMAP.md`. **Перед удалением уникальное перенесено** в корневой `ROADMAP.md` как сворачиваемая секция `<details>Архив деталей (из docs/ROADMAP, 22.06)</details>`: owner-развилки (O1–Моат), поимённые ID-таблицы задач R0–R6 (INFRA/MON/DIST/C с владельцем и Eff) и сквозные YMYL-правила/ловушки. Дублирующая фазовая часть R0–R6 не переносилась (она уже в таблице корневого).
 - **`ROADMAP-FIX.md` — done-пункты отмечены по факту:** деплой + домен `macedoniaguidebook.com` live (Cloudflare Workers, www→apex, TLS) → новый блок «✅ Закрыто после запуска» + `[x]` в Owner actions. Реально открытыми оставлены: GSC sitemap/Request Indexing (числится блокером владельца), perf hero `ohrid-kaneo` ≤200КБ, добор фото `lake-ohrid`/`north-macedonia-7-day-itinerary`/`things-to-do-in-ohrid`. O4 в сводке помечен закрытым (EN-only).

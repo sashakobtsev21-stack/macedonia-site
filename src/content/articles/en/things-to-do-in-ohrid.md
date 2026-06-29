@@ -120,6 +120,13 @@ Everything in Ohrid sits beside **Lake Ohrid**, one of Europe's oldest and deepe
 <figcaption>Lake Ohrid backed by the Galičica range — old, deep and protected as a UNESCO mixed site. <span class="figure__credit">Photo: Benoît Vicart · CC0 · Wikimedia Commons</span></figcaption>
 </figure>
 
+Rising directly east of the town is **Galičica National Park**, the mountain wall that separates Lake Ohrid from neighbouring Lake Prespa. A panoramic road climbs over the ridge to viewpoints that take in the whole lake at a glance, and the park has hiking trails and rich wildlife — an easy half-day with a car.
+
+<figure class="figure">
+<img src="/images/things-to-do-in-ohrid/galicica.webp" alt="The wide panorama of Lake Ohrid seen from the heights of Galičica National Park" width="1280" height="418" loading="lazy" decoding="async" />
+<figcaption>Galičica National Park east of town — the panoramic road over the ridge gives the whole lake at a glance. <span class="figure__credit">Photo: Taskosmileski · CC BY-SA 3.0 · Wikimedia Commons</span></figcaption>
+</figure>
+
 For the full story of the lake itself — its age, endemic species and the cross-border angle — see our [Lake Ohrid guide](/attractions/lake-ohrid/).
 
 ## Boat trips and beaches
@@ -132,6 +139,18 @@ The classic excursion is the **boat trip to the Monastery of St. Naum**, about 2
 </figure>
 
 For swimming, the **town beaches** along the harbour promenade are the easiest, but the better strands are east of town toward **Lagadin** and **Gradište**, and around **St. Naum** in the south. The lake warms up through summer and is comfortable for swimming from roughly late June into September; July and August are the busy peak. The promenade itself is the heart of evening life — a long lakeside walk lined with cafés.
+
+<figure class="figure">
+<img src="/images/things-to-do-in-ohrid/beach.webp" alt="A pebble-and-sand beach on the clear shallows of Lake Ohrid in summer" width="1120" height="746" loading="lazy" decoding="async" />
+<figcaption>The lake's clear, shallow shallows make for easy swimming — the better beaches lie east toward Lagadin and Gradište. <span class="figure__credit">Photo: Ivka20 · CC0 · Wikimedia Commons</span></figcaption>
+</figure>
+
+A worthwhile detour by boat or road is the **Bay of Bones** (Zaliv na Koskite), a reconstructed prehistoric pile-dwelling village built out over the water on the southern shore. The wooden houses on stilts recreate a Bronze- and Iron-Age lakeside settlement (roughly 1200–700 BC) found preserved on the lake bed, with a small underwater-archaeology museum alongside.
+
+<figure class="figure">
+<img src="/images/things-to-do-in-ohrid/bay-of-bones.webp" alt="The reconstructed pile-dwelling houses of the Bay of Bones museum standing on stilts over Lake Ohrid" width="1120" height="746" loading="lazy" decoding="async" />
+<figcaption>The Bay of Bones — a reconstructed prehistoric stilt village over the water, with an underwater-archaeology museum. <span class="figure__credit">Photo: BrankaVV · CC BY-SA 4.0 · Wikimedia Commons</span></figcaption>
+</figure>
 
 <figure class="figure">
 <img src="/images/things-to-do-in-ohrid/harbour.webp" alt="The lakeside promenade in Ohrid with the old town climbing the hill behind" width="1280" height="853" loading="lazy" decoding="async" />
