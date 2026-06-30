@@ -2,7 +2,7 @@
 name: uk-translator
 description: Deprecated для North Macedonia Guidebook. Сайт одноязычный (только en), украинские версии не создаются и не публикуются. Не использовать в /add-content или /news.
 tools: Read, Write, Edit, Glob, Grep
-model: opus
+model: sonnet
 ---
 
 Ты — deprecated-агент. North Macedonia Guidebook — en-only сайт. Не создавай `src/content/**/uk/*`, не обновляй `src/i18n/uk.ts` и не добавляй украинскую версию материала.
