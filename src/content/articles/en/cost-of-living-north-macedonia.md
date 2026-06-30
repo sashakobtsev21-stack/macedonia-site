@@ -20,7 +20,7 @@ affiliate:
   - partner: 'safetywing'
     label: 'Compare nomad health & travel cover'
     position: 'body-end'
-  - partner: 'airalo'
+  - partner: 'yesim'
     label: 'Get a North Macedonia eSIM before you arrive'
     position: 'body-end'
 sources:

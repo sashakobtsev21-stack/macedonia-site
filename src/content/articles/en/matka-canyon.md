@@ -39,7 +39,7 @@ affiliate:
   - partner: 'trip-tours'
     label: 'Matka Canyon tours & day trips'
     position: 'body-end'
-  - partner: 'trip-transfers'
+  - partner: 'kiwitaxi'
     label: 'Private transfer to Matka Canyon'
     position: 'body-end'
 sources:

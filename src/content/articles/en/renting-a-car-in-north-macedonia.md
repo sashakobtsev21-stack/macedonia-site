@@ -20,7 +20,7 @@ gallery:
     alt: 'A wet rural road below snow-dusted mountains in North Macedonia'
     credit: 'Photo: GiveMeMollusks · CC0 · Wikimedia Commons'
 affiliate:
-  - partner: 'car-rental'
+  - partner: 'localrent'
     label: 'Compare car hire in North Macedonia'
     position: 'body-end'
 sources:

@@ -12,7 +12,7 @@ cover:
   alt: 'Lake Ohrid under the slopes of the Galičica mountains, the range the road to Bitola climbs over'
 coverCredit: 'Photo: Klovovi · CC BY 2.0 · Wikimedia Commons'
 affiliate:
-  - partner: 'car-rental'
+  - partner: 'localrent'
     label: 'Compare car hire in Ohrid & Bitola'
     position: 'body-end'
 sources:

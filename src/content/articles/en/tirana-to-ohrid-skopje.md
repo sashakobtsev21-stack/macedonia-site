@@ -16,10 +16,10 @@ gallery:
     alt: 'Lake Ohrid at Struga on the North Macedonian side, with boats and snow-topped mountains'
     credit: 'Photo: Liridon · CC BY-SA 4.0 · Wikimedia Commons'
 affiliate:
-  - partner: 'car-rental'
+  - partner: 'localrent'
     label: 'Compare car hire in Albania and North Macedonia'
     position: 'body-end'
-  - partner: 'trip-transfers'
+  - partner: 'kiwitaxi'
     label: 'Book a private transfer from Tirana to Ohrid'
     position: 'body-end'
 sources:

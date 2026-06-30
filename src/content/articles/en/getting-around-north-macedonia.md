@@ -17,10 +17,10 @@ gallery:
     alt: 'A red JSP city bus on Dimitrie Čupovski street in Skopje'
     credit: 'Photo: Robot8A · CC BY-SA 4.0 · Wikimedia Commons'
 affiliate:
-  - partner: 'trip-transfers'
+  - partner: 'kiwitaxi'
     label: 'Book an airport transfer in North Macedonia'
     position: 'body-end'
-  - partner: 'car-rental'
+  - partner: 'localrent'
     label: 'Compare car hire in North Macedonia'
     position: 'body-end'
   - partner: 'trip-tours'

@@ -16,10 +16,10 @@ gallery:
     alt: 'The pedestrian heart of central Skopje on a clear day'
     credit: 'Photo: xiquinhosilva · CC BY 2.0 · Wikimedia Commons'
 affiliate:
-  - partner: 'trip-transfers'
+  - partner: 'kiwitaxi'
     label: 'Book a private airport transfer in Skopje'
     position: 'body-end'
-  - partner: 'car-rental'
+  - partner: 'localrent'
     label: 'Compare car hire at Skopje Airport'
     position: 'body-end'
 sources:

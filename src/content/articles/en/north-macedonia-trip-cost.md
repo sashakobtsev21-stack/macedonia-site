@@ -20,7 +20,7 @@ affiliate:
   - partner: 'trip-hotels'
     label: 'Compare hotels & guesthouses in North Macedonia'
     position: 'body-end'
-  - partner: 'airalo'
+  - partner: 'yesim'
     label: 'Get a North Macedonia eSIM before you fly'
     position: 'body-end'
   - partner: 'trip-tours'

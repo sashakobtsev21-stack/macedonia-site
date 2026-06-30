@@ -16,10 +16,10 @@ gallery:
     alt: 'The mosaic floor of the ancient ruins of Heraclea Lyncestis near Bitola'
     credit: 'Photo: Marcin Konsek · CC BY-SA 4.0 · Wikimedia Commons'
 affiliate:
-  - partner: 'car-rental'
+  - partner: 'localrent'
     label: 'Compare car hire in North Macedonia'
     position: 'body-end'
-  - partner: 'trip-transfers'
+  - partner: 'kiwitaxi'
     label: 'Book a private transfer from Skopje to Bitola'
     position: 'body-end'
 sources:

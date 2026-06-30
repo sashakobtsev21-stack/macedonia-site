@@ -19,7 +19,7 @@ affiliate:
   - partner: 'trip-hotels'
     label: 'Where to stay in North Macedonia'
     position: 'body-end'
-  - partner: 'airalo'
+  - partner: 'yesim'
     label: 'Get an eSIM before you land'
     position: 'body-end'
 sources:

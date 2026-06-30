@@ -13,10 +13,10 @@ cover:
   alt: 'The main bus station in Skopje, where buses to Ohrid depart'
 coverCredit: 'Photo: CAPTAIN RAJU · CC0 · Wikimedia Commons'
 affiliate:
-  - partner: 'trip-transfers'
+  - partner: 'kiwitaxi'
     label: 'Compare private transfers from Skopje to Ohrid'
     position: 'body-end'
-  - partner: 'car-rental'
+  - partner: 'localrent'
     label: 'Compare car hire in North Macedonia'
     position: 'body-end'
 sources:

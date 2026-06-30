@@ -12,10 +12,10 @@ cover:
   alt: 'Macedonia Square in central Skopje, the usual end point for buses arriving from Sofia, Thessaloniki and Pristina'
 coverCredit: 'Photo: Raso mk · CC BY-SA 4.0 · Wikimedia Commons'
 affiliate:
-  - partner: 'trip-transfers'
+  - partner: 'kiwitaxi'
     label: 'Book a private transfer to Skopje'
     position: 'body-end'
-  - partner: 'car-rental'
+  - partner: 'localrent'
     label: 'Compare car hire for North Macedonia'
     position: 'body-end'
 sources:

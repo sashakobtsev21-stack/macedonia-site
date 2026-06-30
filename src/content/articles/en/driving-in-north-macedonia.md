@@ -16,7 +16,7 @@ gallery:
     alt: 'A quiet rural road winding through the hills of North Macedonia'
     credit: 'Photo: Цаци · CC BY-SA 3.0 · Wikimedia Commons'
 affiliate:
-  - partner: 'car-rental'
+  - partner: 'localrent'
     label: 'Compare car hire in North Macedonia'
     position: 'body-end'
   - partner: 'ekta'
