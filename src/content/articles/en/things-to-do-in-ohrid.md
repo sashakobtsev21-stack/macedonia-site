@@ -22,7 +22,6 @@ cover:
   src: '/images/things-to-do-in-ohrid/cover.webp'
   alt: 'The Church of St. John at Kaneo on its cliff above Lake Ohrid'
 coverCredit: 'Photo: kallerna · CC BY-SA 4.0 · Wikimedia Commons'
-hotelWidget: true
 gallery:
   - src: '/images/things-to-do-in-ohrid/panorama.webp'
     alt: 'Ohrid old town and Lake Ohrid at golden hour with boats on the water'

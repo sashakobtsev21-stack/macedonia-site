@@ -21,7 +21,6 @@ cover:
   src: '/images/things-to-do-in-bitola/cover.webp'
   alt: 'Bitola''s Široki Sokak pedestrian street with neoclassical facades and the clock tower in the distance'
 coverCredit: 'Photo: Duran242 · CC BY-SA 4.0 · Wikimedia Commons'
-hotelWidget: true
 gallery:
   - src: '/images/things-to-do-in-bitola/consuls-street.webp'
     alt: 'Ornate nineteenth-century consulate-era buildings lining Široki Sokak in Bitola'

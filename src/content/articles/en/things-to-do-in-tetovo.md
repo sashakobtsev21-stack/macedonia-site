@@ -18,7 +18,6 @@ cover:
   src: '/images/things-to-do-in-tetovo/cover.webp'
   alt: 'Aerial view over the city of Tetovo spread across the Polog plain with the Šar mountains hazy behind'
 coverCredit: 'Photo: Dean Lazarevski · CC BY-SA 4.0 · Wikimedia Commons'
-hotelWidget: true
 gallery:
   - src: '/images/things-to-do-in-tetovo/painted-mosque-interior.webp'
     alt: 'The elaborately painted mihrab niche inside Tetovo''s Painted Mosque'
