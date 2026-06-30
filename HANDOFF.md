@@ -1,7 +1,12 @@
 # HANDOFF — North Macedonia Guidebook
 > Снимок для возобновления (обновляется после каждой доработки). Подробная история — `PROGRESS.md`; план — `ROADMAP.md`/`KALENDAR.md`; аудит — `AUDIT.md`.
 
-**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `fix(macedonia): enlarge showcase carousel arrows to 44px tap target (mobile)`
+**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `fix(macedonia): consent banner + privacy icon use real accent token --color-wine (was undefined --color-sea)`
+
+## Фикс акцент-токена: баннер cookies + иконка приватности (2026-06-30, `--color-sea` → `--color-wine`)
+- **6 свойств ссылались на несуществующий токен `--color-sea`** → резолвились в invalid-at-computed-value, цвет падал на наследуемый/initial (не тиловый). `src/components/CookieConsent.astro` (5): фон+`border-color` кнопки «Принять» `.cc__btn--accept`, `outline` `.cc__btn:focus-visible`, `color`+focus-`outline` ссылки `.cc__link`. `src/layouts/PrivacyPage.astro` (1): `color` `.contact__icon`. Латентный баг баннера + свежие вхождения в `PrivacyPage`.
+- **Заменено на `--color-wine`** (`#0e6a73`, «Ohrid teal») — реальный акцент форка и конвенция всего движка (~50 файлов; `--color-lake` — алиас, в компонентах не используется). Новый токен НЕ заводился.
+- **Гейты:** `qa`=**GO** (ВЕРДИКТ; крит. 0 / сред. 0; миноры — довоенные alt/CLS на index/404).
 
 ## B3: тап-таргет стрелок витрины ≥44px (2026-06-30, эталон gruzia ShowcaseRail)
 - **Кликабельная зона стрелок карусели заведений `.scard__nav` (ShowcaseRail) увеличена до ≥44×44px** (WCAG 2.5.5, мобайл): кнопка `min-width/min-height:44px` с центрированным контентом; видимая пилюля ~30px — псевдоэлемент `::before` по центру тап-зоны, иконка над ней (`svg z-index:1`). Контраст-фикс a11y сохранён один-в-один (slate 60% + обводка 40%, hover 78%) на `::before`. `--prev`/`--next` смещены на `calc(var(--space-2) - 7px)` — видимая пилюля у края медиа, лишняя площадь тап-зоны внутрь карточки (стрелки не перекрывают карточки уродливо).
