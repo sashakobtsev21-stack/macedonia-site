@@ -1,7 +1,7 @@
 # HANDOFF — North Macedonia Guidebook
 > Снимок для возобновления (обновляется после каждой доработки). Подробная история — `PROGRESS.md`; план — `ROADMAP.md`/`KALENDAR.md`; аудит — `AUDIT.md`.
 
-**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `fix(macedonia): consent banner + privacy icon use real accent token --color-wine (was undefined --color-sea)`
+**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `fix(macedonia): consent banner & privacy page use defined accent --color-wine, not dangling --color-sea`
 
 ## Фикс акцент-токена: баннер cookies + иконка приватности (2026-06-30, `--color-sea` → `--color-wine`)
 - **6 свойств ссылались на несуществующий токен `--color-sea`** → резолвились в invalid-at-computed-value, цвет падал на наследуемый/initial (не тиловый). `src/components/CookieConsent.astro` (5): фон+`border-color` кнопки «Принять» `.cc__btn--accept`, `outline` `.cc__btn:focus-visible`, `color`+focus-`outline` ссылки `.cc__link`. `src/layouts/PrivacyPage.astro` (1): `color` `.contact__icon`. Латентный баг баннера + свежие вхождения в `PrivacyPage`.
