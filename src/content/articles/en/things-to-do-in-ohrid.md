@@ -130,7 +130,7 @@ For the full story of the lake itself — its age, endemic species and the cross
 
 ## Boat trips and beaches
 
-The classic excursion is the **boat trip to the Monastery of St. Naum**, about 29 km south along the shore near the Albanian border. Boats leave from the Ohrid harbour through the day in season (roughly May to October); the ride takes around 1.5 hours each way, or you can drive or take a local bus. The monastery church of **St. Naum**, founded in the 10th century, sits on a bluff above springs that feed the lake — peacocks wander the grounds and small boats run out to the spring pools.
+The classic excursion is the **boat trip to the Monastery of St. Naum**, about 29 km south along the shore near the Albanian border. Boats leave from the Ohrid harbour through the day in season (roughly May to October); the ride takes around 1.5 hours each way, or you can drive or take a local bus. The monastery church of **St. Naum**, founded in the 10th century, sits on a bluff above springs that feed the lake — peacocks wander the grounds and small boats run out to the spring pools. For where to actually swim — the best beaches and coves around the lake — see our guide to [the best beaches on Lake Ohrid](/planning/lake-ohrid-beaches-swimming/).
 
 <figure class="figure">
 <img src="/images/things-to-do-in-ohrid/sveti-naum.webp" alt="The domed stone church of the Monastery of St. Naum above Lake Ohrid" width="1120" height="778" loading="lazy" decoding="async" />

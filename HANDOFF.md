@@ -1,7 +1,10 @@
 # HANDOFF — North Macedonia Guidebook
 > Снимок для возобновления (обновляется после каждой доработки). Подробная история — `PROGRESS.md`; план — `ROADMAP.md`/`KALENDAR.md`; аудит — `AUDIT.md`.
 
-**Дата:** 2026-06-30 · **Фаза:** R4 наполнение · **Статей:** ~27 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `fix(macedonia): consent banner & privacy page use defined accent --color-wine, not dangling --color-sea`
+**Дата:** 2026-07-01 · **Фаза:** R4 наполнение · **Статей:** ~30 (цель ~80) · **Сайт:** live (`macedoniaguidebook.com`) · **Язык:** en (EN-only) · **Последний коммит:** `publish(macedonia): 3 where-to-stay/beaches articles 01.07 (Skopje, Bitola, Lake Ohrid)`
+
+## /work 01.07 — опубликованы 3 коммерческие статьи (where-to-stay кластер, темп 3/будень)
+- `/planning/where-to-stay-in-skopje/` (1695 сл), `/planning/where-to-stay-in-bitola/` (1500 сл), `/planning/lake-ohrid-beaches-swimming/` (1687 сл). Все 5 фото, 💰 trip-hotels, ценовые бэнды помечены «indicative + checkedAt 2026-07-01», без выдуманных отелей/цен (правило 4). Независимое ревью: тон+факты PASS; единственный блокер — отсутствовали **входящие** ссылки (сироты на входе) → добавил по 1 контекстной входящей из живых гайдов (things-to-do-in-skopje → where-to-stay-in-skopje; things-to-do-in-bitola → where-to-stay-in-bitola; things-to-do-in-ohrid «Boat trips and beaches» → lake-ohrid-beaches). Фото 202–203 КБ (десятич.) = 197–198 KiB < порога 200×1024 → check-photos OK, не пережимал. **qa=GO (критич. 0) + links=GO.** KALENDAR 01.07 = `[x]`.
 
 ## Фикс акцент-токена: баннер cookies + иконка приватности (2026-06-30, `--color-sea` → `--color-wine`)
 - **6 свойств ссылались на несуществующий токен `--color-sea`** → резолвились в invalid-at-computed-value, цвет падал на наследуемый/initial (не тиловый). `src/components/CookieConsent.astro` (5): фон+`border-color` кнопки «Принять» `.cc__btn--accept`, `outline` `.cc__btn:focus-visible`, `color`+focus-`outline` ссылки `.cc__link`. `src/layouts/PrivacyPage.astro` (1): `color` `.contact__icon`. Латентный баг баннера + свежие вхождения в `PrivacyPage`.

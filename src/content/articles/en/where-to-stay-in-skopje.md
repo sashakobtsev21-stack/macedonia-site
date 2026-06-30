@@ -26,7 +26,7 @@ sources:
   - 'City Park (Gradski Park) — large green park beside Debar Maalo, roughly a 10–14 minute walk to Macedonia Square; area hotels from ~$56–73/night — Booking.com and Trip.com City Park area listings; Discovering Macedonia park overview (discoveringmacedonia.com/2019/skopje-city-park-the-lungs-of-the-capital/).'
   - 'Skopje hotel price bands — budget ~$25, mid-range ~$43 (high season ~$81), luxury ~$72 and up to ~$126–193 for top 5-star; all-hotel average ~$41/night, with May the priciest month — Budget Your Trip (budgetyourtrip.com/hotels/macedonia/skopje-785842) and KAYAK/Tripadvisor Skopje hotel guides.'
   - 'Police registration within ~48 hours of arrival is normally handled by your hotel or host — North Macedonia entry/stay practice (see our planning hub).'
-draft: true
+draft: false
 ---
 
 The simplest place to stay in Skopje is the **Centre, within a 10–15 minute walk of Macedonia Square** — you can reach almost every sight on foot from there, and it has the densest run of hotels, restaurants and bars. But the right base depends on your trip. First-timers and night-owls want the **Centre and Macedonia Square**; anyone after Ottoman atmosphere and character hotels should look at the **Old Bazaar** just across the river; foodies and people watching the budget do better in leafy **Debar Maalo**; and families or drivers who want green and quiet should consider the **City Park** side. Skopje is compact and cheap by European standards, so nowhere central is far or expensive — but the feel changes a lot between these areas. This guide breaks down each one, who it suits and what you'll pay.

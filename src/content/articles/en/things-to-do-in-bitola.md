@@ -130,7 +130,7 @@ Bitola is compact, so where you stay is mostly about how close you want to be to
 | **Old bazaar fringe** | Quieter, with the market and clock tower nearby |
 | **Toward Pelister** | Guesthouses and mountain lodges for hikers heading up the park |
 
-Most visitors base themselves near the centre, within walking distance of both Široki Sokak and Heraclea. Bitola is a university town with a steady year-round buzz rather than a seasonal resort, so rooms are easier to find here than in peak-summer Ohrid. Prices are in Macedonian denar (**MKD**), pegged to the euro at roughly 61.5 MKD to €1, which keeps a stay good value by European standards.
+Most visitors base themselves near the centre, within walking distance of both Široki Sokak and Heraclea. Bitola is a university town with a steady year-round buzz rather than a seasonal resort, so rooms are easier to find here than in peak-summer Ohrid. Prices are in Macedonian denar (**MKD**), pegged to the euro at roughly 61.5 MKD to €1, which keeps a stay good value by European standards. For the areas and what to expect in each, see our guide to [where to stay in Bitola](/planning/where-to-stay-in-bitola/).
 
 <figure class="figure">
 <img src="/images/things-to-do-in-bitola/consuls-street.webp" alt="Ornate consulate-era buildings along Široki Sokak in Bitola" width="1280" height="851" loading="lazy" decoding="async" />

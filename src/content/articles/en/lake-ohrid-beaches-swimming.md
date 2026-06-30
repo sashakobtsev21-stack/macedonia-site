@@ -25,7 +25,7 @@ sources:
   - 'Designated swimming areas at Gradište, Lagadin and the Ohrid city beach are monitored with lifeguards in season (July–August) — Macedonia Car Rental swimming-beaches guide.'
   - 'Bay of Bones (Zaliv na koskite) reconstructed prehistoric pile-dwelling settlement and museum near Peštani (~13 km south), a sheltered bay you can combine with a swim — Bay of Bones museum information and our things-to-do-in-ohrid guide.'
   - 'Distances from Ohrid town (Lagadin ~8 km, Trpejca ~17 km, Gradište ~20 km, Ljubaništa near St. Naum at the southern tip) — kept consistent with our where-to-stay-in-ohrid guide.'
-draft: true
+draft: false
 ---
 
 The easiest swim on Lake Ohrid is at **Lagadin**, about 8 km south of town on the main lake road, with sand-and-pebble shore, sunbeds, bars and a big car park — but the right beach depends on what you want from the day. Families and anyone without a car do best at **Lagadin** or the **Ohrid town beach**; the postcard cove is **Trpejca**, quiet and clear; the party is at **Gradište**; and the only proper **sand** is down at the southern tip by **St. Naum**. The lake is famously clear and, by July and August, genuinely warm — around 24–25°C — so this is a summer activity, best from June to September. This guide runs through the main beaches, what each is like and how to reach it.

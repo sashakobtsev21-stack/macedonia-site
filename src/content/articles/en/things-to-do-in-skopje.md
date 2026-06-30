@@ -138,7 +138,7 @@ Skopje is compact, so almost anywhere central works. The obvious bases:
 | **Old Bazaar edge** | Atmosphere, character hotels, steps from the fortress |
 | **City Park / Vodno side** | Quieter, greener, handy if you have a car |
 
-Most visitors stay within a 10–15 minute walk of Macedonia Square, which keeps the bazaar, the square and the riverfront all on foot. Prices in Skopje are low by European standards; book ahead only in peak summer and around major events.
+Most visitors stay within a 10–15 minute walk of Macedonia Square, which keeps the bazaar, the square and the riverfront all on foot. Prices in Skopje are low by European standards; book ahead only in peak summer and around major events. For a full area-by-area breakdown of where to base yourself, see our guide to [where to stay in Skopje](/planning/where-to-stay-in-skopje/).
 
 ## How to get to Skopje
 

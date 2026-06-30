@@ -26,7 +26,7 @@ sources:
   - 'Bitola hotel price bands — budget hotels average ~$20, all-hotel average ~$35 (high season ~$65, median ~$34), luxury average ~$63; rooms from ~$28–33/night, cheapest in February, March and May — Budget Your Trip (budgetyourtrip.com/hotels/macedonia/bitola-792578), Tripadvisor and Booking.com Bitola.'
   - 'Heraclea Lyncestis lies about 2 km (1.3 mi) south of the centre — distance reference for choosing a central base; see our things-to-do-in-bitola guide.'
   - 'Police registration within ~48 hours of arrival is normally handled by your hotel or host — North Macedonia entry/stay practice (see our planning hub).'
-draft: true
+draft: false
 ---
 
 The best place to stay in Bitola for most visitors is **on or just off Široki Sokak**, the long pedestrian promenade at the centre of town — you'll have the cafés, restaurants and the evening stroll right outside, and the bazaar, the churches and Heraclea all within easy reach. Bitola is flat, compact and a real working city rather than a seasonal resort, so a central base covers almost everything on foot. If you'd rather have peace, look a few streets back toward the **old bazaar**, which is just as central but quieter; and if you've come mainly to hike, the **mountain lodges toward Pelister** put you up in the forest above the city. This guide breaks down each area, who it suits and what you'll pay.
